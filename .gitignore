@@ -1,10 +1,24 @@
+# Python
 venv/
 __pycache__/
 *.pyc
 *.pyo
-dataset_output/
-logs/
+
+# Raw source data (large)
 data/
 *.zip
 *.tar.gz
+
+# Dataset images (large — keep JSON annotations)
+dataset_output/*/train/images/
+dataset_output/*/val/images/
+dataset_output/*/test/images/
+dataset_output/train/
+dataset_output/val/
+dataset_output/test/
+
+# SLURM logs
+logs/
+
+# Environment
 .env

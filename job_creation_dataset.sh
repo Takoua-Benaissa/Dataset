@@ -13,7 +13,7 @@
 set -euo pipefail
 
 echo "=========================================="
-echo "  Text-to-Image Dataset Creation Pipeline"
+echo "  Text-in-Image Dataset Pipeline  v7"
 echo "=========================================="
 echo "Job ID : $SLURM_JOB_ID"
 echo "Node   : $(hostname)"
@@ -47,60 +47,45 @@ echo "TESSDATA : $TESSDATA_PREFIX"
 echo ""
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-TRAIN_IMAGES="$HOME/data/train_images"   # 21 953 images (TextCaps train)
-TEST_IMAGES="$HOME/data/test_images"     # 3 353 images  (TextCaps test)
+TRAIN_IMAGES="$HOME/data/train_images"   # TextOCR/TextCaps train images
+TEST_IMAGES="$HOME/data/test_images"     # TextOCR/TextCaps test images
 OUTPUT_DIR="$PROJECT_DIR/dataset_output"
-MAX_IMAGES=500
+MAX_IMAGES=100    # raise to 1000+ for production runs
 BATCH_SIZE=16
 
-# ── Choose best available image source ───────────────────────────────────────
+# TextOCR ground-truth annotation files
+TEXTOCR_TRAIN="$HOME/data/TextOCR_0.1_train.json"
+TEXTOCR_VAL="$HOME/data/TextOCR_0.1_val.json"
+
+# Verify annotation files exist
+for f in "$TEXTOCR_TRAIN" "$TEXTOCR_VAL"; do
+    if [ ! -f "$f" ]; then
+        echo "WARNING: annotation file not found: $f"
+    fi
+done
+
 TRAIN_COUNT=$(ls "$TRAIN_IMAGES"/*.jpg 2>/dev/null | wc -l)
 TEST_COUNT=$(ls  "$TEST_IMAGES"/*.jpg  2>/dev/null | wc -l)
 
-echo "Available sources:"
-echo "  train_images : $TRAIN_COUNT images"
-echo "  test_images  : $TEST_COUNT images"
-echo ""
-
-if [ "$TRAIN_COUNT" -ge 5000 ]; then
-    # Enough train images → use train set (gives most variety)
-    IMAGES_DIR="$TRAIN_IMAGES"
-    echo "Using: train_images ($TRAIN_COUNT images)"
-elif [ "$TRAIN_COUNT" -ge 100 ]; then
-    # Partial train download → combine with test via symlink dir
-    COMBINED="$HOME/data/combined_images"
-    mkdir -p "$COMBINED"
-    find "$TRAIN_IMAGES" -maxdepth 1 -name "*.jpg" -exec ln -sf {} "$COMBINED/" \; 2>/dev/null || true
-    find "$TEST_IMAGES"  -maxdepth 1 -name "*.jpg" -exec ln -sf {} "$COMBINED/" \; 2>/dev/null || true
-    IMAGES_DIR="$COMBINED"
-    COMBINED_COUNT=$(ls "$COMBINED"/*.jpg 2>/dev/null | wc -l)
-    echo "Using: combined ($COMBINED_COUNT images)"
-else
-    # Fallback: test images only
-    IMAGES_DIR="$TEST_IMAGES"
-    echo "Using: test_images ($TEST_COUNT images) – train not ready yet"
-fi
-
-if [ ! -d "$IMAGES_DIR" ] || [ "$(ls "$IMAGES_DIR"/*.jpg 2>/dev/null | wc -l)" -eq 0 ]; then
-    echo "ERROR: No images found in $IMAGES_DIR"
-    exit 1
-fi
-
+echo "Available images:"
+echo "  train_images : $TRAIN_COUNT"
+echo "  test_images  : $TEST_COUNT"
 echo ""
 echo "Configuration:"
-echo "  Images dir : $IMAGES_DIR"
-echo "  Output dir : $OUTPUT_DIR"
-echo "  Max images : $MAX_IMAGES"
-echo "  Batch size : $BATCH_SIZE"
+echo "  Annotations : $TEXTOCR_TRAIN  $TEXTOCR_VAL"
+echo "  Image dirs  : $TRAIN_IMAGES  $TEST_IMAGES"
+echo "  Output dir  : $OUTPUT_DIR"
+echo "  Max images  : $MAX_IMAGES"
 echo ""
 
 # ── Run pipeline ─────────────────────────────────────────────────────────────
 echo "Starting pipeline at $(date)..."
 python -u create_dataset_cluster.py \
-    --images    "$IMAGES_DIR" \
-    --output    "$OUTPUT_DIR" \
-    --max-images "$MAX_IMAGES" \
-    --batch-size "$BATCH_SIZE"
+    --annotation-files "$TEXTOCR_TRAIN" "$TEXTOCR_VAL" \
+    --image-dirs       "$TRAIN_IMAGES"  "$TEST_IMAGES" \
+    --output           "$OUTPUT_DIR" \
+    --max-images       "$MAX_IMAGES" \
+    --batch-size       "$BATCH_SIZE"
 
 # ── Report ────────────────────────────────────────────────────────────────────
 echo ""
