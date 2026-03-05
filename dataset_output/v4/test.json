@@ -1,0 +1,1055 @@
+{
+  "split": "test",
+  "data": [
+    {
+      "id": 450,
+      "image_id": "05000c2a491afc90",
+      "filename": "img_0450.jpg",
+      "filepath": "test/images/img_0450.jpg",
+      "split": "test",
+      "text": "BANIS",
+      "caption": "Two baseball players standing next to each other players",
+      "prompt": "Two baseball players standing next to each other players, with the text \u201cBANIS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 70.0,
+        "text_length": 5,
+        "sharpness": 788.69,
+        "brightness": 89.97,
+        "contrast": 58.69,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 451,
+      "image_id": "050b5524c278d81f",
+      "filename": "img_0451.jpg",
+      "filepath": "test/images/img_0451.jpg",
+      "split": "test",
+      "text": "FRIED",
+      "caption": "A group of people standing in front of a food stand",
+      "prompt": "A group of people standing in front of a food stand, with the text \u201cFRIED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "sharpness": 2463.49,
+        "brightness": 107.57,
+        "contrast": 88.39,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 452,
+      "image_id": "05142a12b2703809",
+      "filename": "img_0452.jpg",
+      "filepath": "test/images/img_0452.jpg",
+      "split": "test",
+      "text": "DON",
+      "caption": "Two framed pictures of a man in uniform",
+      "prompt": "Two framed pictures of a man in uniform, with the text \u201cDON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 3,
+        "sharpness": 412.45,
+        "brightness": 131.53,
+        "contrast": 68.99,
+        "resolution": [
+          534,
+          640
+        ]
+      }
+    },
+    {
+      "id": 453,
+      "image_id": "05195453b8496d73",
+      "filename": "img_0453.jpg",
+      "filepath": "test/images/img_0453.jpg",
+      "split": "test",
+      "text": "D OF",
+      "caption": "The world of the dead winter book cover",
+      "prompt": "The world of the dead winter book cover, with the text \u201cD OF\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 4,
+        "sharpness": 6882.03,
+        "brightness": 110.03,
+        "contrast": 64.61,
+        "resolution": [
+          401,
+          640
+        ]
+      }
+    },
+    {
+      "id": 454,
+      "image_id": "051b572ea12bbc0d",
+      "filename": "img_0454.jpg",
+      "filepath": "test/images/img_0454.jpg",
+      "split": "test",
+      "text": "Backspaco",
+      "caption": "The back of a laptop with the keyboard open",
+      "prompt": "The back of a laptop with the keyboard open, with the text \u201cBackspaco\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 9,
+        "sharpness": 843.02,
+        "brightness": 96.75,
+        "contrast": 50.05,
+        "resolution": [
+          360,
+          640
+        ]
+      }
+    },
+    {
+      "id": 455,
+      "image_id": "051d3e6ed66946df",
+      "filename": "img_0455.jpg",
+      "filepath": "test/images/img_0455.jpg",
+      "split": "test",
+      "text": "AND",
+      "caption": "Two movie posters hanging on the wall in a subway station",
+      "prompt": "Two movie posters hanging on the wall in a subway station, with the text \u201cAND\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "sharpness": 1106.86,
+        "brightness": 125.79,
+        "contrast": 64.46,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 456,
+      "image_id": "0520a85295e04471",
+      "filename": "img_0456.jpg",
+      "filepath": "test/images/img_0456.jpg",
+      "split": "test",
+      "text": "YOU SHOOT AND HOW YOU",
+      "caption": "I ' m not about the camera, it ' s about what you ' re",
+      "prompt": "I ' m not about the camera, it ' s about what you ' re, with the text \u201cYOU SHOOT AND HOW YOU\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 21,
+        "sharpness": 722.77,
+        "brightness": 75.11,
+        "contrast": 76.82,
+        "resolution": [
+          640,
+          640
+        ]
+      }
+    },
+    {
+      "id": 457,
+      "image_id": "052192ea6c98ee4b",
+      "filename": "img_0457.jpg",
+      "filepath": "test/images/img_0457.jpg",
+      "split": "test",
+      "text": "RATATOUILLE",
+      "caption": "A stack of books sitting on a shelf",
+      "prompt": "A stack of books sitting on a shelf, with the text \u201cRATATOUILLE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 11,
+        "sharpness": 432.32,
+        "brightness": 59.37,
+        "contrast": 43.18,
+        "resolution": [
+          640,
+          426
+        ]
+      }
+    },
+    {
+      "id": 458,
+      "image_id": "0525540818288de8",
+      "filename": "img_0458.jpg",
+      "filepath": "test/images/img_0458.jpg",
+      "split": "test",
+      "text": "EAU DE TOILETTE",
+      "caption": "Chanel allure perfume review",
+      "prompt": "Chanel allure perfume review, with the text \u201cEAU DE TOILETTE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 15,
+        "sharpness": 546.81,
+        "brightness": 103.54,
+        "contrast": 56.11,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 459,
+      "image_id": "05281c93e99b5c08",
+      "filename": "img_0459.jpg",
+      "filepath": "test/images/img_0459.jpg",
+      "split": "test",
+      "text": "demonstrators who behaved",
+      "caption": "A television screen showing two people sitting at a table",
+      "prompt": "A television screen showing two people sitting at a table, with the text \u201cdemonstrators who behaved\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 25,
+        "sharpness": 1348.16,
+        "brightness": 108.83,
+        "contrast": 87.49,
+        "resolution": [
+          640,
+          468
+        ]
+      }
+    },
+    {
+      "id": 460,
+      "image_id": "0529b506446a359f",
+      "filename": "img_0460.jpg",
+      "filepath": "test/images/img_0460.jpg",
+      "split": "test",
+      "text": "INDIA PALE",
+      "caption": "A bottle of beer next to a glass of beer",
+      "prompt": "A bottle of beer next to a glass of beer, with the text \u201cINDIA PALE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 10,
+        "sharpness": 1162.23,
+        "brightness": 130.0,
+        "contrast": 75.33,
+        "resolution": [
+          427,
+          640
+        ]
+      }
+    },
+    {
+      "id": 461,
+      "image_id": "052e4d4438123aec",
+      "filename": "img_0461.jpg",
+      "filepath": "test/images/img_0461.jpg",
+      "split": "test",
+      "text": "Ambulance Service",
+      "caption": "A white van parked in front of a building",
+      "prompt": "A white van parked in front of a building, with the text \u201cAmbulance Service\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 17,
+        "sharpness": 1741.75,
+        "brightness": 107.86,
+        "contrast": 60.33,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 462,
+      "image_id": "0533a3faeed840d4",
+      "filename": "img_0462.jpg",
+      "filepath": "test/images/img_0462.jpg",
+      "split": "test",
+      "text": "HER BAND",
+      "caption": "A wall with posters on it in a room",
+      "prompt": "A wall with posters on it in a room, with the text \u201cHER BAND\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "sharpness": 1288.6,
+        "brightness": 83.15,
+        "contrast": 47.24,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 463,
+      "image_id": "053690e8110febab",
+      "filename": "img_0463.jpg",
+      "filepath": "test/images/img_0463.jpg",
+      "split": "test",
+      "text": "by MICHAEL AVALLONE",
+      "caption": "A book with the title 5 minute mysteries",
+      "prompt": "A book with the title 5 minute mysteries, with the text \u201cby MICHAEL AVALLONE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 19,
+        "sharpness": 6170.14,
+        "brightness": 150.23,
+        "contrast": 64.4,
+        "resolution": [
+          387,
+          639
+        ]
+      }
+    },
+    {
+      "id": 464,
+      "image_id": "054058cbdb47dd13",
+      "filename": "img_0464.jpg",
+      "filepath": "test/images/img_0464.jpg",
+      "split": "test",
+      "text": "LOVELY IN FIER BONES",
+      "caption": "A book with a man laying down on the ground",
+      "prompt": "A book with a man laying down on the ground, with the text \u201cLOVELY IN FIER BONES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 20,
+        "sharpness": 4690.71,
+        "brightness": 64.0,
+        "contrast": 58.39,
+        "resolution": [
+          401,
+          640
+        ]
+      }
+    },
+    {
+      "id": 465,
+      "image_id": "054dd4ca2a338f8d",
+      "filename": "img_0465.jpg",
+      "filepath": "test/images/img_0465.jpg",
+      "split": "test",
+      "text": "henokiablog.con",
+      "caption": "Two cell phones sitting side by side on a red surface",
+      "prompt": "Two cell phones sitting side by side on a red surface, with the text \u201chenokiablog.con\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 15,
+        "sharpness": 362.52,
+        "brightness": 80.2,
+        "contrast": 42.05,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 466,
+      "image_id": "05520ff3b2090808",
+      "filename": "img_0466.jpg",
+      "filepath": "test/images/img_0466.jpg",
+      "split": "test",
+      "text": "WHAT",
+      "caption": "A man in a baseball cap holding books",
+      "prompt": "A man in a baseball cap holding books, with the text \u201cWHAT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 4,
+        "sharpness": 531.93,
+        "brightness": 128.72,
+        "contrast": 59.09,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 467,
+      "image_id": "05551391c119d3cc",
+      "filename": "img_0467.jpg",
+      "filepath": "test/images/img_0467.jpg",
+      "split": "test",
+      "text": "MOBILE",
+      "caption": "A person holding a small piece of food",
+      "prompt": "A person holding a small piece of food, with the text \u201cMOBILE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "sharpness": 1434.66,
+        "brightness": 160.15,
+        "contrast": 40.88,
+        "resolution": [
+          426,
+          640
+        ]
+      }
+    },
+    {
+      "id": 468,
+      "image_id": "0555d9cdef6ba308",
+      "filename": "img_0468.jpg",
+      "filepath": "test/images/img_0468.jpg",
+      "split": "test",
+      "text": "Furniture",
+      "caption": "A sign on the side of a building that says vault furniture",
+      "prompt": "A sign on the side of a building that says vault furniture, with the text \u201cFurniture\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "sharpness": 896.8,
+        "brightness": 140.28,
+        "contrast": 66.86,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 469,
+      "image_id": "0558c67463bea05a",
+      "filename": "img_0469.jpg",
+      "filepath": "test/images/img_0469.jpg",
+      "split": "test",
+      "text": "A f",
+      "caption": "A glass of beer sitting on a table",
+      "prompt": "A glass of beer sitting on a table, with the text \u201cA f\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 83.0,
+        "text_length": 3,
+        "sharpness": 549.26,
+        "brightness": 75.43,
+        "contrast": 64.86,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 470,
+      "image_id": "055b8f4762ee71e3",
+      "filename": "img_0470.jpg",
+      "filepath": "test/images/img_0470.jpg",
+      "split": "test",
+      "text": "INN",
+      "caption": "A person crossing the street in front of a building",
+      "prompt": "A person crossing the street in front of a building, with the text \u201cINN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 3,
+        "sharpness": 3461.71,
+        "brightness": 116.19,
+        "contrast": 72.15,
+        "resolution": [
+          605,
+          640
+        ]
+      }
+    },
+    {
+      "id": 471,
+      "image_id": "05640d9d140ec1d4",
+      "filename": "img_0471.jpg",
+      "filepath": "test/images/img_0471.jpg",
+      "split": "test",
+      "text": "I. i",
+      "caption": "A group of people in white and blue marching outfits",
+      "prompt": "A group of people in white and blue marching outfits, with the text \u201cI. i\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 80.0,
+        "text_length": 4,
+        "sharpness": 4303.97,
+        "brightness": 112.37,
+        "contrast": 77.66,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 472,
+      "image_id": "0568903bc8b65da0",
+      "filename": "img_0472.jpg",
+      "filepath": "test/images/img_0472.jpg",
+      "split": "test",
+      "text": "SAMSUNG",
+      "caption": "The back and front of the htc smartphones",
+      "prompt": "The back and front of the htc smartphones, with the text \u201cSAMSUNG\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 7,
+        "sharpness": 1218.6,
+        "brightness": 135.98,
+        "contrast": 47.53,
+        "resolution": [
+          640,
+          442
+        ]
+      }
+    },
+    {
+      "id": 473,
+      "image_id": "056e296765345890",
+      "filename": "img_0473.jpg",
+      "filepath": "test/images/img_0473.jpg",
+      "split": "test",
+      "text": "Google",
+      "caption": "A cell phone sitting on top of a white surface",
+      "prompt": "A cell phone sitting on top of a white surface, with the text \u201cGoogle\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "sharpness": 3266.77,
+        "brightness": 137.08,
+        "contrast": 98.37,
+        "resolution": [
+          640,
+          539
+        ]
+      }
+    },
+    {
+      "id": 474,
+      "image_id": "0578da75e0a8990d",
+      "filename": "img_0474.jpg",
+      "filepath": "test/images/img_0474.jpg",
+      "split": "test",
+      "text": "Spirit of the times",
+      "caption": "An advertisement for a stove with a man and woman cooking",
+      "prompt": "An advertisement for a stove with a man and woman cooking, with the text \u201cSpirit of the times\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 19,
+        "sharpness": 7737.56,
+        "brightness": 167.31,
+        "contrast": 80.46,
+        "resolution": [
+          640,
+          535
+        ]
+      }
+    },
+    {
+      "id": 475,
+      "image_id": "057d63bb419d2109",
+      "filename": "img_0475.jpg",
+      "filepath": "test/images/img_0475.jpg",
+      "split": "test",
+      "text": "the",
+      "caption": "A gold and silver coin with the image of an eagle on it",
+      "prompt": "A gold and silver coin with the image of an eagle on it, with the text \u201cthe\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 3,
+        "sharpness": 3938.41,
+        "brightness": 128.73,
+        "contrast": 93.88,
+        "resolution": [
+          640,
+          438
+        ]
+      }
+    },
+    {
+      "id": 476,
+      "image_id": "05813399afa37f53",
+      "filename": "img_0476.jpg",
+      "filepath": "test/images/img_0476.jpg",
+      "split": "test",
+      "text": "doubleshot J",
+      "caption": "A coffee maker and a cup of coffee next to it",
+      "prompt": "A coffee maker and a cup of coffee next to it, with the text \u201cdoubleshot J\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 79.0,
+        "text_length": 12,
+        "sharpness": 747.7,
+        "brightness": 214.96,
+        "contrast": 54.81,
+        "resolution": [
+          640,
+          430
+        ]
+      }
+    },
+    {
+      "id": 477,
+      "image_id": "058415ab113ea63e",
+      "filename": "img_0477.jpg",
+      "filepath": "test/images/img_0477.jpg",
+      "split": "test",
+      "text": "CHANGE",
+      "caption": "A pile of books sitting on top of a table",
+      "prompt": "A pile of books sitting on top of a table, with the text \u201cCHANGE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "sharpness": 1139.35,
+        "brightness": 114.81,
+        "contrast": 53.12,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 478,
+      "image_id": "05865c77850249ca",
+      "filename": "img_0478.jpg",
+      "filepath": "test/images/img_0478.jpg",
+      "split": "test",
+      "text": "Press SELECT",
+      "caption": "A tv screen showing the schedule for the game",
+      "prompt": "A tv screen showing the schedule for the game, with the text \u201cPress SELECT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 12,
+        "sharpness": 7059.04,
+        "brightness": 86.14,
+        "contrast": 76.53,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 479,
+      "image_id": "058dd75a30aedfd9",
+      "filename": "img_0479.jpg",
+      "filepath": "test/images/img_0479.jpg",
+      "split": "test",
+      "text": "Cin",
+      "caption": "A bus stop on the side of the street",
+      "prompt": "A bus stop on the side of the street, with the text \u201cCin\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 3,
+        "sharpness": 1862.09,
+        "brightness": 108.95,
+        "contrast": 55.08,
+        "resolution": [
+          360,
+          640
+        ]
+      }
+    },
+    {
+      "id": 480,
+      "image_id": "058f87b6a547be35",
+      "filename": "img_0480.jpg",
+      "filepath": "test/images/img_0480.jpg",
+      "split": "test",
+      "text": "SONY",
+      "caption": "Two remotes sitting next to each other remotes",
+      "prompt": "Two remotes sitting next to each other remotes, with the text \u201cSONY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "sharpness": 1430.99,
+        "brightness": 140.25,
+        "contrast": 97.71,
+        "resolution": [
+          504,
+          640
+        ]
+      }
+    },
+    {
+      "id": 481,
+      "image_id": "059387098b2e926e",
+      "filename": "img_0481.jpg",
+      "filepath": "test/images/img_0481.jpg",
+      "split": "test",
+      "text": "BLACK SESAME VAN",
+      "caption": "A bowl of black sesame in front of a green tile",
+      "prompt": "A bowl of black sesame in front of a green tile, with the text \u201cBLACK SESAME VAN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 16,
+        "sharpness": 2021.74,
+        "brightness": 166.71,
+        "contrast": 55.88,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 482,
+      "image_id": "05940f004e45f43a",
+      "filename": "img_0482.jpg",
+      "filepath": "test/images/img_0482.jpg",
+      "split": "test",
+      "text": "Arg",
+      "caption": "A group of men playing soccer on a field",
+      "prompt": "A group of men playing soccer on a field, with the text \u201cArg\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 3,
+        "sharpness": 405.33,
+        "brightness": 134.91,
+        "contrast": 55.19,
+        "resolution": [
+          639,
+          444
+        ]
+      }
+    },
+    {
+      "id": 483,
+      "image_id": "05a4fa87bfdaa243",
+      "filename": "img_0483.jpg",
+      "filepath": "test/images/img_0483.jpg",
+      "split": "test",
+      "text": "Biman",
+      "caption": "The plane is white",
+      "prompt": "The plane is white, with the text \u201cBiman\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "sharpness": 932.46,
+        "brightness": 153.11,
+        "contrast": 62.31,
+        "resolution": [
+          639,
+          426
+        ]
+      }
+    },
+    {
+      "id": 484,
+      "image_id": "05a8099e9157f5e1",
+      "filename": "img_0484.jpg",
+      "filepath": "test/images/img_0484.jpg",
+      "split": "test",
+      "text": "YAKIMA",
+      "caption": "A sign that is on the side of a road",
+      "prompt": "A sign that is on the side of a road, with the text \u201cYAKIMA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "sharpness": 2758.34,
+        "brightness": 134.9,
+        "contrast": 61.0,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 485,
+      "image_id": "05ae767c5c1c8445",
+      "filename": "img_0485.jpg",
+      "filepath": "test/images/img_0485.jpg",
+      "split": "test",
+      "text": "NOVEMBER BUTLINS MINEHEAD ARENA",
+      "caption": "The shinon weekend poster",
+      "prompt": "The shinon weekend poster, with the text \u201cNOVEMBER BUTLINS MINEHEAD ARENA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 31,
+        "sharpness": 2110.44,
+        "brightness": 205.21,
+        "contrast": 64.58,
+        "resolution": [
+          640,
+          640
+        ]
+      }
+    },
+    {
+      "id": 486,
+      "image_id": "05b1c48356e80e93",
+      "filename": "img_0486.jpg",
+      "filepath": "test/images/img_0486.jpg",
+      "split": "test",
+      "text": "BOND",
+      "caption": "A poster advertising an event in the city of vienna",
+      "prompt": "A poster advertising an event in the city of vienna, with the text \u201cBOND\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "sharpness": 3553.09,
+        "brightness": 135.88,
+        "contrast": 51.94,
+        "resolution": [
+          465,
+          639
+        ]
+      }
+    },
+    {
+      "id": 487,
+      "image_id": "05b6ce697e11ffb1",
+      "filename": "img_0487.jpg",
+      "filepath": "test/images/img_0487.jpg",
+      "split": "test",
+      "text": "BE Of",
+      "caption": "A close up of a cell phone in someone ' s pocket",
+      "prompt": "A close up of a cell phone in someone ' s pocket, with the text \u201cBE Of\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 78.0,
+        "text_length": 5,
+        "sharpness": 1249.27,
+        "brightness": 75.53,
+        "contrast": 78.1,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 488,
+      "image_id": "05be76d2400e4f39",
+      "filename": "img_0488.jpg",
+      "filepath": "test/images/img_0488.jpg",
+      "split": "test",
+      "text": "Speisewagen Dienst",
+      "caption": "An old german poster for a concert in the 1930s",
+      "prompt": "An old german poster for a concert in the 1930s, with the text \u201cSpeisewagen Dienst\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 18,
+        "sharpness": 7627.62,
+        "brightness": 137.75,
+        "contrast": 55.41,
+        "resolution": [
+          459,
+          640
+        ]
+      }
+    },
+    {
+      "id": 489,
+      "image_id": "05be79808b4a3347",
+      "filename": "img_0489.jpg",
+      "filepath": "test/images/img_0489.jpg",
+      "split": "test",
+      "text": "Crepes turned out great, you were",
+      "caption": "An image of a cell phone with a message on the screen",
+      "prompt": "An image of a cell phone with a message on the screen, with the text \u201cCrepes turned out great, you were\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 33,
+        "sharpness": 5470.42,
+        "brightness": 57.79,
+        "contrast": 67.47,
+        "resolution": [
+          320,
+          480
+        ]
+      }
+    },
+    {
+      "id": 490,
+      "image_id": "05be9e4047f4de52",
+      "filename": "img_0490.jpg",
+      "filepath": "test/images/img_0490.jpg",
+      "split": "test",
+      "text": "SRCHARLES",
+      "caption": "A red and white double decker bus on a city street",
+      "prompt": "A red and white double decker bus on a city street, with the text \u201cSRCHARLES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 75.0,
+        "text_length": 9,
+        "sharpness": 2606.05,
+        "brightness": 132.73,
+        "contrast": 74.82,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 491,
+      "image_id": "05c3fc256c80ccd5",
+      "filename": "img_0491.jpg",
+      "filepath": "test/images/img_0491.jpg",
+      "split": "test",
+      "text": "Samsung",
+      "caption": "A television screen with a woman on it",
+      "prompt": "A television screen with a woman on it, with the text \u201cSamsung\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 7,
+        "sharpness": 163.39,
+        "brightness": 103.7,
+        "contrast": 64.7,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 492,
+      "image_id": "05cad7e0a038e402",
+      "filename": "img_0492.jpg",
+      "filepath": "test/images/img_0492.jpg",
+      "split": "test",
+      "text": "Filosofia de felicidad",
+      "caption": "A coffee cup sitting next to a stack of books",
+      "prompt": "A coffee cup sitting next to a stack of books, with the text \u201cFilosofia de felicidad\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 22,
+        "sharpness": 811.91,
+        "brightness": 152.79,
+        "contrast": 74.92,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 493,
+      "image_id": "05d932ecefc0c3bd",
+      "filename": "img_0493.jpg",
+      "filepath": "test/images/img_0493.jpg",
+      "split": "test",
+      "text": "Selly Oak Station",
+      "caption": "A sign that is on the side of a fence",
+      "prompt": "A sign that is on the side of a fence, with the text \u201cSelly Oak Station\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 17,
+        "sharpness": 6520.69,
+        "brightness": 113.8,
+        "contrast": 63.36,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 494,
+      "image_id": "05db6cd9951e9e81",
+      "filename": "img_0494.jpg",
+      "filepath": "test/images/img_0494.jpg",
+      "split": "test",
+      "text": "Screen",
+      "caption": "A woman holding up two cell phones",
+      "prompt": "A woman holding up two cell phones, with the text \u201cScreen\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 6,
+        "sharpness": 2009.72,
+        "brightness": 139.84,
+        "contrast": 70.14,
+        "resolution": [
+          495,
+          640
+        ]
+      }
+    },
+    {
+      "id": 495,
+      "image_id": "05e7748e4c5d4849",
+      "filename": "img_0495.jpg",
+      "filepath": "test/images/img_0495.jpg",
+      "split": "test",
+      "text": "Dic",
+      "caption": "A shelf with books and mugs on it",
+      "prompt": "A shelf with books and mugs on it, with the text \u201cDic\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 3,
+        "sharpness": 1071.73,
+        "brightness": 60.85,
+        "contrast": 44.77,
+        "resolution": [
+          639,
+          425
+        ]
+      }
+    },
+    {
+      "id": 496,
+      "image_id": "060496f24b6c6b42",
+      "filename": "img_0496.jpg",
+      "filepath": "test/images/img_0496.jpg",
+      "split": "test",
+      "text": "VELE",
+      "caption": "A glass of beer next to a bottle of beer",
+      "prompt": "A glass of beer next to a bottle of beer, with the text \u201cVELE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "sharpness": 891.43,
+        "brightness": 65.26,
+        "contrast": 59.22,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 497,
+      "image_id": "060e0d58d045138d",
+      "filename": "img_0497.jpg",
+      "filepath": "test/images/img_0497.jpg",
+      "split": "test",
+      "text": "JOHNSON",
+      "caption": "A crowd of people watching a soccer game on a large screen",
+      "prompt": "A crowd of people watching a soccer game on a large screen, with the text \u201cJOHNSON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 7,
+        "sharpness": 2508.36,
+        "brightness": 107.9,
+        "contrast": 64.69,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 498,
+      "image_id": "060ec35375b47526",
+      "filename": "img_0498.jpg",
+      "filepath": "test/images/img_0498.jpg",
+      "split": "test",
+      "text": "chasing",
+      "caption": "A flat screen tv",
+      "prompt": "A flat screen tv, with the text \u201cchasing\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "sharpness": 3497.34,
+        "brightness": 76.37,
+        "contrast": 62.08,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 499,
+      "image_id": "0611e28827ba45e3",
+      "filename": "img_0499.jpg",
+      "filepath": "test/images/img_0499.jpg",
+      "split": "test",
+      "text": "a Z",
+      "caption": "A coffee maker with sticky notes on it",
+      "prompt": "A coffee maker with sticky notes on it, with the text \u201ca Z\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 83.0,
+        "text_length": 3,
+        "sharpness": 487.19,
+        "brightness": 123.43,
+        "contrast": 62.56,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    }
+  ]
+}

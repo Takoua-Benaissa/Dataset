@@ -1,0 +1,805 @@
+{
+  "split": "val",
+  "data": [
+    {
+      "id": 320,
+      "image_id": "2de3fd3804321add",
+      "filename": "img_0320.jpg",
+      "filepath": "val/images/img_0320.jpg",
+      "split": "val",
+      "text": "Wig",
+      "caption": "a group of people playing hockey on an ice rink",
+      "prompt": "a group of people playing hockey on an ice rink, with the text 'Wig' clearly visible",
+      "metadata": {
+        "ocr_confidence": 74.0,
+        "text_length": 3,
+        "sharpness": 454.59591564159507,
+        "brightness": 157.90719796623353,
+        "resolution": [
+          1024,
+          683
+        ]
+      }
+    },
+    {
+      "id": 321,
+      "image_id": "2e1a98cac503b529",
+      "filename": "img_0321.jpg",
+      "filepath": "val/images/img_0321.jpg",
+      "split": "val",
+      "text": "ACCORDANCE",
+      "caption": "several cans of beer sit on a shelf",
+      "prompt": "several cans of beer sit on a shelf, with the text 'ACCORDANCE' clearly visible",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 10,
+        "sharpness": 339.10026741014735,
+        "brightness": 73.437819480896,
+        "resolution": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 322,
+      "image_id": "2e5945c362a9356e",
+      "filename": "img_0322.jpg",
+      "filepath": "val/images/img_0322.jpg",
+      "split": "val",
+      "text": "eferer",
+      "caption": "a box of books with the spines on it",
+      "prompt": "a box of books with the spines on it, with the text 'eferer' clearly visible",
+      "metadata": {
+        "ocr_confidence": 48.0,
+        "text_length": 6,
+        "sharpness": 886.5032221876301,
+        "brightness": 100.96773529052734,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 323,
+      "image_id": "2e9d30391fe285b7",
+      "filename": "img_0323.jpg",
+      "filepath": "val/images/img_0323.jpg",
+      "split": "val",
+      "text": "PARLIN",
+      "caption": "a couple of kids standing next to trophies",
+      "prompt": "a couple of kids standing next to trophies, with the text 'PARLIN' clearly visible",
+      "metadata": {
+        "ocr_confidence": 56.0,
+        "text_length": 6,
+        "sharpness": 1632.2597986229746,
+        "brightness": 98.1712252298991,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 324,
+      "image_id": "2ec2e501c2994103",
+      "filename": "img_0324.jpg",
+      "filepath": "val/images/img_0324.jpg",
+      "split": "val",
+      "text": "res",
+      "caption": "a crowd of people",
+      "prompt": "a crowd of people, with the text 'res' clearly visible",
+      "metadata": {
+        "ocr_confidence": 70.0,
+        "text_length": 3,
+        "sharpness": 432.3378121174229,
+        "brightness": 59.65810991418869,
+        "resolution": [
+          1024,
+          681
+        ]
+      }
+    },
+    {
+      "id": 325,
+      "image_id": "2f194117eb6dc535",
+      "filename": "img_0325.jpg",
+      "filepath": "val/images/img_0325.jpg",
+      "split": "val",
+      "text": "pened",
+      "caption": "a group of young men playing a game of basketball",
+      "prompt": "a group of young men playing a game of basketball, with the text 'pened' clearly visible",
+      "metadata": {
+        "ocr_confidence": 53.0,
+        "text_length": 5,
+        "sharpness": 372.5402317162953,
+        "brightness": 118.3691763703331,
+        "resolution": [
+          1024,
+          683
+        ]
+      }
+    },
+    {
+      "id": 326,
+      "image_id": "2f1dad994517d003",
+      "filename": "img_0326.jpg",
+      "filepath": "val/images/img_0326.jpg",
+      "split": "val",
+      "text": "LLAMA",
+      "caption": "a picture of a record on a blue background",
+      "prompt": "a picture of a record on a blue background, with the text 'LLAMA' clearly visible",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "sharpness": 952.2927252388287,
+        "brightness": 115.27817153930664,
+        "resolution": [
+          1024,
+          512
+        ]
+      }
+    },
+    {
+      "id": 327,
+      "image_id": "2f8710feaeaf9598",
+      "filename": "img_0327.jpg",
+      "filepath": "val/images/img_0327.jpg",
+      "split": "val",
+      "text": "OSA",
+      "caption": "a group of people playing a game of hockey",
+      "prompt": "a group of people playing a game of hockey, with the text 'OSA' clearly visible",
+      "metadata": {
+        "ocr_confidence": 78.0,
+        "text_length": 3,
+        "sharpness": 151.34929481246255,
+        "brightness": 111.30481761301245,
+        "resolution": [
+          1024,
+          683
+        ]
+      }
+    },
+    {
+      "id": 328,
+      "image_id": "2f96c2ce91d68233",
+      "filename": "img_0328.jpg",
+      "filepath": "val/images/img_0328.jpg",
+      "split": "val",
+      "text": "com",
+      "caption": "a man on a skateboard doing a trick",
+      "prompt": "a man on a skateboard doing a trick, with the text 'com' clearly visible",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 3,
+        "sharpness": 616.5199365313225,
+        "brightness": 100.32901289451182,
+        "resolution": [
+          804,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 329,
+      "image_id": "308ee7b998c651ca",
+      "filename": "img_0329.jpg",
+      "filepath": "val/images/img_0329.jpg",
+      "split": "val",
+      "text": "Whitemans",
+      "caption": "a woman standing in front of a book shop",
+      "prompt": "a woman standing in front of a book shop, with the text 'Whitemans' clearly visible",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 9,
+        "sharpness": 740.3632156341579,
+        "brightness": 125.22920608520508,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 330,
+      "image_id": "309ff8c61513e644",
+      "filename": "img_0330.jpg",
+      "filepath": "val/images/img_0330.jpg",
+      "split": "val",
+      "text": "Wonderland",
+      "caption": "an open book on a wooden table",
+      "prompt": "an open book on a wooden table, with the text 'Wonderland' clearly visible",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 10,
+        "sharpness": 344.77873567326486,
+        "brightness": 109.05189985795455,
+        "resolution": [
+          1024,
+          605
+        ]
+      }
+    },
+    {
+      "id": 331,
+      "image_id": "3119bc9b02b9a5e4",
+      "filename": "img_0331.jpg",
+      "filepath": "val/images/img_0331.jpg",
+      "split": "val",
+      "text": "dar",
+      "caption": "a black and white photo of an old building",
+      "prompt": "a black and white photo of an old building, with the text 'dar' clearly visible",
+      "metadata": {
+        "ocr_confidence": 71.0,
+        "text_length": 3,
+        "sharpness": 2184.0905201477535,
+        "brightness": 183.78760060837365,
+        "resolution": [
+          1024,
+          827
+        ]
+      }
+    },
+    {
+      "id": 332,
+      "image_id": "311df5f8fc88ac91",
+      "filename": "img_0332.jpg",
+      "filepath": "val/images/img_0332.jpg",
+      "split": "val",
+      "text": "RANGE",
+      "caption": "a red post box sitting on the side of a street",
+      "prompt": "a red post box sitting on the side of a street, with the text 'RANGE' clearly visible",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 5,
+        "sharpness": 147.2773091287042,
+        "brightness": 126.2591061062283,
+        "resolution": [
+          1024,
+          576
+        ]
+      }
+    },
+    {
+      "id": 333,
+      "image_id": "311edf5bc589a126",
+      "filename": "img_0333.jpg",
+      "filepath": "val/images/img_0333.jpg",
+      "split": "val",
+      "text": "Homeownership",
+      "caption": "the world ' s largest yachts infographic",
+      "prompt": "the world ' s largest yachts infographic, with the text 'Homeownership' clearly visible",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "sharpness": 1846.6682641004054,
+        "brightness": 165.86327886814024,
+        "resolution": [
+          410,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 334,
+      "image_id": "315a4c77b8fdd4b3",
+      "filename": "img_0334.jpg",
+      "filepath": "val/images/img_0334.jpg",
+      "split": "val",
+      "text": "Peary",
+      "caption": "a cell phone sitting on top of an open book",
+      "prompt": "a cell phone sitting on top of an open book, with the text 'Peary' clearly visible",
+      "metadata": {
+        "ocr_confidence": 61.0,
+        "text_length": 5,
+        "sharpness": 80.11380037837789,
+        "brightness": 107.38524604227672,
+        "resolution": [
+          1024,
+          683
+        ]
+      }
+    },
+    {
+      "id": 335,
+      "image_id": "317d8a4940cfd712",
+      "filename": "img_0335.jpg",
+      "filepath": "val/images/img_0335.jpg",
+      "split": "val",
+      "text": "REMINGTON",
+      "caption": "an old typewriter with a note on it",
+      "prompt": "an old typewriter with a note on it, with the text 'REMINGTON' clearly visible",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 9,
+        "sharpness": 362.54654522894515,
+        "brightness": 93.59196345011394,
+        "resolution": [
+          768,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 336,
+      "image_id": "3183b9a9259bab1a",
+      "filename": "img_0336.jpg",
+      "filepath": "val/images/img_0336.jpg",
+      "split": "val",
+      "text": "Lily",
+      "caption": "a set of four coasters with different designs on them",
+      "prompt": "a set of four coasters with different designs on them, with the text 'Lily' clearly visible",
+      "metadata": {
+        "ocr_confidence": 79.0,
+        "text_length": 4,
+        "sharpness": 174.79631232819156,
+        "brightness": 187.5798807144165,
+        "resolution": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 337,
+      "image_id": "318faa89dd1aac20",
+      "filename": "img_0337.jpg",
+      "filepath": "val/images/img_0337.jpg",
+      "split": "val",
+      "text": "SSS",
+      "caption": "a truck covered in graffiti",
+      "prompt": "a truck covered in graffiti, with the text 'SSS' clearly visible",
+      "metadata": {
+        "ocr_confidence": 68.0,
+        "text_length": 3,
+        "sharpness": 806.6767552279765,
+        "brightness": 132.31029891967773,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 338,
+      "image_id": "31d67fa695f2d7a5",
+      "filename": "img_0338.jpg",
+      "filepath": "val/images/img_0338.jpg",
+      "split": "val",
+      "text": "Henderson",
+      "caption": "a pair of tickets sitting on top of a table",
+      "prompt": "a pair of tickets sitting on top of a table, with the text 'Henderson' clearly visible",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "sharpness": 101.70278918480835,
+        "brightness": 117.3413257598877,
+        "resolution": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 339,
+      "image_id": "31e76123b6a3388b",
+      "filename": "img_0339.jpg",
+      "filepath": "val/images/img_0339.jpg",
+      "split": "val",
+      "text": "ath",
+      "caption": "a baseball player is getting ready to hit the ball",
+      "prompt": "a baseball player is getting ready to hit the ball, with the text 'ath' clearly visible",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 3,
+        "sharpness": 490.2035653359085,
+        "brightness": 111.33664321899414,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 340,
+      "image_id": "320531fe57966274",
+      "filename": "img_0340.jpg",
+      "filepath": "val/images/img_0340.jpg",
+      "split": "val",
+      "text": "bed",
+      "caption": "a group of people playing soccer on a field",
+      "prompt": "a group of people playing soccer on a field, with the text 'bed' clearly visible",
+      "metadata": {
+        "ocr_confidence": 74.0,
+        "text_length": 3,
+        "sharpness": 422.8021952300267,
+        "brightness": 160.68750635782877,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 341,
+      "image_id": "323375da1ecef6ed",
+      "filename": "img_0341.jpg",
+      "filepath": "val/images/img_0341.jpg",
+      "split": "val",
+      "text": "cays",
+      "caption": "a display of chips in a grocery store",
+      "prompt": "a display of chips in a grocery store, with the text 'cays' clearly visible",
+      "metadata": {
+        "ocr_confidence": 74.0,
+        "text_length": 4,
+        "sharpness": 5480.2492809960395,
+        "brightness": 119.82641609533137,
+        "resolution": [
+          768,
+          1021
+        ]
+      }
+    },
+    {
+      "id": 342,
+      "image_id": "323640973616e526",
+      "filename": "img_0342.jpg",
+      "filepath": "val/images/img_0342.jpg",
+      "split": "val",
+      "text": "AUSEUM",
+      "caption": "a black trash can sitting in the grass",
+      "prompt": "a black trash can sitting in the grass, with the text 'AUSEUM' clearly visible",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 6,
+        "sharpness": 270.9696396022299,
+        "brightness": 88.81666259765625,
+        "resolution": [
+          768,
+          960
+        ]
+      }
+    },
+    {
+      "id": 343,
+      "image_id": "324d951aa3f7b3ad",
+      "filename": "img_0343.jpg",
+      "filepath": "val/images/img_0343.jpg",
+      "split": "val",
+      "text": "FISHING",
+      "caption": "the front of a store with a sign on it",
+      "prompt": "the front of a store with a sign on it, with the text 'FISHING' clearly visible",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 7,
+        "sharpness": 160.65871148591233,
+        "brightness": 128.72381973266602,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 344,
+      "image_id": "326e083d991f1ad0",
+      "filename": "img_0344.jpg",
+      "filepath": "val/images/img_0344.jpg",
+      "split": "val",
+      "text": "OUT",
+      "caption": "a white cat sitting on top of a black background",
+      "prompt": "a white cat sitting on top of a black background, with the text 'OUT' clearly visible",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "sharpness": 206.70910741522295,
+        "brightness": 130.6441410683882,
+        "resolution": [
+          881,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 345,
+      "image_id": "327c9df1f6a15af9",
+      "filename": "img_0345.jpg",
+      "filepath": "val/images/img_0345.jpg",
+      "split": "val",
+      "text": "anggungjawabkan",
+      "caption": "a sign that is on display in a museum",
+      "prompt": "a sign that is on display in a museum, with the text 'anggungjawabkan' clearly visible",
+      "metadata": {
+        "ocr_confidence": 83.0,
+        "text_length": 15,
+        "sharpness": 1341.8479500815622,
+        "brightness": 77.58537720086652,
+        "resolution": [
+          1024,
+          678
+        ]
+      }
+    },
+    {
+      "id": 346,
+      "image_id": "329062bb98b3139d",
+      "filename": "img_0346.jpg",
+      "filepath": "val/images/img_0346.jpg",
+      "split": "val",
+      "text": "uernhoF",
+      "caption": "an old postcard with a boy playing in the snow",
+      "prompt": "an old postcard with a boy playing in the snow, with the text 'uernhoF' clearly visible",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 7,
+        "sharpness": 1876.30507420896,
+        "brightness": 178.23950501253134,
+        "resolution": [
+          798,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 347,
+      "image_id": "32dac0d02a4ba81e",
+      "filename": "img_0347.jpg",
+      "filepath": "val/images/img_0347.jpg",
+      "split": "val",
+      "text": "Forensic",
+      "caption": "the van is white",
+      "prompt": "the van is white, with the text 'Forensic' clearly visible",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 8,
+        "sharpness": 678.5117239912748,
+        "brightness": 107.93245061238606,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 348,
+      "image_id": "32f32ac93f13881c",
+      "filename": "img_0348.jpg",
+      "filepath": "val/images/img_0348.jpg",
+      "split": "val",
+      "text": "READY",
+      "caption": "a digital clock with green numbers on it",
+      "prompt": "a digital clock with green numbers on it, with the text 'READY' clearly visible",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "sharpness": 84.11676847972194,
+        "brightness": 149.05239009857178,
+        "resolution": [
+          1024,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 349,
+      "image_id": "33040e3951cc688c",
+      "filename": "img_0349.jpg",
+      "filepath": "val/images/img_0349.jpg",
+      "split": "val",
+      "text": "ing",
+      "caption": "a book with an image of a landscape on it",
+      "prompt": "a book with an image of a landscape on it, with the text 'ing' clearly visible",
+      "metadata": {
+        "ocr_confidence": 75.0,
+        "text_length": 3,
+        "sharpness": 174.1575584369566,
+        "brightness": 110.03492482503255,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 350,
+      "image_id": "3306ddf28591aca2",
+      "filename": "img_0350.jpg",
+      "filepath": "val/images/img_0350.jpg",
+      "split": "val",
+      "text": "Coming",
+      "caption": "a person standing next to a wall with a clock on it",
+      "prompt": "a person standing next to a wall with a clock on it, with the text 'Coming' clearly visible",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "sharpness": 355.58208955381775,
+        "brightness": 138.1801571116728,
+        "resolution": [
+          1024,
+          680
+        ]
+      }
+    },
+    {
+      "id": 351,
+      "image_id": "33182ee981e79cc5",
+      "filename": "img_0351.jpg",
+      "filepath": "val/images/img_0351.jpg",
+      "split": "val",
+      "text": "SSD",
+      "caption": "the computer is black",
+      "prompt": "the computer is black, with the text 'SSD' clearly visible",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 3,
+        "sharpness": 352.12673684659956,
+        "brightness": 113.14469424871889,
+        "resolution": [
+          1024,
+          683
+        ]
+      }
+    },
+    {
+      "id": 352,
+      "image_id": "33a5631d9f2ca752",
+      "filename": "img_0352.jpg",
+      "filepath": "val/images/img_0352.jpg",
+      "split": "val",
+      "text": "ETUDIANT",
+      "caption": "the counter is red",
+      "prompt": "the counter is red, with the text 'ETUDIANT' clearly visible",
+      "metadata": {
+        "ocr_confidence": 83.0,
+        "text_length": 8,
+        "sharpness": 1167.8105722265714,
+        "brightness": 95.01000154419839,
+        "resolution": [
+          1024,
+          683
+        ]
+      }
+    },
+    {
+      "id": 353,
+      "image_id": "346e1b92b1e31016",
+      "filename": "img_0353.jpg",
+      "filepath": "val/images/img_0353.jpg",
+      "split": "val",
+      "text": "SANDIEGO",
+      "caption": "a baseball player standing on a baseball field",
+      "prompt": "a baseball player standing on a baseball field, with the text 'SANDIEGO' clearly visible",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "sharpness": 774.5748253134321,
+        "brightness": 111.73558044433594,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 354,
+      "image_id": "34c3e83ec10267f3",
+      "filename": "img_0354.jpg",
+      "filepath": "val/images/img_0354.jpg",
+      "split": "val",
+      "text": "TELECOMMUNICATIONS",
+      "caption": "a baseball stadium with many signs on it",
+      "prompt": "a baseball stadium with many signs on it, with the text 'TELECOMMUNICATIONS' clearly visible",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 18,
+        "sharpness": 759.7517187030714,
+        "brightness": 117.71157989952064,
+        "resolution": [
+          1024,
+          678
+        ]
+      }
+    },
+    {
+      "id": 355,
+      "image_id": "351effda5aef584c",
+      "filename": "img_0355.jpg",
+      "filepath": "val/images/img_0355.jpg",
+      "split": "val",
+      "text": "SAN",
+      "caption": "a pile of wooden crates",
+      "prompt": "a pile of wooden crates, with the text 'SAN' clearly visible",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 3,
+        "sharpness": 289.16912397973647,
+        "brightness": 139.37176513671875,
+        "resolution": [
+          1024,
+          768
+        ]
+      }
+    },
+    {
+      "id": 356,
+      "image_id": "35412c92157891e7",
+      "filename": "img_0356.jpg",
+      "filepath": "val/images/img_0356.jpg",
+      "split": "val",
+      "text": "COMPACTOR",
+      "caption": "a black trash bin",
+      "prompt": "a black trash bin, with the text 'COMPACTOR' clearly visible",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 9,
+        "sharpness": 808.5160310885157,
+        "brightness": 112.35967084099265,
+        "resolution": [
+          680,
+          1024
+        ]
+      }
+    },
+    {
+      "id": 357,
+      "image_id": "3556083cf7bf8975",
+      "filename": "img_0357.jpg",
+      "filepath": "val/images/img_0357.jpg",
+      "split": "val",
+      "text": "Application",
+      "caption": "a screenshote window in windows xp",
+      "prompt": "a screenshote window in windows xp, with the text 'Application' clearly visible",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 11,
+        "sharpness": 1793.0311850845894,
+        "brightness": 218.30410385131836,
+        "resolution": [
+          1024,
+          512
+        ]
+      }
+    },
+    {
+      "id": 358,
+      "image_id": "3582f180f4724758",
+      "filename": "img_0358.jpg",
+      "filepath": "val/images/img_0358.jpg",
+      "split": "val",
+      "text": "ehotee",
+      "caption": "the front desk of a hotel with two people sitting at it",
+      "prompt": "the front desk of a hotel with two people sitting at it, with the text 'ehotee' clearly visible",
+      "metadata": {
+        "ocr_confidence": 59.0,
+        "text_length": 6,
+        "sharpness": 856.4002180843181,
+        "brightness": 143.98148116281203,
+        "resolution": [
+          1024,
+          681
+        ]
+      }
+    },
+    {
+      "id": 359,
+      "image_id": "3598e3632d53fdba",
+      "filename": "img_0359.jpg",
+      "filepath": "val/images/img_0359.jpg",
+      "split": "val",
+      "text": "THEEDGEOFPLEASURE",
+      "caption": "a flyer for the kapa event",
+      "prompt": "a flyer for the kapa event, with the text 'THEEDGEOFPLEASURE' clearly visible",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 17,
+        "sharpness": 459.6500711387115,
+        "brightness": 118.59437274932861,
+        "resolution": [
+          1024,
+          1024
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2006 @@
+{
+  "split": "train",
+  "count": 80,
+  "data": [
+    {
+      "id": 0,
+      "image_id": "651b1eca4dd26d03",
+      "filename": "img_0000.jpg",
+      "filepath": "train/images/img_0000.jpg",
+      "split": "train",
+      "text": "ACCESS",
+      "annotation_text": "COMREX",
+      "caption_blip": "A cell phone sitting on top of a table",
+      "caption_textcaps": "An advertisement for a phone from the company ARC",
+      "prompt": "A cell phone sitting on top of a table, with the text \u201cACCESS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 382.17,
+        "brightness": 127.01,
+        "contrast": 30.83
+      }
+    },
+    {
+      "id": 1,
+      "image_id": "caac3e729eda38c9",
+      "filename": "img_0001.jpg",
+      "filepath": "train/images/img_0001.jpg",
+      "split": "train",
+      "text": "WARNING",
+      "annotation_text": "WARNING",
+      "caption_blip": "A fence with a sign on it that says warning",
+      "caption_textcaps": "Fence that have a warning controlled area sign on it",
+      "prompt": "A fence with a sign on it that says warning, with the text \u201cWARNING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          432
+        ],
+        "sharpness": 5142.93,
+        "brightness": 155.3,
+        "contrast": 75.44
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "1c0dd3e32f4a8806",
+      "filename": "img_0002.jpg",
+      "filepath": "train/images/img_0002.jpg",
+      "split": "train",
+      "text": "First",
+      "annotation_text": "Ealing",
+      "caption_blip": "A red double decker bus on a city street",
+      "caption_textcaps": "A double decker bus heading to Ealing Hospital rides down the street.",
+      "prompt": "A red double decker bus on a city street, with the text \u201cFirst\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1343.42,
+        "brightness": 106.27,
+        "contrast": 61.53
+      }
+    },
+    {
+      "id": 3,
+      "image_id": "03b9b929f76a5e56",
+      "filename": "img_0003.jpg",
+      "filepath": "train/images/img_0003.jpg",
+      "split": "train",
+      "text": "WORK",
+      "annotation_text": "WORK",
+      "caption_blip": "A sign that says men at work on a bridge",
+      "caption_textcaps": "A large orange Men At Work sign on a bridge under construction.",
+      "prompt": "A sign that says men at work on a bridge, with the text \u201cWORK\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          425
+        ],
+        "sharpness": 1977.94,
+        "brightness": 119.59,
+        "contrast": 51.09
+      }
+    },
+    {
+      "id": 4,
+      "image_id": "031733473703e84a",
+      "filename": "img_0004.jpg",
+      "filepath": "train/images/img_0004.jpg",
+      "split": "train",
+      "text": "AMSTERDAN-CS.",
+      "annotation_text": "AMSTERDAM-GS.",
+      "caption_blip": "A clock on the ceiling of a building",
+      "caption_textcaps": "A bus station has an LED sign that says Amsterdam.",
+      "prompt": "A clock on the ceiling of a building, with the text \u201cAMSTERDAN-CS.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 13,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1250.87,
+        "brightness": 101.17,
+        "contrast": 72.85
+      }
+    },
+    {
+      "id": 5,
+      "image_id": "b61a4b989f0cf01d",
+      "filename": "img_0005.jpg",
+      "filepath": "train/images/img_0005.jpg",
+      "split": "train",
+      "text": "Heathrow",
+      "annotation_text": "Heathrow 7",
+      "caption_blip": "A blue and white bus",
+      "caption_textcaps": "Bus service is available to Heathrow Airport via Slough.",
+      "prompt": "A blue and white bus, with the text \u201cHeathrow\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1008.59,
+        "brightness": 116.9,
+        "contrast": 83.76
+      }
+    },
+    {
+      "id": 6,
+      "image_id": "7210d82ceabb2583",
+      "filename": "img_0006.jpg",
+      "filepath": "train/images/img_0006.jpg",
+      "split": "train",
+      "text": "Website",
+      "annotation_text": "Vintuitive",
+      "caption_blip": "A person typing on a computer keyboard",
+      "caption_textcaps": "a website for vintuitive has a keyboard on the screen",
+      "prompt": "A person typing on a computer keyboard, with the text \u201cWebsite\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          468
+        ],
+        "sharpness": 2877.65,
+        "brightness": 134.71,
+        "contrast": 71.74
+      }
+    },
+    {
+      "id": 7,
+      "image_id": "70886dc3a9280c68",
+      "filename": "img_0007.jpg",
+      "filepath": "train/images/img_0007.jpg",
+      "split": "train",
+      "text": "BARON",
+      "annotation_text": "D 100",
+      "caption_blip": "A street sign on the side of a road",
+      "caption_textcaps": "A street sign has several things written on it, including that it is Baron Street.",
+      "prompt": "A street sign on the side of a road, with the text \u201cBARON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 2670.66,
+        "brightness": 110.99,
+        "contrast": 77.56
+      }
+    },
+    {
+      "id": 8,
+      "image_id": "0bb42a8207460ac0",
+      "filename": "img_0008.jpg",
+      "filepath": "train/images/img_0008.jpg",
+      "split": "train",
+      "text": "ARIZONA",
+      "annotation_text": "ARIZONA",
+      "caption_blip": "A sign on the side of a road",
+      "caption_textcaps": "a road sign for Arizona on the side of a road",
+      "prompt": "A sign on the side of a road, with the text \u201cARIZONA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          428
+        ],
+        "sharpness": 1597.09,
+        "brightness": 158.44,
+        "contrast": 82.0
+      }
+    },
+    {
+      "id": 9,
+      "image_id": "59b1d4d41ffd676c",
+      "filename": "img_0009.jpg",
+      "filepath": "train/images/img_0009.jpg",
+      "split": "train",
+      "text": "WRANGLER",
+      "annotation_text": "HACK BURGH",
+      "caption_blip": "A group of people standing next to each other people",
+      "caption_textcaps": "Two of the six people in the picture are wearing Hack The Burgh t-shirts.",
+      "prompt": "A group of people standing next to each other people, with the text \u201cWRANGLER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 1311.6,
+        "brightness": 102.73,
+        "contrast": 77.95
+      }
+    },
+    {
+      "id": 10,
+      "image_id": "d303000244ba00ef",
+      "filename": "img_0010.jpg",
+      "filepath": "train/images/img_0010.jpg",
+      "split": "train",
+      "text": "NATAN",
+      "annotation_text": "NATAN",
+      "caption_blip": "A rose gold watch with brown leather strap",
+      "caption_textcaps": "A watch with a brown band and gold trim that is the brand natan.",
+      "prompt": "A rose gold watch with brown leather strap, with the text \u201cNATAN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          637,
+          640
+        ],
+        "sharpness": 897.12,
+        "brightness": 43.89,
+        "contrast": 82.2
+      }
+    },
+    {
+      "id": 11,
+      "image_id": "aef255b366dcc7c5",
+      "filename": "img_0011.jpg",
+      "filepath": "train/images/img_0011.jpg",
+      "split": "train",
+      "text": "ZONE",
+      "annotation_text": "ZONE",
+      "caption_blip": "A pole with several street signs on it",
+      "caption_textcaps": "some street signs that include ZONE 30, Sauf bikes and no left turn.",
+      "prompt": "A pole with several street signs on it, with the text \u201cZONE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          425,
+          639
+        ],
+        "sharpness": 3212.05,
+        "brightness": 155.36,
+        "contrast": 62.33
+      }
+    },
+    {
+      "id": 12,
+      "image_id": "a21384952708d59b",
+      "filename": "img_0012.jpg",
+      "filepath": "train/images/img_0012.jpg",
+      "split": "train",
+      "text": "APPELLATION",
+      "annotation_text": "CHINON",
+      "caption_blip": "A bottle of wine sitting on top of a table",
+      "caption_textcaps": "A white label with blue text reads \"Chinon.\"",
+      "prompt": "A bottle of wine sitting on top of a table, with the text \u201cAPPELLATION\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 11,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1299.53,
+        "brightness": 152.75,
+        "contrast": 39.97
+      }
+    },
+    {
+      "id": 13,
+      "image_id": "ad5c288813e4cbc7",
+      "filename": "img_0013.jpg",
+      "filepath": "train/images/img_0013.jpg",
+      "split": "train",
+      "text": "ARMANI",
+      "annotation_text": "GIO ARMANI",
+      "caption_blip": "Giorgio armani perfume in a black box with a white window",
+      "caption_textcaps": "A black Giorgio Armani bag with a flesh colored container of foundation in front of it as well as the black cardboard container.",
+      "prompt": "Giorgio armani perfume in a black box with a white window, with the text \u201cARMANI\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          450,
+          600
+        ],
+        "sharpness": 605.29,
+        "brightness": 113.93,
+        "contrast": 83.18
+      }
+    },
+    {
+      "id": 14,
+      "image_id": "177482ed108062de",
+      "filename": "img_0014.jpg",
+      "filepath": "train/images/img_0014.jpg",
+      "split": "train",
+      "text": "WHOLLY",
+      "annotation_text": "JUVE",
+      "caption_blip": "Several bottles of wine sit on a wooden shelf",
+      "caption_textcaps": "Bottles of champagne displayed at a bar named \"Wholly Cow\".",
+      "prompt": "Several bottles of wine sit on a wooden shelf, with the text \u201cWHOLLY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 673.81,
+        "brightness": 81.94,
+        "contrast": 69.27
+      }
+    },
+    {
+      "id": 15,
+      "image_id": "250f6a95a46ab2c8",
+      "filename": "img_0015.jpg",
+      "filepath": "train/images/img_0015.jpg",
+      "split": "train",
+      "text": "nevni",
+      "annotation_text": "Dnevnik",
+      "caption_blip": "A man sitting at a desk in front of a tv",
+      "caption_textcaps": "A man in a red polo with a screen behind him reading Dnevnik.",
+      "prompt": "A man sitting at a desk in front of a tv, with the text \u201cnevni\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 561.84,
+        "brightness": 106.89,
+        "contrast": 61.68
+      }
+    },
+    {
+      "id": 16,
+      "image_id": "46e20763ac423f25",
+      "filename": "img_0016.jpg",
+      "filepath": "train/images/img_0016.jpg",
+      "split": "train",
+      "text": "Ocm",
+      "annotation_text": "0 in",
+      "caption_blip": "A ruler showing the width of a wooden plank",
+      "caption_textcaps": "A measuring device showing the numbers 0 through 6 in cm on the bottom and numbers 0 through 2 in on the top.",
+      "prompt": "A ruler showing the width of a wooden plank, with the text \u201cOcm\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          600,
+          600
+        ],
+        "sharpness": 3717.55,
+        "brightness": 219.67,
+        "contrast": 68.16
+      }
+    },
+    {
+      "id": 17,
+      "image_id": "3e0de383ed5575ef",
+      "filename": "img_0017.jpg",
+      "filepath": "train/images/img_0017.jpg",
+      "split": "train",
+      "text": "the",
+      "annotation_text": "Domin",
+      "caption_blip": "A blue gate with a sign on it",
+      "caption_textcaps": "A picture in red on blue with Spice Property Consultations written on it.",
+      "prompt": "A blue gate with a sign on it, with the text \u201cthe\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          425
+        ],
+        "sharpness": 1176.44,
+        "brightness": 78.17,
+        "contrast": 46.52
+      }
+    },
+    {
+      "id": 18,
+      "image_id": "6becc1e801b0189a",
+      "filename": "img_0018.jpg",
+      "filepath": "train/images/img_0018.jpg",
+      "split": "train",
+      "text": "palm",
+      "annotation_text": "palm",
+      "caption_blip": "A white box on the ground",
+      "caption_textcaps": "A black phone, marked palm, is laying in front of its box.",
+      "prompt": "A white box on the ground, with the text \u201cpalm\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 761.67,
+        "brightness": 112.34,
+        "contrast": 75.29
+      }
+    },
+    {
+      "id": 19,
+      "image_id": "b958d4303a84ee19",
+      "filename": "img_0019.jpg",
+      "filepath": "train/images/img_0019.jpg",
+      "split": "train",
+      "text": "GREATEST",
+      "annotation_text": "DREGS OF",
+      "caption_blip": "Fantastic fantastic world of marvel fantastic fantastic comics fantastic fantastic comic fantastic fantastic fantastic",
+      "caption_textcaps": "A Fantastic Four comic called \"The Dismal Dregs of Defeat!\" lies on a wooden table.",
+      "prompt": "Fantastic fantastic world of marvel fantastic fantastic comics fantastic fantastic comic fantastic fantastic fantastic, with the text \u201cGREATEST\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 2909.59,
+        "brightness": 113.65,
+        "contrast": 46.06
+      }
+    },
+    {
+      "id": 20,
+      "image_id": "3f041bc460eb8d4d",
+      "filename": "img_0020.jpg",
+      "filepath": "train/images/img_0020.jpg",
+      "split": "train",
+      "text": "REVLON",
+      "annotation_text": "REVLON",
+      "caption_blip": "Four bottles of nail polish in a clear container",
+      "caption_textcaps": "A number of different Revlon fragrances are displayed on a shelf.",
+      "prompt": "Four bottles of nail polish in a clear container, with the text \u201cREVLON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          399
+        ],
+        "sharpness": 1081.42,
+        "brightness": 89.04,
+        "contrast": 61.07
+      }
+    },
+    {
+      "id": 21,
+      "image_id": "764149a1499f1c50",
+      "filename": "img_0021.jpg",
+      "filepath": "train/images/img_0021.jpg",
+      "split": "train",
+      "text": "Que",
+      "annotation_text": "LOVE",
+      "caption_blip": "A white box with a black and white design on it",
+      "caption_textcaps": "A shape of a heart is filled with letters and has \"Love\" in the center of it.",
+      "prompt": "A white box with a black and white design on it, with the text \u201cQue\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 2268.93,
+        "brightness": 180.67,
+        "contrast": 45.3
+      }
+    },
+    {
+      "id": 22,
+      "image_id": "12c241c131db6287",
+      "filename": "img_0022.jpg",
+      "filepath": "train/images/img_0022.jpg",
+      "split": "train",
+      "text": "AQUINAS",
+      "annotation_text": "AQUINAS",
+      "caption_blip": "A man in a green and white uniform holding a soccer ball",
+      "caption_textcaps": "A player wearing a green Aquinas jersey looks happy on the field",
+      "prompt": "A man in a green and white uniform holding a soccer ball, with the text \u201cAQUINAS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 1760.78,
+        "brightness": 133.74,
+        "contrast": 52.13
+      }
+    },
+    {
+      "id": 23,
+      "image_id": "efb1bd4760641448",
+      "filename": "img_0023.jpg",
+      "filepath": "train/images/img_0023.jpg",
+      "split": "train",
+      "text": "SERAFIN",
+      "annotation_text": "SERAFIN",
+      "caption_blip": "A group of people standing around a table",
+      "caption_textcaps": "Four men appear to be having a heated conversation in front of a poster for Serafin.",
+      "prompt": "A group of people standing around a table, with the text \u201cSERAFIN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          425
+        ],
+        "sharpness": 1139.85,
+        "brightness": 94.8,
+        "contrast": 64.29
+      }
+    },
+    {
+      "id": 24,
+      "image_id": "5cc4fa2f21560d7a",
+      "filename": "img_0024.jpg",
+      "filepath": "train/images/img_0024.jpg",
+      "split": "train",
+      "text": "Turn",
+      "annotation_text": "Google",
+      "caption_blip": "A cell phone with the google logo on it",
+      "caption_textcaps": "An image of a phone taken at 12:38 on a 28\u00b0 day.",
+      "prompt": "A cell phone with the google logo on it, with the text \u201cTurn\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          451
+        ],
+        "sharpness": 3202.93,
+        "brightness": 185.57,
+        "contrast": 91.56
+      }
+    },
+    {
+      "id": 25,
+      "image_id": "61e19dbd3c3e5eb8",
+      "filename": "img_0025.jpg",
+      "filepath": "train/images/img_0025.jpg",
+      "split": "train",
+      "text": "ADVENTURE",
+      "annotation_text": "LEGO NINJAGO",
+      "caption_blip": "Lego build your own adventure book",
+      "caption_textcaps": "A Ninjago build your own adventure set from Lego shows a warrior character on the front.",
+      "prompt": "Lego build your own adventure book, with the text \u201cADVENTURE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          470,
+          577
+        ],
+        "sharpness": 3741.52,
+        "brightness": 145.86,
+        "contrast": 71.43
+      }
+    },
+    {
+      "id": 26,
+      "image_id": "3490d5644635726d",
+      "filename": "img_0026.jpg",
+      "filepath": "train/images/img_0026.jpg",
+      "split": "train",
+      "text": "ime",
+      "annotation_text": "XI I",
+      "caption_blip": "An old clock sitting on top of a table",
+      "caption_textcaps": "An old Aeropostale clock hangs from a circular frame.",
+      "prompt": "An old clock sitting on top of a table, with the text \u201cime\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          428,
+          639
+        ],
+        "sharpness": 1573.31,
+        "brightness": 126.63,
+        "contrast": 74.02
+      }
+    },
+    {
+      "id": 27,
+      "image_id": "add280861695a0e1",
+      "filename": "img_0027.jpg",
+      "filepath": "train/images/img_0027.jpg",
+      "split": "train",
+      "text": "Window",
+      "annotation_text": "Windows",
+      "caption_blip": "A computer screen with the windows logo on it",
+      "caption_textcaps": "An error message and Windows 2000 professional appear on the blue screen of a computer screen.",
+      "prompt": "A computer screen with the windows logo on it, with the text \u201cWindow\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1315.19,
+        "brightness": 76.69,
+        "contrast": 60.4
+      }
+    },
+    {
+      "id": 28,
+      "image_id": "34521ae35bdf8e64",
+      "filename": "img_0028.jpg",
+      "filepath": "train/images/img_0028.jpg",
+      "split": "train",
+      "text": "Librium",
+      "annotation_text": "mg ROCHE",
+      "caption_blip": "A box of cigarettes sitting on top of a table",
+      "caption_textcaps": "Medical supplies include Valium 2 and Librium 5.",
+      "prompt": "A box of cigarettes sitting on top of a table, with the text \u201cLibrium\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 461.88,
+        "brightness": 180.07,
+        "contrast": 46.15
+      }
+    },
+    {
+      "id": 29,
+      "image_id": "54e98403b5b995fb",
+      "filename": "img_0029.jpg",
+      "filepath": "train/images/img_0029.jpg",
+      "split": "train",
+      "text": "REPUBLIC",
+      "annotation_text": "OLD REPUBLIC",
+      "caption_blip": "Star wars the old republic",
+      "caption_textcaps": "A poster depicts an outerspace scene featuring characters from a Star Wars video game called The Old Republic.",
+      "prompt": "Star wars the old republic, with the text \u201cREPUBLIC\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          360
+        ],
+        "sharpness": 2669.3,
+        "brightness": 56.65,
+        "contrast": 55.9
+      }
+    },
+    {
+      "id": 30,
+      "image_id": "e1075d2d9cec7fda",
+      "filename": "img_0030.jpg",
+      "filepath": "train/images/img_0030.jpg",
+      "split": "train",
+      "text": "iMac",
+      "annotation_text": "iMac",
+      "caption_blip": "An apple computer in a box on the floor",
+      "caption_textcaps": "imac computer that is new in a white box that never been open",
+      "prompt": "An apple computer in a box on the floor, with the text \u201ciMac\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 515.29,
+        "brightness": 138.96,
+        "contrast": 56.13
+      }
+    },
+    {
+      "id": 31,
+      "image_id": "249edec63aa020a7",
+      "filename": "img_0031.jpg",
+      "filepath": "train/images/img_0031.jpg",
+      "split": "train",
+      "text": "LOOPHOLE",
+      "annotation_text": "LOOPHOLE",
+      "caption_blip": "A pile of coins on a white background",
+      "caption_textcaps": "LOOPHOLE in capital letters is above a pile of coins from assorted countries.",
+      "prompt": "A pile of coins on a white background, with the text \u201cLOOPHOLE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          600,
+          600
+        ],
+        "sharpness": 3623.83,
+        "brightness": 200.38,
+        "contrast": 80.71
+      }
+    },
+    {
+      "id": 32,
+      "image_id": "e368e7caf2fae5c4",
+      "filename": "img_0032.jpg",
+      "filepath": "train/images/img_0032.jpg",
+      "split": "train",
+      "text": "FINLAN",
+      "annotation_text": "KREIKKA",
+      "caption_blip": "A black and white book sitting on top of a table",
+      "caption_textcaps": "A green book called Suomi Kreikka Suomi is on a counter top.",
+      "prompt": "A black and white book sitting on top of a table, with the text \u201cFINLAN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 507.75,
+        "brightness": 77.77,
+        "contrast": 81.27
+      }
+    },
+    {
+      "id": 33,
+      "image_id": "3ce4bfcca2df5c3d",
+      "filename": "img_0033.jpg",
+      "filepath": "train/images/img_0033.jpg",
+      "split": "train",
+      "text": "EASY",
+      "annotation_text": "MARNER",
+      "caption_blip": "The cover of a book with an image of a man holding a knife",
+      "caption_textcaps": "The complete and unabridged book Silas Marner is printed with larger type for easy reading.",
+      "prompt": "The cover of a book with an image of a man holding a knife, with the text \u201cEASY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          396,
+          640
+        ],
+        "sharpness": 2319.11,
+        "brightness": 107.65,
+        "contrast": 69.21
+      }
+    },
+    {
+      "id": 34,
+      "image_id": "4046d0037d6728cb",
+      "filename": "img_0034.jpg",
+      "filepath": "train/images/img_0034.jpg",
+      "split": "train",
+      "text": "EXPRESSION",
+      "annotation_text": "EXPRESSION",
+      "caption_blip": "A bottle of wine sitting on top of a table",
+      "caption_textcaps": "A bottle of Pinot Noir red wine branded with the name Expression 44 degrees.",
+      "prompt": "A bottle of wine sitting on top of a table, with the text \u201cEXPRESSION\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 151.67,
+        "brightness": 103.92,
+        "contrast": 71.92
+      }
+    },
+    {
+      "id": 35,
+      "image_id": "7959b263c05901a3",
+      "filename": "img_0035.jpg",
+      "filepath": "train/images/img_0035.jpg",
+      "split": "train",
+      "text": "R H R",
+      "annotation_text": "R H",
+      "caption_blip": "A group of men playing a game of basketball",
+      "caption_textcaps": "Player wearing a green number 10 jersey walking on a basketball court.",
+      "prompt": "A group of men playing a game of basketball, with the text \u201cR H R\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 5,
+        "word_count": 3,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          427,
+          640
+        ],
+        "sharpness": 472.07,
+        "brightness": 134.59,
+        "contrast": 73.5
+      }
+    },
+    {
+      "id": 36,
+      "image_id": "3b47525a500e3777",
+      "filename": "img_0036.jpg",
+      "filepath": "train/images/img_0036.jpg",
+      "split": "train",
+      "text": "MATHER",
+      "annotation_text": "30 meeting",
+      "caption_blip": "A man sitting in front of a large screen",
+      "caption_textcaps": "J. Mather taking to people at the rimini meeting in 2009.",
+      "prompt": "A man sitting in front of a large screen, with the text \u201cMATHER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 402.45,
+        "brightness": 107.91,
+        "contrast": 47.52
+      }
+    },
+    {
+      "id": 37,
+      "image_id": "013f5cac93b70098",
+      "filename": "img_0037.jpg",
+      "filepath": "train/images/img_0037.jpg",
+      "split": "train",
+      "text": "Village",
+      "annotation_text": "Village",
+      "caption_blip": "A traffic light with two flags attached to it",
+      "caption_textcaps": "Two banners hanging vertically off a post with a green light that states Cambie Village.",
+      "prompt": "A traffic light with two flags attached to it, with the text \u201cVillage\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          478,
+          640
+        ],
+        "sharpness": 1651.28,
+        "brightness": 123.81,
+        "contrast": 86.74
+      }
+    },
+    {
+      "id": 38,
+      "image_id": "7319601c46db3002",
+      "filename": "img_0038.jpg",
+      "filepath": "train/images/img_0038.jpg",
+      "split": "train",
+      "text": "JEWELRY",
+      "annotation_text": "GOLDRUSH",
+      "caption_blip": "A group of taxis parked on the side of a street",
+      "caption_textcaps": "Taxis have their fare on the side so people can estimate how expensive the trip will be.",
+      "prompt": "A group of taxis parked on the side of a street, with the text \u201cJEWELRY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          395
+        ],
+        "sharpness": 3374.75,
+        "brightness": 98.37,
+        "contrast": 60.87
+      }
+    },
+    {
+      "id": 39,
+      "image_id": "2bb08eddd5926fe5",
+      "filename": "img_0039.jpg",
+      "filepath": "train/images/img_0039.jpg",
+      "split": "train",
+      "text": "guide",
+      "annotation_text": "DEVIL",
+      "caption_blip": "A baseball game is being played on the field",
+      "caption_textcaps": "A man hits a baseball and there are several advertisements in the background, including one for Devil Rays.",
+      "prompt": "A baseball game is being played on the field, with the text \u201cguide\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 682.67,
+        "brightness": 104.77,
+        "contrast": 50.65
+      }
+    },
+    {
+      "id": 40,
+      "image_id": "7a30d2e61206eb20",
+      "filename": "img_0040.jpg",
+      "filepath": "train/images/img_0040.jpg",
+      "split": "train",
+      "text": "JEFFREY",
+      "annotation_text": "AND LIFE",
+      "caption_blip": "A book with a picture of a man on the cover",
+      "caption_textcaps": "Matter, energy, and life book by Jeffrey J. W. Baker and Garland E. Allen",
+      "prompt": "A book with a picture of a man on the cover, with the text \u201cJEFFREY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          434,
+          639
+        ],
+        "sharpness": 2432.27,
+        "brightness": 133.52,
+        "contrast": 68.77
+      }
+    },
+    {
+      "id": 41,
+      "image_id": "022315ce008d95c3",
+      "filename": "img_0041.jpg",
+      "filepath": "train/images/img_0041.jpg",
+      "split": "train",
+      "text": "SPARKLING",
+      "annotation_text": "Starmy Ridge",
+      "caption_blip": "A bottle of wine sitting on a wooden table",
+      "caption_textcaps": "A bottle of 2004 Sparkling Shiraz from Stormy Ridge.",
+      "prompt": "A bottle of wine sitting on a wooden table, with the text \u201cSPARKLING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 166.18,
+        "brightness": 153.35,
+        "contrast": 66.69
+      }
+    },
+    {
+      "id": 42,
+      "image_id": "2a9cbf813fb49323",
+      "filename": "img_0042.jpg",
+      "filepath": "train/images/img_0042.jpg",
+      "split": "train",
+      "text": "RON",
+      "annotation_text": "pups",
+      "caption_blip": "A bunch of dvds sitting on top of a shelf",
+      "caption_textcaps": "A DVD cover showing a woman yelling with a shadow figure in the background with the name pups in the foreground.",
+      "prompt": "A bunch of dvds sitting on top of a shelf, with the text \u201cRON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 175.53,
+        "brightness": 143.27,
+        "contrast": 47.23
+      }
+    },
+    {
+      "id": 43,
+      "image_id": "4c8d6ab28d3e93b2",
+      "filename": "img_0043.jpg",
+      "filepath": "train/images/img_0043.jpg",
+      "split": "train",
+      "text": "VIRGINIA",
+      "annotation_text": "AIR WOlF",
+      "caption_blip": "A license plate with the word virginia on it",
+      "caption_textcaps": "A Virginia licence plate with the words Air Wo1F",
+      "prompt": "A license plate with the word virginia on it, with the text \u201cVIRGINIA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          360
+        ],
+        "sharpness": 1092.01,
+        "brightness": 97.69,
+        "contrast": 76.71
+      }
+    },
+    {
+      "id": 44,
+      "image_id": "b5df231901ab1398",
+      "filename": "img_0044.jpg",
+      "filepath": "train/images/img_0044.jpg",
+      "split": "train",
+      "text": "BLOOD",
+      "annotation_text": "WARNING",
+      "caption_blip": "A sign with a picture of a man on it",
+      "caption_textcaps": "A sign with a vampire that says Warning Donate Blood.",
+      "prompt": "A sign with a picture of a man on it, with the text \u201cBLOOD\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          614,
+          600
+        ],
+        "sharpness": 1607.41,
+        "brightness": 143.67,
+        "contrast": 67.06
+      }
+    },
+    {
+      "id": 45,
+      "image_id": "09d273a898b4d25e",
+      "filename": "img_0045.jpg",
+      "filepath": "train/images/img_0045.jpg",
+      "split": "train",
+      "text": "SAMSUNG",
+      "annotation_text": "CHUCK",
+      "caption_blip": "A television with the word chuck on it",
+      "caption_textcaps": "A Samsung TV is about to play a tv show called CHUCK.",
+      "prompt": "A television with the word chuck on it, with the text \u201cSAMSUNG\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          426
+        ],
+        "sharpness": 138.08,
+        "brightness": 45.19,
+        "contrast": 68.46
+      }
+    },
+    {
+      "id": 46,
+      "image_id": "a2a8ff6bd656eb90",
+      "filename": "img_0046.jpg",
+      "filepath": "train/images/img_0046.jpg",
+      "split": "train",
+      "text": "POVERSO",
+      "annotation_text": "CAPOVERSO",
+      "caption_blip": "A bottle of wine sitting on top of a table",
+      "caption_textcaps": "A bottle of Capoverso wine is in front of a white wall.",
+      "prompt": "A bottle of wine sitting on top of a table, with the text \u201cPOVERSO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 396.42,
+        "brightness": 97.39,
+        "contrast": 56.52
+      }
+    },
+    {
+      "id": 47,
+      "image_id": "9c2d8ce43ee4ba01",
+      "filename": "img_0047.jpg",
+      "filepath": "train/images/img_0047.jpg",
+      "split": "train",
+      "text": "edia.ca",
+      "annotation_text": "Expedia.ca",
+      "caption_blip": "A baseball player pitching a ball on the field",
+      "caption_textcaps": "A baseball player is wearing a jersey with Cecil on the back.",
+      "prompt": "A baseball player pitching a ball on the field, with the text \u201cedia.ca\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 648.29,
+        "brightness": 105.81,
+        "contrast": 47.96
+      }
+    },
+    {
+      "id": 48,
+      "image_id": "a753256c8233f77d",
+      "filename": "img_0048.jpg",
+      "filepath": "train/images/img_0048.jpg",
+      "split": "train",
+      "text": "ZERO",
+      "annotation_text": "M M",
+      "caption_blip": "Monster energy drink in a store",
+      "caption_textcaps": "Some monster energy drinks with a green M on them",
+      "prompt": "Monster energy drink in a store, with the text \u201cZERO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          478
+        ],
+        "sharpness": 1989.65,
+        "brightness": 106.6,
+        "contrast": 74.51
+      }
+    },
+    {
+      "id": 49,
+      "image_id": "e163c241e3c5b8d8",
+      "filename": "img_0049.jpg",
+      "filepath": "train/images/img_0049.jpg",
+      "split": "train",
+      "text": "sunshine",
+      "annotation_text": "paul smith",
+      "caption_blip": "A bottle of perfume next to a box",
+      "caption_textcaps": "A bottle of Paul Smith Sunshine Edition is displayed next to its box.",
+      "prompt": "A bottle of perfume next to a box, with the text \u201csunshine\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          431
+        ],
+        "sharpness": 715.42,
+        "brightness": 174.54,
+        "contrast": 48.71
+      }
+    },
+    {
+      "id": 50,
+      "image_id": "d625b376a03157b9",
+      "filename": "img_0050.jpg",
+      "filepath": "train/images/img_0050.jpg",
+      "split": "train",
+      "text": "FANDANGO",
+      "annotation_text": "FIFTY SHADES",
+      "caption_blip": "A sign in the middle of a store",
+      "caption_textcaps": "Fifty Shades of Grey movies for sale inside a store.",
+      "prompt": "A sign in the middle of a store, with the text \u201cFANDANGO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          459
+        ],
+        "sharpness": 1710.67,
+        "brightness": 115.27,
+        "contrast": 67.85
+      }
+    },
+    {
+      "id": 51,
+      "image_id": "42132546ea298db4",
+      "filename": "img_0051.jpg",
+      "filepath": "train/images/img_0051.jpg",
+      "split": "train",
+      "text": "DEFIA",
+      "annotation_text": "DEFIANCE",
+      "caption_blip": "Defiance movie poster",
+      "caption_textcaps": "A poster for the game Defiance showing two people with guns and a battle scene.",
+      "prompt": "Defiance movie poster, with the text \u201cDEFIA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          640
+        ],
+        "sharpness": 1209.98,
+        "brightness": 87.87,
+        "contrast": 68.11
+      }
+    },
+    {
+      "id": 52,
+      "image_id": "1a909e5f2939cd13",
+      "filename": "img_0052.jpg",
+      "filepath": "train/images/img_0052.jpg",
+      "split": "train",
+      "text": "TANGA",
+      "annotation_text": "TECHRON",
+      "caption_blip": "A boy standing in front of a wall with graffiti on it",
+      "caption_textcaps": "Young man wearing the Techron shirt reads the wall.",
+      "prompt": "A boy standing in front of a wall with graffiti on it, with the text \u201cTANGA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          426
+        ],
+        "sharpness": 3681.99,
+        "brightness": 100.54,
+        "contrast": 62.0
+      }
+    },
+    {
+      "id": 53,
+      "image_id": "3fd9e1cdcf3fc4d6",
+      "filename": "img_0053.jpg",
+      "filepath": "train/images/img_0053.jpg",
+      "split": "train",
+      "text": "LosMocanos.com",
+      "annotation_text": "BIRHDAY!!! HAPPY",
+      "caption_blip": "A bunch of balloons hanging from the ceiling",
+      "caption_textcaps": "Two balloons one of which says Happy Birthday and they are multi colored and in a dark room with a light casting a purple glow.",
+      "prompt": "A bunch of balloons hanging from the ceiling, with the text \u201cLosMocanos.com\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 14,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          429
+        ],
+        "sharpness": 1366.98,
+        "brightness": 97.63,
+        "contrast": 60.36
+      }
+    },
+    {
+      "id": 54,
+      "image_id": "e16f270d3cac31fe",
+      "filename": "img_0054.jpg",
+      "filepath": "train/images/img_0054.jpg",
+      "split": "train",
+      "text": "READY,",
+      "annotation_text": "BAM HOT-N-",
+      "caption_blip": "A baseball player pitching a ball during a game",
+      "caption_textcaps": "A baseball game is being played with number forty-four winding up for a pitch.",
+      "prompt": "A baseball player pitching a ball during a game, with the text \u201cREADY,\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          425
+        ],
+        "sharpness": 267.81,
+        "brightness": 55.94,
+        "contrast": 26.4
+      }
+    },
+    {
+      "id": 55,
+      "image_id": "3930bda69ad32584",
+      "filename": "img_0055.jpg",
+      "filepath": "train/images/img_0055.jpg",
+      "split": "train",
+      "text": "PRESSO",
+      "annotation_text": "SUNTORY",
+      "caption_blip": "A can of soda sitting on top of a table",
+      "caption_textcaps": "japanese boss branded espresso in a red, silver and black can.",
+      "prompt": "A can of soda sitting on top of a table, with the text \u201cPRESSO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 247.41,
+        "brightness": 125.34,
+        "contrast": 58.75
+      }
+    },
+    {
+      "id": 56,
+      "image_id": "0b2f523a4e734bec",
+      "filename": "img_0056.jpg",
+      "filepath": "train/images/img_0056.jpg",
+      "split": "train",
+      "text": "EC634",
+      "annotation_text": "EC-634",
+      "caption_blip": "An airplane hanging from the ceiling",
+      "caption_textcaps": "A red airplane is hanging from the roof of a hangar with the text EC-634.",
+      "prompt": "An airplane hanging from the ceiling, with the text \u201cEC634\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 2730.71,
+        "brightness": 116.67,
+        "contrast": 61.11
+      }
+    },
+    {
+      "id": 57,
+      "image_id": "d98931b2c3fbe253",
+      "filename": "img_0057.jpg",
+      "filepath": "train/images/img_0057.jpg",
+      "split": "train",
+      "text": "HERMES",
+      "annotation_text": "TERRE",
+      "caption_blip": "A bottle of perfume sitting on top of a table",
+      "caption_textcaps": "a bottle of Terre D'hermes perfume standing next to its box",
+      "prompt": "A bottle of perfume sitting on top of a table, with the text \u201cHERMES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 642.68,
+        "brightness": 89.37,
+        "contrast": 71.24
+      }
+    },
+    {
+      "id": 58,
+      "image_id": "00a36cacbd3d2070",
+      "filename": "img_0058.jpg",
+      "filepath": "train/images/img_0058.jpg",
+      "split": "train",
+      "text": "CULE",
+      "annotation_text": "pretty",
+      "caption_blip": "A man in a suit and tie posing for the camera",
+      "caption_textcaps": "A man poses for a photo in front of a pink and white background that says pretty chic and for the cure.",
+      "prompt": "A man in a suit and tie posing for the camera, with the text \u201cCULE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          424,
+          639
+        ],
+        "sharpness": 645.1,
+        "brightness": 115.37,
+        "contrast": 67.1
+      }
+    },
+    {
+      "id": 59,
+      "image_id": "01742c404f9c67a8",
+      "filename": "img_0059.jpg",
+      "filepath": "train/images/img_0059.jpg",
+      "split": "train",
+      "text": "chicken,",
+      "annotation_text": "chicken",
+      "caption_blip": "A person standing in front of a projection screen",
+      "caption_textcaps": "A person is explaining a chart projected on the wall about chicken.",
+      "prompt": "A person standing in front of a projection screen, with the text \u201cchicken,\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          457
+        ],
+        "sharpness": 203.69,
+        "brightness": 91.29,
+        "contrast": 53.34
+      }
+    },
+    {
+      "id": 60,
+      "image_id": "082c76aca87e303f",
+      "filename": "img_0060.jpg",
+      "filepath": "train/images/img_0060.jpg",
+      "split": "train",
+      "text": "TRIPLE",
+      "annotation_text": "GEORGIA",
+      "caption_blip": "A can of beer sitting on top of a table",
+      "caption_textcaps": "The coffee drink is called Georgia Triple Star Premium.",
+      "prompt": "A can of beer sitting on top of a table, with the text \u201cTRIPLE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 499.97,
+        "brightness": 126.03,
+        "contrast": 40.88
+      }
+    },
+    {
+      "id": 61,
+      "image_id": "318e8c0d125c41f9",
+      "filename": "img_0061.jpg",
+      "filepath": "train/images/img_0061.jpg",
+      "split": "train",
+      "text": "TOP",
+      "annotation_text": "STOP",
+      "caption_blip": "A stop sign on the side of the road",
+      "caption_textcaps": "A red sign says stop in two different languages.",
+      "prompt": "A stop sign on the side of the road, with the text \u201cTOP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 5076.52,
+        "brightness": 94.15,
+        "contrast": 73.26
+      }
+    },
+    {
+      "id": 62,
+      "image_id": "860d0c6bfe1c53cb",
+      "filename": "img_0062.jpg",
+      "filepath": "train/images/img_0062.jpg",
+      "split": "train",
+      "text": "making",
+      "annotation_text": "SQL Sorver",
+      "caption_blip": "A timeline of the history of the internet",
+      "caption_textcaps": "A rectangular green poster with the words \"The Road to Database Technology\" written on top.",
+      "prompt": "A timeline of the history of the internet, with the text \u201cmaking\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          384,
+          640
+        ],
+        "sharpness": 5869.78,
+        "brightness": 153.93,
+        "contrast": 47.72
+      }
+    },
+    {
+      "id": 63,
+      "image_id": "ee835115b66d6d16",
+      "filename": "img_0063.jpg",
+      "filepath": "train/images/img_0063.jpg",
+      "split": "train",
+      "text": "samsung GALAXY Gear",
+      "annotation_text": "SAMSUNG",
+      "caption_blip": "Samsung galaxy note 3",
+      "caption_textcaps": "An ad for the Samsung Galaxy Note 3 shows a man's hand holding the phone.",
+      "prompt": "Samsung galaxy note 3, with the text \u201csamsung GALAXY Gear\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 19,
+        "word_count": 3,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1871.97,
+        "brightness": 155.57,
+        "contrast": 63.5
+      }
+    },
+    {
+      "id": 64,
+      "image_id": "7777c120304a2470",
+      "filename": "img_0064.jpg",
+      "filepath": "train/images/img_0064.jpg",
+      "split": "train",
+      "text": "REDACTION",
+      "annotation_text": "LE BALLON",
+      "caption_blip": "An old fashioned label with the words le salon",
+      "caption_textcaps": "A french advertisment for hot air balloons displayed the words \"Le Ballon\" on the front.",
+      "prompt": "An old fashioned label with the words le salon, with the text \u201cREDACTION\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          413
+        ],
+        "sharpness": 5528.92,
+        "brightness": 162.5,
+        "contrast": 55.11
+      }
+    },
+    {
+      "id": 65,
+      "image_id": "27e27f76637103bf",
+      "filename": "img_0065.jpg",
+      "filepath": "train/images/img_0065.jpg",
+      "split": "train",
+      "text": "WASHINGTON",
+      "annotation_text": "799- PAL",
+      "caption_blip": "A white car parked on the side of the road",
+      "caption_textcaps": "The back of a Nissan car showing its plates.",
+      "prompt": "A white car parked on the side of the road, with the text \u201cWASHINGTON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          443
+        ],
+        "sharpness": 847.71,
+        "brightness": 141.64,
+        "contrast": 70.0
+      }
+    },
+    {
+      "id": 66,
+      "image_id": "004c1766c10578cd",
+      "filename": "img_0066.jpg",
+      "filepath": "train/images/img_0066.jpg",
+      "split": "train",
+      "text": "HOLMAN",
+      "annotation_text": "udweiser",
+      "caption_blip": "A man holding a baseball glove on a field",
+      "caption_textcaps": "the name National that is on a jersey",
+      "prompt": "A man holding a baseball glove on a field, with the text \u201cHOLMAN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          510,
+          640
+        ],
+        "sharpness": 6303.94,
+        "brightness": 129.67,
+        "contrast": 60.53
+      }
+    },
+    {
+      "id": 67,
+      "image_id": "023182f17b71f861",
+      "filename": "img_0067.jpg",
+      "filepath": "train/images/img_0067.jpg",
+      "split": "train",
+      "text": "Oblivion",
+      "annotation_text": "DR. OBLIVION?",
+      "caption_blip": "A poster with a man in a suit and tie",
+      "caption_textcaps": "A red poster asking \"Have you seen Dr. Obilvion\"",
+      "prompt": "A poster with a man in a suit and tie, with the text \u201cOblivion\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          495,
+          640
+        ],
+        "sharpness": 1150.47,
+        "brightness": 111.43,
+        "contrast": 76.57
+      }
+    },
+    {
+      "id": 68,
+      "image_id": "cbf4b43c9b8a3fc1",
+      "filename": "img_0068.jpg",
+      "filepath": "train/images/img_0068.jpg",
+      "split": "train",
+      "text": "OLIO",
+      "annotation_text": "BROLIO",
+      "caption_blip": "Three bottles of wine sitting next to each other bottles",
+      "caption_textcaps": "The bottles of Brolio wine, including one with a 2010 vintage, are stood up next to each other.",
+      "prompt": "Three bottles of wine sitting next to each other bottles, with the text \u201cOLIO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          416
+        ],
+        "sharpness": 1342.65,
+        "brightness": 130.01,
+        "contrast": 64.28
+      }
+    },
+    {
+      "id": 69,
+      "image_id": "6c67376411fa45c7",
+      "filename": "img_0069.jpg",
+      "filepath": "train/images/img_0069.jpg",
+      "split": "train",
+      "text": "Delany",
+      "annotation_text": "EMPIRE",
+      "caption_blip": "An old book with a picture of an alien flying over it",
+      "caption_textcaps": "Ace double is the publisher of Empire Star.",
+      "prompt": "An old book with a picture of an alien flying over it, with the text \u201cDelany\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          426,
+          640
+        ],
+        "sharpness": 3007.98,
+        "brightness": 92.65,
+        "contrast": 52.31
+      }
+    },
+    {
+      "id": 70,
+      "image_id": "e3b8ee62606ca713",
+      "filename": "img_0070.jpg",
+      "filepath": "train/images/img_0070.jpg",
+      "split": "train",
+      "text": "Largest",
+      "annotation_text": "THE POINT",
+      "caption_blip": "A blue boat in the water next to some buildings",
+      "caption_textcaps": "Blue ship that has the words The Point in white.",
+      "prompt": "A blue boat in the water next to some buildings, with the text \u201cLargest\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          423
+        ],
+        "sharpness": 2081.79,
+        "brightness": 154.54,
+        "contrast": 53.26
+      }
+    },
+    {
+      "id": 71,
+      "image_id": "adcb557b8e41a377",
+      "filename": "img_0071.jpg",
+      "filepath": "train/images/img_0071.jpg",
+      "split": "train",
+      "text": "noticias,",
+      "annotation_text": "metro",
+      "caption_blip": "A phone sitting on top of a box",
+      "caption_textcaps": "the app metro that has a phone on it",
+      "prompt": "A phone sitting on top of a box, with the text \u201cnoticias,\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 893.61,
+        "brightness": 167.68,
+        "contrast": 77.31
+      }
+    },
+    {
+      "id": 72,
+      "image_id": "34ef818e79674b51",
+      "filename": "img_0072.jpg",
+      "filepath": "train/images/img_0072.jpg",
+      "split": "train",
+      "text": "NE R",
+      "annotation_text": "WANG",
+      "caption_blip": "The building is beige",
+      "caption_textcaps": "lots of taxi cabs on the street and people on the sidewalk",
+      "prompt": "The building is beige, with the text \u201cNE R\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1615.4,
+        "brightness": 137.38,
+        "contrast": 61.03
+      }
+    },
+    {
+      "id": 73,
+      "image_id": "6f4d3591c3b6b055",
+      "filename": "img_0073.jpg",
+      "filepath": "train/images/img_0073.jpg",
+      "split": "train",
+      "text": "Courtesy",
+      "annotation_text": "VIKES",
+      "caption_blip": "A group of women running on a track",
+      "caption_textcaps": "Two female runners on the Vikes team are running a race and are ahead of the female wearing an Ocean Athletic shirt.",
+      "prompt": "A group of women running on a track, with the text \u201cCourtesy\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          426,
+          640
+        ],
+        "sharpness": 909.14,
+        "brightness": 69.94,
+        "contrast": 53.88
+      }
+    },
+    {
+      "id": 74,
+      "image_id": "fa3fb59b2ef29f1c",
+      "filename": "img_0074.jpg",
+      "filepath": "train/images/img_0074.jpg",
+      "split": "train",
+      "text": "INFR",
+      "annotation_text": "SOFIA",
+      "caption_blip": "The plane is white and blue",
+      "caption_textcaps": "The jet clearly stated it's use for SOFIA, Stratospheric Observatory For Infrared Astronomy.",
+      "prompt": "The plane is white and blue, with the text \u201cINFR\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 1724.87,
+        "brightness": 145.84,
+        "contrast": 68.39
+      }
+    },
+    {
+      "id": 75,
+      "image_id": "9ead90367893b0a6",
+      "filename": "img_0075.jpg",
+      "filepath": "train/images/img_0075.jpg",
+      "split": "train",
+      "text": "NYG",
+      "annotation_text": "TAXI",
+      "caption_blip": "An image of a man driving a taxi",
+      "caption_textcaps": "Someone created an unflattering cartoon of a New York City taxi, irate taxi driver, and rider!",
+      "prompt": "An image of a man driving a taxi, with the text \u201cNYG\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          361
+        ],
+        "sharpness": 4312.12,
+        "brightness": 174.38,
+        "contrast": 92.9
+      }
+    },
+    {
+      "id": 76,
+      "image_id": "0d10d38b05f114e8",
+      "filename": "img_0076.jpg",
+      "filepath": "train/images/img_0076.jpg",
+      "split": "train",
+      "text": "EWING",
+      "annotation_text": "COMPANY",
+      "caption_blip": "A plate of food and a beer on a table",
+      "caption_textcaps": "A hot dog with coleslaw next to a bottle of Sunny Ale.",
+      "prompt": "A plate of food and a beer on a table, with the text \u201cEWING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 287.07,
+        "brightness": 104.37,
+        "contrast": 39.95
+      }
+    },
+    {
+      "id": 77,
+      "image_id": "0a204e50362fdf1d",
+      "filename": "img_0077.jpg",
+      "filepath": "train/images/img_0077.jpg",
+      "split": "train",
+      "text": "Shazam",
+      "annotation_text": "PapiJump",
+      "caption_blip": "A close up of an iphone on a table",
+      "caption_textcaps": "A smart phone has a number of apps installed including Monkey Ball.",
+      "prompt": "A close up of an iphone on a table, with the text \u201cShazam\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          428
+        ],
+        "sharpness": 616.84,
+        "brightness": 54.05,
+        "contrast": 44.15
+      }
+    },
+    {
+      "id": 78,
+      "image_id": "53135d87a1768a41",
+      "filename": "img_0078.jpg",
+      "filepath": "train/images/img_0078.jpg",
+      "split": "train",
+      "text": "PORTER",
+      "annotation_text": "MR PORTER",
+      "caption_blip": "A white box sitting on top of a wooden floor",
+      "caption_textcaps": "Large white box that says Mr Porter on the top.",
+      "prompt": "A white box sitting on top of a wooden floor, with the text \u201cPORTER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 285.61,
+        "brightness": 133.38,
+        "contrast": 48.65
+      }
+    },
+    {
+      "id": 79,
+      "image_id": "1ed1ae7f81874729",
+      "filename": "img_0079.jpg",
+      "filepath": "train/images/img_0079.jpg",
+      "split": "train",
+      "text": "ZEALAND",
+      "annotation_text": "Fat Cat",
+      "caption_blip": "A bottle of beer sitting on top of a table",
+      "caption_textcaps": "A bottle of Fat cat Chardonnay is sitting in front of a computer monitor.",
+      "prompt": "A bottle of beer sitting on top of a table, with the text \u201cZEALAND\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          481
+        ],
+        "sharpness": 246.9,
+        "brightness": 90.54,
+        "contrast": 55.66
+      }
+    }
+  ]
+}

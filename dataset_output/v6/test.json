@@ -1,0 +1,256 @@
+{
+  "split": "test",
+  "count": 10,
+  "data": [
+    {
+      "id": 90,
+      "image_id": "55eb940224c400ea",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "PASADENA",
+      "annotation_text": "Pasadena",
+      "caption_blip": "A white board with a map on it",
+      "caption_textcaps": "paper map of the city of pasadena ca",
+      "prompt": "A white board with a map on it, with the text \u201cPASADENA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1073.04,
+        "brightness": 155.67,
+        "contrast": 42.58
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "949d3c8f3c8962ae",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "FASHION",
+      "annotation_text": "FASHION",
+      "caption_blip": "A bottle of beer sitting on top of a computer",
+      "caption_textcaps": "Lg computer is turned on a website called fashion by he",
+      "prompt": "A bottle of beer sitting on top of a computer, with the text \u201cFASHION\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          640
+        ],
+        "sharpness": 293.15,
+        "brightness": 114.85,
+        "contrast": 66.76
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "e684c27b650e0154",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "NO PE",
+      "annotation_text": "NOPE",
+      "caption_blip": "A red and yellow sign that says nope",
+      "caption_textcaps": "In bold letters the word NOPE is displayed on something that looks like old film.",
+      "prompt": "A red and yellow sign that says nope, with the text \u201cNO PE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 5,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 1890.89,
+        "brightness": 44.91,
+        "contrast": 76.76
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "3e2c5b9b9b0ab88a",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "results",
+      "annotation_text": "twitter",
+      "caption_blip": "A laptop computer with a bunch of twees on it",
+      "caption_textcaps": "A computer with Twitter on its web browser.",
+      "prompt": "A laptop computer with a bunch of twees on it, with the text \u201cresults\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 721.42,
+        "brightness": 108.04,
+        "contrast": 49.86
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "c3235b8c930c7c19",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "CREE",
+      "annotation_text": "CREED",
+      "caption_blip": "A woman standing behind a counter in a store",
+      "caption_textcaps": "A woman in a black blazer is standing behind the creed perfume counter",
+      "prompt": "A woman standing behind a counter in a store, with the text \u201cCREE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          393
+        ],
+        "sharpness": 4646.65,
+        "brightness": 147.29,
+        "contrast": 76.41
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "a3e8bbfe27a43266",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "Passend",
+      "annotation_text": "ZIGARETTEN",
+      "caption_blip": "A vege machine on the side of a building",
+      "caption_textcaps": "In Germany there is a vending machine for ZIGARETTEN or cigarettes.",
+      "prompt": "A vege machine on the side of a building, with the text \u201cPassend\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 2032.91,
+        "brightness": 106.31,
+        "contrast": 60.11
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "6d0570bec48316c5",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "Galileo",
+      "annotation_text": "OBSERVAT.",
+      "caption_blip": "An open book on display in a glass case",
+      "caption_textcaps": "Book about Galileo that includes pictures and details",
+      "prompt": "An open book on display in a glass case, with the text \u201cGalileo\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 780.22,
+        "brightness": 132.8,
+        "contrast": 81.59
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "55bf12a31c481418",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "ROMPON",
+      "annotation_text": "ROMPON",
+      "caption_blip": "An old book on a wooden table",
+      "caption_textcaps": "A poster for Echos De Rompon sits on a wooden table",
+      "prompt": "An old book on a wooden table, with the text \u201cROMPON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1496.45,
+        "brightness": 116.69,
+        "contrast": 78.61
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "417c389ca9f31302",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "DEVIZES",
+      "annotation_text": "WADWORTH",
+      "caption_blip": "A bottle of beer sitting on a counter",
+      "caption_textcaps": "A bottle of WADWORTH 6X sits on a table with a phone charger.",
+      "prompt": "A bottle of beer sitting on a counter, with the text \u201cDEVIZES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 575.5,
+        "brightness": 49.63,
+        "contrast": 57.32
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "9f54efb08ebfaa98",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "HEAVEN",
+      "annotation_text": "HEAVEN",
+      "caption_blip": "There is a sign on the side of a building",
+      "caption_textcaps": "An electrical box in the snowy mountains with a caution sign on it.",
+      "prompt": "There is a sign on the side of a building, with the text \u201cHEAVEN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          490
+        ],
+        "sharpness": 984.03,
+        "brightness": 108.27,
+        "contrast": 55.72
+      }
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "split": "test",
+  "count": 10,
+  "data": [
+    {
+      "id": 90,
+      "image_id": "354909ac2c1850be",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "WDC10",
+      "annotation_text": "WDC10",
+      "ocr_text": "mic",
+      "caption_blip": "A group of people standing outside of a building",
+      "caption_textcaps": "A crowd of people standing outside of the WWDC10 convention",
+      "prompt": "A group of people standing outside of a building, with the text \u201cWDC10\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 3651.41,
+        "brightness": 94.63,
+        "contrast": 68.71
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "1998cb73a30374f9",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "Innovation",
+      "annotation_text": "Innovation",
+      "ocr_text": "SMART",
+      "caption_blip": "A couple of people standing around a table",
+      "caption_textcaps": "a sign next to people called smart services crc",
+      "prompt": "A couple of people standing around a table, with the text \u201cInnovation\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 276.02,
+        "brightness": 106.0,
+        "contrast": 47.0
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "68ba1148cfc05e87",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "twitter",
+      "annotation_text": "twitter",
+      "ocr_text": "Moods",
+      "caption_blip": "A magazine cover with an image of a phone",
+      "caption_textcaps": "A Time magazine cover story about Twitter taking over the world.",
+      "prompt": "A magazine cover with an image of a phone, with the text \u201ctwitter\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          340,
+          448
+        ],
+        "sharpness": 3008.94,
+        "brightness": 152.32,
+        "contrast": 69.23
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "7380ff7a235218e4",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "saben...",
+      "annotation_text": "saben...",
+      "ocr_text": "han",
+      "caption_blip": "A man standing in front of a projection screen",
+      "caption_textcaps": "a computer screen with engano over a blue speech bubble.",
+      "prompt": "A man standing in front of a projection screen, with the text \u201csaben...\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          640
+        ],
+        "sharpness": 344.12,
+        "brightness": 81.13,
+        "contrast": 77.72
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "03d3665bb6b8cd0e",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "BOURGEOIS",
+      "annotation_text": "BOURGEOIS",
+      "ocr_text": "afi",
+      "caption_blip": "A group of baseball players sitting in the dug",
+      "caption_textcaps": "Players are seen sitting in the KC dugout.",
+      "prompt": "A group of baseball players sitting in the dug, with the text \u201cBOURGEOIS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          426
+        ],
+        "sharpness": 762.6,
+        "brightness": 111.03,
+        "contrast": 61.42
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "ff2aa25ce4e4ef41",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "le c",
+      "annotation_text": "le c",
+      "ocr_text": "de Linsig",
+      "caption_blip": "Two men playing table tennis on a court",
+      "caption_textcaps": "Number 421 plays ping pong with an opponent on table 12.",
+      "prompt": "Two men playing table tennis on a court, with the text \u201cle c\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 4,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 667.03,
+        "brightness": 54.9,
+        "contrast": 48.42
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "f0819e7d429dbeb5",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "STOP",
+      "annotation_text": "STOP",
+      "ocr_text": "STOP",
+      "caption_blip": "A stop sign with a pumpkin on top of it",
+      "caption_textcaps": "A carved pumpkin is on top of a red sign that says Stop.",
+      "prompt": "A stop sign with a pumpkin on top of it, with the text \u201cSTOP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          439,
+          640
+        ],
+        "sharpness": 490.1,
+        "brightness": 92.55,
+        "contrast": 65.6
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "a776f88e45dffed5",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "UP TO",
+      "annotation_text": "UP TO",
+      "ocr_text": "PAYDAY",
+      "caption_blip": "A window display with an easter bunny in it",
+      "caption_textcaps": "A sign sits inside of a window that reads payday loans.",
+      "prompt": "A window display with an easter bunny in it, with the text \u201cUP TO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 5,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 191.76,
+        "brightness": 147.3,
+        "contrast": 47.46
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "3de1abd665b79e7e",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "Estreno",
+      "annotation_text": "Estreno",
+      "ocr_text": "Lars",
+      "caption_blip": "A movie poster on the side of a building",
+      "caption_textcaps": "An advertisement for the Spanish cinema which reads Melancolia.",
+      "prompt": "A movie poster on the side of a building, with the text \u201cEstreno\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 1333.91,
+        "brightness": 118.77,
+        "contrast": 66.51
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "10430e6d61ea6be5",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "SALVADOR rce",
+      "annotation_text": "SALVADOR rce",
+      "ocr_text": "life of",
+      "caption_blip": "A little girl holding a basket of flowers",
+      "caption_textcaps": "A young girl wearing a dress and sash representing El Salvador C.A.",
+      "prompt": "A little girl holding a basket of flowers, with the text \u201cSALVADOR rce\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          618
+        ],
+        "sharpness": 1737.31,
+        "brightness": 146.87,
+        "contrast": 88.1
+      }
+    }
+  ]
+}

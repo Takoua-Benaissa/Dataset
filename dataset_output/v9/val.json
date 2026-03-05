@@ -1,0 +1,266 @@
+{
+  "split": "val",
+  "count": 10,
+  "data": [
+    {
+      "id": 80,
+      "image_id": "ab4495de483283c1",
+      "filename": "img_0080.jpg",
+      "filepath": "val/images/img_0080.jpg",
+      "split": "val",
+      "text": "SAUF",
+      "annotation_text": "SAUF",
+      "ocr_text": "SAUF",
+      "caption_blip": "A red and white street sign next to a building",
+      "caption_textcaps": "A red and white sign with another white sign below it that says SAUF.",
+      "prompt": "A red and white street sign next to a building, with the text \u201cSAUF\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 1725.59,
+        "brightness": 114.01,
+        "contrast": 48.66
+      }
+    },
+    {
+      "id": 81,
+      "image_id": "1a0daecc117f39f0",
+      "filename": "img_0081.jpg",
+      "filepath": "val/images/img_0081.jpg",
+      "split": "val",
+      "text": "BUSINESS",
+      "annotation_text": "BUSINESS",
+      "ocr_text": "BUSINESS",
+      "caption_blip": "A newspaper with a picture of a building on it",
+      "caption_textcaps": "An image of a business page from the Chicago Tribune",
+      "prompt": "A newspaper with a picture of a building on it, with the text \u201cBUSINESS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          360
+        ],
+        "sharpness": 1757.94,
+        "brightness": 139.83,
+        "contrast": 43.94
+      }
+    },
+    {
+      "id": 82,
+      "image_id": "318e8c0d125c41f9",
+      "filename": "img_0082.jpg",
+      "filepath": "val/images/img_0082.jpg",
+      "split": "val",
+      "text": "STOP",
+      "annotation_text": "STOP",
+      "ocr_text": "TOP",
+      "caption_blip": "A stop sign on the side of the road",
+      "caption_textcaps": "A red sign says stop in two different languages.",
+      "prompt": "A stop sign on the side of the road, with the text \u201cSTOP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 5076.52,
+        "brightness": 94.15,
+        "contrast": 73.26
+      }
+    },
+    {
+      "id": 83,
+      "image_id": "1a2d47bd28873050",
+      "filename": "img_0083.jpg",
+      "filepath": "val/images/img_0083.jpg",
+      "split": "val",
+      "text": "all-inclusive pricing.",
+      "annotation_text": "all-inclusive pricing.",
+      "ocr_text": "Pricing.",
+      "caption_blip": "A blue billboard with the words look for passing men",
+      "caption_textcaps": "A roadside billboard displays an ad for a funeral home.",
+      "prompt": "A blue billboard with the words look for passing men, with the text \u201call-inclusive pricing.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 22,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1335.23,
+        "brightness": 108.33,
+        "contrast": 64.89
+      }
+    },
+    {
+      "id": 84,
+      "image_id": "8ff1d6353953a3d4",
+      "filename": "img_0084.jpg",
+      "filepath": "val/images/img_0084.jpg",
+      "split": "val",
+      "text": "ARK'S",
+      "annotation_text": "ARK'S",
+      "ocr_text": "ARK",
+      "caption_blip": "A boy in a baseball uniform pitching a ball",
+      "caption_textcaps": "pitcher for st marks number 5 on the pitchers mound",
+      "prompt": "A boy in a baseball uniform pitching a ball, with the text \u201cARK'S\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          425,
+          639
+        ],
+        "sharpness": 825.61,
+        "brightness": 105.15,
+        "contrast": 47.1
+      }
+    },
+    {
+      "id": 85,
+      "image_id": "123ec8724b43e5ca",
+      "filename": "img_0085.jpg",
+      "filepath": "val/images/img_0085.jpg",
+      "split": "val",
+      "text": "Wendesday",
+      "annotation_text": "Wendesday",
+      "ocr_text": "Day",
+      "caption_blip": "A sign hanging on the side of a building",
+      "caption_textcaps": "A sign regarding the Tube strike on Boxing Day.",
+      "prompt": "A sign hanging on the side of a building, with the text \u201cWendesday\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 3559.19,
+        "brightness": 114.47,
+        "contrast": 72.55
+      }
+    },
+    {
+      "id": 86,
+      "image_id": "26d5c465a5b72bb4",
+      "filename": "img_0086.jpg",
+      "filepath": "val/images/img_0086.jpg",
+      "split": "val",
+      "text": "DANCE",
+      "annotation_text": "DANCE",
+      "ocr_text": "dance",
+      "caption_blip": "A newspaper page with an image of a woman doing gymnastics",
+      "caption_textcaps": "A newspaper article in the arts section with a picture of a male ballet dancer on it.",
+      "prompt": "A newspaper page with an image of a woman doing gymnastics, with the text \u201cDANCE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          360
+        ],
+        "sharpness": 5902.07,
+        "brightness": 158.06,
+        "contrast": 71.89
+      }
+    },
+    {
+      "id": 87,
+      "image_id": "bd22ee4e71b8f551",
+      "filename": "img_0087.jpg",
+      "filepath": "val/images/img_0087.jpg",
+      "split": "val",
+      "text": "Contagious",
+      "annotation_text": "Contagious",
+      "ocr_text": "Contagious",
+      "caption_blip": "A stack of books sitting on top of a table",
+      "caption_textcaps": "Books on self improvement are stacked on top of each other.",
+      "prompt": "A stack of books sitting on top of a table, with the text \u201cContagious\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          640
+        ],
+        "sharpness": 486.92,
+        "brightness": 111.33,
+        "contrast": 53.42
+      }
+    },
+    {
+      "id": 88,
+      "image_id": "18cbb2be2d609fb3",
+      "filename": "img_0088.jpg",
+      "filepath": "val/images/img_0088.jpg",
+      "split": "val",
+      "text": "EPSON",
+      "annotation_text": "EPSON",
+      "ocr_text": "EPSON",
+      "caption_blip": "An old typewriter sitting on top of a table",
+      "caption_textcaps": "A white Epson electronic typewriter with a black keyboard sitting on a table",
+      "prompt": "An old typewriter sitting on top of a table, with the text \u201cEPSON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          612,
+          612
+        ],
+        "sharpness": 1554.8,
+        "brightness": 148.78,
+        "contrast": 73.24
+      }
+    },
+    {
+      "id": 89,
+      "image_id": "01508daa80f0d00e",
+      "filename": "img_0089.jpg",
+      "filepath": "val/images/img_0089.jpg",
+      "split": "val",
+      "text": "PAR",
+      "annotation_text": "PAR",
+      "ocr_text": "PAR",
+      "caption_blip": "A sign on a golf course with a hole in the background",
+      "caption_textcaps": "A sign out in the open field that reads 18 PAR 4 434 383 340 with trees in the background.",
+      "prompt": "A sign on a golf course with a hole in the background, with the text \u201cPAR\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1826.04,
+        "brightness": 107.26,
+        "contrast": 80.01
+      }
+    }
+  ]
+}

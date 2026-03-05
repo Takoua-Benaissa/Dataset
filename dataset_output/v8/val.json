@@ -1,0 +1,266 @@
+{
+  "split": "val",
+  "count": 10,
+  "data": [
+    {
+      "id": 80,
+      "image_id": "4aebcf0dddbcbd37",
+      "filename": "img_0080.jpg",
+      "filepath": "val/images/img_0080.jpg",
+      "split": "val",
+      "text": "Soundy",
+      "annotation_text": "Soundy",
+      "ocr_text": "NEWS",
+      "caption_blip": "A baseball game is being played on the field",
+      "caption_textcaps": "A baseball score board shaped like a guitar with a variety of advertising signs on the score board and on the fence below it.",
+      "prompt": "A baseball game is being played on the field, with the text \u201cSoundy\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          332
+        ],
+        "sharpness": 2539.45,
+        "brightness": 82.15,
+        "contrast": 66.86
+      }
+    },
+    {
+      "id": 81,
+      "image_id": "a4db4b5d2f776a47",
+      "filename": "img_0081.jpg",
+      "filepath": "val/images/img_0081.jpg",
+      "split": "val",
+      "text": "g TALK",
+      "annotation_text": "g TALK",
+      "ocr_text": "Camera",
+      "caption_blip": "A close up of an iphone with various apps",
+      "caption_textcaps": "A close up of a smart phone with the first app being the phone call icon.",
+      "prompt": "A close up of an iphone with various apps, with the text \u201cg TALK\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          427,
+          640
+        ],
+        "sharpness": 3334.29,
+        "brightness": 72.68,
+        "contrast": 86.68
+      }
+    },
+    {
+      "id": 82,
+      "image_id": "7b774edcbb95ebc9",
+      "filename": "img_0082.jpg",
+      "filepath": "val/images/img_0082.jpg",
+      "split": "val",
+      "text": "WITHDRAWN",
+      "annotation_text": "WITHDRAWN",
+      "ocr_text": "THOUSAND",
+      "caption_blip": "An open book with a stamp on it",
+      "caption_textcaps": "The title of a withdrawn libaray book titled A Thousand For Italy.",
+      "prompt": "An open book with a stamp on it, with the text \u201cWITHDRAWN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 699.86,
+        "brightness": 186.98,
+        "contrast": 30.52
+      }
+    },
+    {
+      "id": 83,
+      "image_id": "ab5a21ba38715b8c",
+      "filename": "img_0083.jpg",
+      "filepath": "val/images/img_0083.jpg",
+      "split": "val",
+      "text": "Ferricyanide",
+      "annotation_text": "Ferricyanide",
+      "ocr_text": "acid",
+      "caption_blip": "A blue bottle with a label on it",
+      "caption_textcaps": "A blue glass bottle of Potassium Ferricyanide on a shelf.",
+      "prompt": "A blue bottle with a label on it, with the text \u201cFerricyanide\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 12,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 507.16,
+        "brightness": 127.67,
+        "contrast": 44.79
+      }
+    },
+    {
+      "id": 84,
+      "image_id": "771762210713ba4d",
+      "filename": "img_0084.jpg",
+      "filepath": "val/images/img_0084.jpg",
+      "split": "val",
+      "text": "DISNEP .PIXAR",
+      "annotation_text": "DISNEP .PIXAR",
+      "ocr_text": "PIXAR",
+      "caption_blip": "A toy is sitting on top of a shelf",
+      "caption_textcaps": "Poster for the movie Toy Story by Disney.",
+      "prompt": "A toy is sitting on top of a shelf, with the text \u201cDISNEP .PIXAR\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          478,
+          640
+        ],
+        "sharpness": 517.5,
+        "brightness": 114.33,
+        "contrast": 52.33
+      }
+    },
+    {
+      "id": 85,
+      "image_id": "9ef4ec10ff5ad281",
+      "filename": "img_0085.jpg",
+      "filepath": "val/images/img_0085.jpg",
+      "split": "val",
+      "text": "Tower",
+      "annotation_text": "Tower",
+      "ocr_text": "The",
+      "caption_blip": "The inside of a mall with many tables and chairs",
+      "caption_textcaps": "A banner that reads \"Tour The Tower\" hangs above a large restaurant area in the mall",
+      "prompt": "The inside of a mall with many tables and chairs, with the text \u201cTower\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 97.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          427
+        ],
+        "sharpness": 7758.36,
+        "brightness": 109.83,
+        "contrast": 63.87
+      }
+    },
+    {
+      "id": 86,
+      "image_id": "07739a86c0e12ac3",
+      "filename": "img_0086.jpg",
+      "filepath": "val/images/img_0086.jpg",
+      "split": "val",
+      "text": "Snapkeep",
+      "annotation_text": "Snapkeep",
+      "ocr_text": "Courtney",
+      "caption_blip": "A smartphone with the app on it and an image of a green background",
+      "caption_textcaps": "Emily, Courtney and Oliver are in a Snapkeep group.",
+      "prompt": "A smartphone with the app on it and an image of a green background, with the text \u201cSnapkeep\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          306,
+          469
+        ],
+        "sharpness": 2310.15,
+        "brightness": 211.46,
+        "contrast": 51.48
+      }
+    },
+    {
+      "id": 87,
+      "image_id": "50c45baa95a84d83",
+      "filename": "img_0087.jpg",
+      "filepath": "val/images/img_0087.jpg",
+      "split": "val",
+      "text": "Individual",
+      "annotation_text": "Individual",
+      "ocr_text": "The",
+      "caption_blip": "A man standing in front of a whiteboard",
+      "caption_textcaps": "The instructor is teaching a web development class and is discussing frames and data hosts.",
+      "prompt": "A man standing in front of a whiteboard, with the text \u201cIndividual\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 276.01,
+        "brightness": 89.76,
+        "contrast": 27.6
+      }
+    },
+    {
+      "id": 88,
+      "image_id": "013a414982747e7f",
+      "filename": "img_0088.jpg",
+      "filepath": "val/images/img_0088.jpg",
+      "split": "val",
+      "text": "SoftBan aHIRA",
+      "annotation_text": "SoftBan aHIRA",
+      "ocr_text": "Windows",
+      "caption_blip": "A laptop computer sitting on top of a desk",
+      "caption_textcaps": "Computer monitor showing a screen with two women and a word that says \"Windows\".",
+      "prompt": "A laptop computer sitting on top of a desk, with the text \u201cSoftBan aHIRA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          479
+        ],
+        "sharpness": 965.66,
+        "brightness": 55.87,
+        "contrast": 60.92
+      }
+    },
+    {
+      "id": 89,
+      "image_id": "7ef1505e480043d4",
+      "filename": "img_0089.jpg",
+      "filepath": "val/images/img_0089.jpg",
+      "split": "val",
+      "text": "THAT'S NO",
+      "annotation_text": "THAT'S NO",
+      "ocr_text": "ABS A",
+      "caption_blip": "A person wearing a green shirt with a star wars logo on it",
+      "caption_textcaps": "Storm Stormtrooper looking out of a window and see a big globe and thinks \"That's no Moon.\"",
+      "prompt": "A person wearing a green shirt with a star wars logo on it, with the text \u201cTHAT'S NO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 9,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1410.72,
+        "brightness": 93.27,
+        "contrast": 58.51
+      }
+    }
+  ]
+}

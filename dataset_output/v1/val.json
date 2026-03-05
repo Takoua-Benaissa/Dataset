@@ -1,0 +1,692 @@
+[
+  {
+    "image_id": "5173cdfc3b401cec",
+    "text": "i",
+    "text_length": 1,
+    "ocr_confidence": 80.0,
+    "caption_blip": "there is a blue mail box sitting on the side of the road",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a blue mail box sitting on the side of the road, with the text 'i' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        768,
+        1024
+      ],
+      "sharpness": 721.48,
+      "brightness": 127.35,
+      "contrast": 83.16
+    },
+    "split": "val",
+    "filename": "img_0240.jpg",
+    "filepath": "val/images/img_0240.jpg",
+    "id": 240
+  },
+  {
+    "image_id": "01635d30529455d0",
+    "text": "a",
+    "text_length": 1,
+    "ocr_confidence": 88.0,
+    "caption_blip": "there is a close up of the controls in the cockpit of a plane",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a close up of the controls in the cockpit of a plane, with the text 'a' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        685
+      ],
+      "sharpness": 2940.27,
+      "brightness": 114.51,
+      "contrast": 80.58
+    },
+    "split": "val",
+    "filename": "img_0241.jpg",
+    "filepath": "val/images/img_0241.jpg",
+    "id": 241
+  },
+  {
+    "image_id": "cea7fa69aa31d1d5",
+    "text": "i W &",
+    "text_length": 5,
+    "ocr_confidence": 81.0,
+    "caption_blip": "there is a yellow truck that is parked in the middle of a field",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a yellow truck that is parked in the middle of a field, with the text 'i W &' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 5671.99,
+      "brightness": 128.8,
+      "contrast": 62.75
+    },
+    "split": "val",
+    "filename": "img_0242.jpg",
+    "filepath": "val/images/img_0242.jpg",
+    "id": 242
+  },
+  {
+    "image_id": "4edc28ec5e25c324",
+    "text": "al",
+    "text_length": 2,
+    "ocr_confidence": 88.0,
+    "caption_blip": "there are many cars driving down the street in the city",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there are many cars driving down the street in the city, with the text 'al' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        683
+      ],
+      "sharpness": 1290.0,
+      "brightness": 117.54,
+      "contrast": 63.07
+    },
+    "split": "val",
+    "filename": "img_0243.jpg",
+    "filepath": "val/images/img_0243.jpg",
+    "id": 243
+  },
+  {
+    "image_id": "534315f4b230d49a",
+    "text": "Tokyo Town @",
+    "text_length": 12,
+    "ocr_confidence": 91.0,
+    "caption_blip": "this is a picture of a television screen showing a map of the world",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is a picture of a television screen showing a map of the world, with the text 'Tokyo Town @' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        765
+      ],
+      "sharpness": 562.7,
+      "brightness": 55.19,
+      "contrast": 68.22
+    },
+    "split": "val",
+    "filename": "img_0244.jpg",
+    "filepath": "val/images/img_0244.jpg",
+    "id": 244
+  },
+  {
+    "image_id": "6aeb6e2e194cad62",
+    "text": "Clercqstraat",
+    "text_length": 12,
+    "ocr_confidence": 92.0,
+    "caption_blip": "there is a gps device mounted on the dashboard of a car",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a gps device mounted on the dashboard of a car, with the text 'Clercqstraat' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 399.67,
+      "brightness": 111.42,
+      "contrast": 75.6
+    },
+    "split": "val",
+    "filename": "img_0245.jpg",
+    "filepath": "val/images/img_0245.jpg",
+    "id": 245
+  },
+  {
+    "image_id": "87fc2c5181396287",
+    "text": "Parmesan",
+    "text_length": 8,
+    "ocr_confidence": 96.0,
+    "caption_blip": "there is a menu for a restaurant on a table in a restaurant",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a menu for a restaurant on a table in a restaurant, with the text 'Parmesan' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        768,
+        1024
+      ],
+      "sharpness": 1504.81,
+      "brightness": 145.68,
+      "contrast": 46.94
+    },
+    "split": "val",
+    "filename": "img_0246.jpg",
+    "filepath": "val/images/img_0246.jpg",
+    "id": 246
+  },
+  {
+    "image_id": "9eef056818ae46e6",
+    "text": "mi",
+    "text_length": 2,
+    "ocr_confidence": 88.0,
+    "caption_blip": "there is a basketball game in progress with the ball in the air",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a basketball game in progress with the ball in the air, with the text 'mi' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        683,
+        1024
+      ],
+      "sharpness": 1017.31,
+      "brightness": 90.93,
+      "contrast": 72.99
+    },
+    "split": "val",
+    "filename": "img_0247.jpg",
+    "filepath": "val/images/img_0247.jpg",
+    "id": 247
+  },
+  {
+    "image_id": "40372df579a6f602",
+    "text": "Clot",
+    "text_length": 4,
+    "ocr_confidence": 96.0,
+    "caption_blip": "there is a glass of beer sitting on a table in a restaurant",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a glass of beer sitting on a table in a restaurant, with the text 'Clot' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        768,
+        1024
+      ],
+      "sharpness": 643.87,
+      "brightness": 136.8,
+      "contrast": 62.33
+    },
+    "split": "val",
+    "filename": "img_0248.jpg",
+    "filepath": "val/images/img_0248.jpg",
+    "id": 248
+  },
+  {
+    "image_id": "57ed614e67f36e02",
+    "text": "JU NON-GMO GUID Gul tart Indoors partial S A nt",
+    "text_length": 47,
+    "ocr_confidence": 89.0,
+    "caption_blip": "this is a picture of a flower guide on display in a store",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is a picture of a flower guide on display in a store, with the text 'JU NON-GMO GUID Gul tart Indoors partial S A nt' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sharpness": 294.02,
+      "brightness": 148.03,
+      "contrast": 61.19
+    },
+    "split": "val",
+    "filename": "img_0249.jpg",
+    "filepath": "val/images/img_0249.jpg",
+    "id": 249
+  },
+  {
+    "image_id": "39215c5a4c056006",
+    "text": "Ch AWARD AWARD WINNING DRINK ICE MUFFIN",
+    "text_length": 39,
+    "ocr_confidence": 86.0,
+    "caption_blip": "there is a store front of a chocolate shop on the side of the street",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a store front of a chocolate shop on the side of the street, with the text 'Ch AWARD AWARD WINNING DRINK ICE MUFFIN' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        683
+      ],
+      "sharpness": 1937.43,
+      "brightness": 96.67,
+      "contrast": 50.83
+    },
+    "split": "val",
+    "filename": "img_0250.jpg",
+    "filepath": "val/images/img_0250.jpg",
+    "id": 250
+  },
+  {
+    "image_id": "35b250dfdb12d1a6",
+    "text": "Andamans",
+    "text_length": 8,
+    "ocr_confidence": 96.0,
+    "caption_blip": "this is a picture of a house with a balcony and a porch",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is a picture of a house with a balcony and a porch, with the text 'Andamans' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1011,
+        768
+      ],
+      "sharpness": 293.39,
+      "brightness": 114.75,
+      "contrast": 57.23
+    },
+    "split": "val",
+    "filename": "img_0251.jpg",
+    "filepath": "val/images/img_0251.jpg",
+    "id": 251
+  },
+  {
+    "image_id": "c55af357ee5bad5b",
+    "text": "@ iPod WHE",
+    "text_length": 10,
+    "ocr_confidence": 84.0,
+    "caption_blip": "this is an image of a vending machine at an apple store",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is an image of a vending machine at an apple store, with the text '@ iPod WHE' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 1057.24,
+      "brightness": 72.93,
+      "contrast": 67.26
+    },
+    "split": "val",
+    "filename": "img_0252.jpg",
+    "filepath": "val/images/img_0252.jpg",
+    "id": 252
+  },
+  {
+    "image_id": "6aca090d80ec8eac",
+    "text": "SKIL L CENTERS AMERICA",
+    "text_length": 22,
+    "ocr_confidence": 93.0,
+    "caption_blip": "there is a sign that says thrift store on the side of a building",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a sign that says thrift store on the side of a building, with the text 'SKIL L CENTERS AMERICA' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 377.52,
+      "brightness": 110.61,
+      "contrast": 43.97
+    },
+    "split": "val",
+    "filename": "img_0253.jpg",
+    "filepath": "val/images/img_0253.jpg",
+    "id": 253
+  },
+  {
+    "image_id": "b0bee956d024dccc",
+    "text": "wy",
+    "text_length": 2,
+    "ocr_confidence": 84.0,
+    "caption_blip": "there is a large green house with white trimmings on the front of it",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a large green house with white trimmings on the front of it, with the text 'wy' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 3687.71,
+      "brightness": 125.68,
+      "contrast": 70.91
+    },
+    "split": "val",
+    "filename": "img_0254.jpg",
+    "filepath": "val/images/img_0254.jpg",
+    "id": 254
+  },
+  {
+    "image_id": "9cde16b3a263bb97",
+    "text": "6 9 6 Ci 9 09 2",
+    "text_length": 15,
+    "ocr_confidence": 87.0,
+    "caption_blip": "this is a close up of a ruler on a counter top",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is a close up of a ruler on a counter top, with the text '6 9 6 Ci 9 09 2' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 281.67,
+      "brightness": 133.83,
+      "contrast": 52.38
+    },
+    "split": "val",
+    "filename": "img_0255.jpg",
+    "filepath": "val/images/img_0255.jpg",
+    "id": 255
+  },
+  {
+    "image_id": "c0f90a125ff5ccf3",
+    "text": "COLOSSUS",
+    "text_length": 8,
+    "ocr_confidence": 95.0,
+    "caption_blip": "there are many books that are sitting on a shelf in a book case",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there are many books that are sitting on a shelf in a book case, with the text 'COLOSSUS' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        680
+      ],
+      "sharpness": 1049.5,
+      "brightness": 71.63,
+      "contrast": 67.54
+    },
+    "split": "val",
+    "filename": "img_0256.jpg",
+    "filepath": "val/images/img_0256.jpg",
+    "id": 256
+  },
+  {
+    "image_id": "71ca302d4791f912",
+    "text": "We CRANBERRY",
+    "text_length": 12,
+    "ocr_confidence": 84.0,
+    "caption_blip": "there are two cans of soda sitting next to each other on a table",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there are two cans of soda sitting next to each other on a table, with the text 'We CRANBERRY' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 1032.57,
+      "brightness": 133.3,
+      "contrast": 44.38
+    },
+    "split": "val",
+    "filename": "img_0257.jpg",
+    "filepath": "val/images/img_0257.jpg",
+    "id": 257
+  },
+  {
+    "image_id": "b5d8ee7c6214c692",
+    "text": "TAL",
+    "text_length": 3,
+    "ocr_confidence": 77.0,
+    "caption_blip": "this is an image of a pantry full of food and condiments",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is an image of a pantry full of food and condiments, with the text 'TAL' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 449.11,
+      "brightness": 109.75,
+      "contrast": 57.03
+    },
+    "split": "val",
+    "filename": "img_0258.jpg",
+    "filepath": "val/images/img_0258.jpg",
+    "id": 258
+  },
+  {
+    "image_id": "955c0b15b32d0dd5",
+    "text": "Ingredients",
+    "text_length": 11,
+    "ocr_confidence": 96.0,
+    "caption_blip": "several jars of pickles are lined up on a table",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "several jars of pickles are lined up on a table, with the text 'Ingredients' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        685
+      ],
+      "sharpness": 554.19,
+      "brightness": 118.16,
+      "contrast": 66.85
+    },
+    "split": "val",
+    "filename": "img_0259.jpg",
+    "filepath": "val/images/img_0259.jpg",
+    "id": 259
+  },
+  {
+    "image_id": "2165003c324d2fae",
+    "text": "INDEX LOW e",
+    "text_length": 11,
+    "ocr_confidence": 88.0,
+    "caption_blip": "there is a cassette with the words greatest bullshit written on it",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a cassette with the words greatest bullshit written on it, with the text 'INDEX LOW e' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 589.47,
+      "brightness": 124.76,
+      "contrast": 83.96
+    },
+    "split": "val",
+    "filename": "img_0260.jpg",
+    "filepath": "val/images/img_0260.jpg",
+    "id": 260
+  },
+  {
+    "image_id": "f5f2d9a1159511dc",
+    "text": "EMAAR",
+    "text_length": 5,
+    "ocr_confidence": 87.0,
+    "caption_blip": "there are three men playing a game of baseball on the field",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there are three men playing a game of baseball on the field, with the text 'EMAAR' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 361.67,
+      "brightness": 108.39,
+      "contrast": 56.59
+    },
+    "split": "val",
+    "filename": "img_0261.jpg",
+    "filepath": "val/images/img_0261.jpg",
+    "id": 261
+  },
+  {
+    "image_id": "5f5e173b421dd3d5",
+    "text": "tre 20 10",
+    "text_length": 9,
+    "ocr_confidence": 93.0,
+    "caption_blip": "there is a picture of a christmas ornament hanging on a christmas tree",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a picture of a christmas ornament hanging on a christmas tree, with the text 'tre 20 10' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        683,
+        1024
+      ],
+      "sharpness": 466.25,
+      "brightness": 70.77,
+      "contrast": 60.0
+    },
+    "split": "val",
+    "filename": "img_0262.jpg",
+    "filepath": "val/images/img_0262.jpg",
+    "id": 262
+  },
+  {
+    "image_id": "b9bf4f8e9fdb52ec",
+    "text": "BRIDE w",
+    "text_length": 7,
+    "ocr_confidence": 94.0,
+    "caption_blip": "there is a pinball machine that has a picture of a woman on it",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a pinball machine that has a picture of a woman on it, with the text 'BRIDE w' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sharpness": 934.95,
+      "brightness": 83.29,
+      "contrast": 70.35
+    },
+    "split": "val",
+    "filename": "img_0263.jpg",
+    "filepath": "val/images/img_0263.jpg",
+    "id": 263
+  },
+  {
+    "image_id": "b3c7aa88b3aa3bef",
+    "text": "D ge 22",
+    "text_length": 7,
+    "ocr_confidence": 79.0,
+    "caption_blip": "there is a green box sitting on the side of the road",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a green box sitting on the side of the road, with the text 'D ge 22' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        947
+      ],
+      "sharpness": 1457.49,
+      "brightness": 88.88,
+      "contrast": 30.94
+    },
+    "split": "val",
+    "filename": "img_0264.jpg",
+    "filepath": "val/images/img_0264.jpg",
+    "id": 264
+  },
+  {
+    "image_id": "0b2e303697ae3875",
+    "text": "ch Pwr EF 6 8 Tuy",
+    "text_length": 17,
+    "ocr_confidence": 79.0,
+    "caption_blip": "there is a close up of a cell phone on a table",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a close up of a cell phone on a table, with the text 'ch Pwr EF 6 8 Tuy' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        768,
+        1024
+      ],
+      "sharpness": 204.1,
+      "brightness": 111.17,
+      "contrast": 41.65
+    },
+    "split": "val",
+    "filename": "img_0265.jpg",
+    "filepath": "val/images/img_0265.jpg",
+    "id": 265
+  },
+  {
+    "image_id": "28000fa2c6a9eefa",
+    "text": "N BONGO i ite omo",
+    "text_length": 17,
+    "ocr_confidence": 87.0,
+    "caption_blip": "there is a man standing in front of a yellow and blue store",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a man standing in front of a yellow and blue store, with the text 'N BONGO i ite omo' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 520.91,
+      "brightness": 150.7,
+      "contrast": 68.07
+    },
+    "split": "val",
+    "filename": "img_0266.jpg",
+    "filepath": "val/images/img_0266.jpg",
+    "id": 266
+  },
+  {
+    "image_id": "d77f7b61e272b2cf",
+    "text": "4 il lt",
+    "text_length": 7,
+    "ocr_confidence": 79.0,
+    "caption_blip": "this is an image of a large building with a glass roof",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "this is an image of a large building with a glass roof, with the text '4 il lt' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 349.62,
+      "brightness": 147.92,
+      "contrast": 57.22
+    },
+    "split": "val",
+    "filename": "img_0267.jpg",
+    "filepath": "val/images/img_0267.jpg",
+    "id": 267
+  },
+  {
+    "image_id": "809d3b2a5420f420",
+    "text": "Be",
+    "text_length": 2,
+    "ocr_confidence": 89.0,
+    "caption_blip": "there is a teddy bear that is sitting in the window of a store",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a teddy bear that is sitting in the window of a store, with the text 'Be' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        768
+      ],
+      "sharpness": 200.68,
+      "brightness": 95.86,
+      "contrast": 67.67
+    },
+    "split": "val",
+    "filename": "img_0268.jpg",
+    "filepath": "val/images/img_0268.jpg",
+    "id": 268
+  },
+  {
+    "image_id": "7cc6abb3ed8f1751",
+    "text": "y By Feace on",
+    "text_length": 13,
+    "ocr_confidence": 86.0,
+    "caption_blip": "there is a christmas card with a picture of a santa claus holding a sack of presents",
+    "captions_textcaps": [],
+    "validation_reason": "no_captions_available",
+    "prompt": "there is a christmas card with a picture of a santa claus holding a sack of presents, with the text 'y By Feace on' clearly visible",
+    "quality_metrics": {
+      "resolution": [
+        1024,
+        765
+      ],
+      "sharpness": 3146.2,
+      "brightness": 160.8,
+      "contrast": 67.01
+    },
+    "split": "val",
+    "filename": "img_0269.jpg",
+    "filepath": "val/images/img_0269.jpg",
+    "id": 269
+  }
+]

@@ -1,0 +1,266 @@
+{
+  "split": "test",
+  "count": 10,
+  "data": [
+    {
+      "id": 90,
+      "image_id": "04b2ba30ae5de5db",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "GUINNESS.",
+      "annotation_text": "GUINNESS.",
+      "ocr_text": "NESS",
+      "caption_blip": "A glass of guinness on a table",
+      "caption_textcaps": "A glass of Guinness beer sitting on a restaurant table.",
+      "prompt": "A glass of guinness on a table, with the text \u201cGUINNESS.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 770.47,
+        "brightness": 99.58,
+        "contrast": 102.16
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "a132f7b81dfbb07b",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "Granby",
+      "annotation_text": "Granby",
+      "ocr_text": "Gra",
+      "caption_blip": "A person holding a magazine in their hand",
+      "caption_textcaps": "Man is reading a magazine about Linux Logiciel Libre",
+      "prompt": "A person holding a magazine in their hand, with the text \u201cGranby\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 1584.21,
+        "brightness": 89.51,
+        "contrast": 78.67
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "650b0c87e52cca3b",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "HAND CRAFTED",
+      "annotation_text": "HAND CRAFTED",
+      "ocr_text": "CRAFTED",
+      "caption_blip": "A bottle of beer sitting on top of a table",
+      "caption_textcaps": "A bottle of Murray's Whale Ale sits in front of a glass filled with beer.",
+      "prompt": "A bottle of beer sitting on top of a table, with the text \u201cHAND CRAFTED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          360,
+          640
+        ],
+        "sharpness": 2742.78,
+        "brightness": 71.74,
+        "contrast": 86.03
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "6e340fcbb1e0a877",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "KARAJAN",
+      "annotation_text": "KARAJAN",
+      "ocr_text": "KARAJAN",
+      "caption_blip": "An open book sitting on top of a table",
+      "caption_textcaps": "A text in German and English is about the technological wonder Karajan.",
+      "prompt": "An open book sitting on top of a table, with the text \u201cKARAJAN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          639,
+          407
+        ],
+        "sharpness": 2862.73,
+        "brightness": 168.04,
+        "contrast": 53.39
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "069a1ecc2b2c40f8",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "ICEBAR",
+      "annotation_text": "ICEBAR",
+      "ocr_text": "BAR",
+      "caption_blip": "Two people standing in an ice bar holding wine glasses",
+      "caption_textcaps": "A man and a woman at an icebar hotel wearing heavy clothing while holding up glasses.",
+      "prompt": "Two people standing in an ice bar holding wine glasses, with the text \u201cICEBAR\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 2205.16,
+        "brightness": 90.83,
+        "contrast": 55.22
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "752d2060bc79c141",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "Stormakts",
+      "annotation_text": "Stormakts",
+      "ocr_text": "Stormakts",
+      "caption_blip": "A bottle of beer and a glass on a table",
+      "caption_textcaps": "A bottle of narke booze next to a glass half full of booze.",
+      "prompt": "A bottle of beer and a glass on a table, with the text \u201cStormakts\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          480,
+          640
+        ],
+        "sharpness": 1530.53,
+        "brightness": 102.48,
+        "contrast": 63.69
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "7428d5613d77d411",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "SINCE 1898",
+      "annotation_text": "SINCE 1898",
+      "ocr_text": "SINCE",
+      "caption_blip": "A baseball player throwing a ball on a field",
+      "caption_textcaps": "a man throwing a ball with a sign reading 'since 1898' behind him.",
+      "prompt": "A baseball player throwing a ball on a field, with the text \u201cSINCE 1898\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          427
+        ],
+        "sharpness": 420.85,
+        "brightness": 90.09,
+        "contrast": 46.68
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "43c80607ec7aac0c",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "kojakitchen.com",
+      "annotation_text": "kojakitchen.com",
+      "ocr_text": "Kitchen",
+      "caption_blip": "A food truck parked in a parking lot",
+      "caption_textcaps": "People  in line to get food from the KoJa Kitchen food truck at night.",
+      "prompt": "A food truck parked in a parking lot, with the text \u201ckojakitchen.com\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 15,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 2169.24,
+        "brightness": 104.09,
+        "contrast": 57.64
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "2636137f305e000e",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "SAKANA 2",
+      "annotation_text": "SAKANA 2",
+      "ocr_text": "SAKANA",
+      "caption_blip": "A clock on the wall",
+      "caption_textcaps": "a clock that has the number 12 on it",
+      "prompt": "A clock on the wall, with the text \u201cSAKANA 2\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 8,
+        "word_count": 2,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          480
+        ],
+        "sharpness": 446.83,
+        "brightness": 161.08,
+        "contrast": 29.95
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "6ac9c8857df1241d",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "volaris",
+      "annotation_text": "volaris",
+      "ocr_text": "volaris",
+      "caption_blip": "A man kicking a soccer ball on a field",
+      "caption_textcaps": "A soccer game that is sponsored by GNC.",
+      "prompt": "A man kicking a soccer ball on a field, with the text \u201cvolaris\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR+TextCaps",
+        "resolution": [
+          640,
+          348
+        ],
+        "sharpness": 1161.84,
+        "brightness": 70.63,
+        "contrast": 62.49
+      }
+    }
+  ]
+}
