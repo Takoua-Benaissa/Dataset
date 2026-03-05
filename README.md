@@ -192,28 +192,33 @@ dataset_output/v1/
 Each JSON entry looks like:
 ```json
 {
-  "id": 42,
-  "image_id": "0019340fba652d43",
-  "filename": "img_0042.jpg",
-  "filepath": "train/images/img_0042.jpg",
+  "id": 0,
+  "image_id": "b880baf0a6b997ef",
+  "filename": "img_0000.jpg",
+  "filepath": "train/images/img_0000.jpg",
   "split": "train",
-  "text": "OPEN 24 HRS",
-  "ocr_text": "OPEN",
-  "caption": "A neon sign on the side of a building at night",
-  "prompt": "A neon sign on the side of a building at night, with the text \"OPEN 24 HRS\" clearly visible, sharp focus, high resolution photography",
+  "text": "Brooklyn",
+  "annotation_text": "Brooklyn",
+  "ocr_text": "Brooklyn",
+  "caption_blip": "A street sign with the words brooklyn bridge on it",
+  "caption_textcaps": "",
+  "prompt": "A street sign with the words brooklyn bridge on it, with the text \"Brooklyn\" clearly visible, sharp focus, high resolution photography",
   "metadata": {
-    "ocr_confidence": 94.0,
-    "text_length": 11,
-    "sharpness": 312.5,
-    "brightness": 87.3,
-    "contrast": 58.1,
-    "resolution": [640, 480]
+    "ocr_confidence": 96.0,
+    "text_length": 8,
+    "word_count": 1,
+    "source": "TextOCR",
+    "resolution": [480, 640],
+    "sharpness": 1074.25,
+    "brightness": 136.6,
+    "contrast": 67.22
   }
 }
 ```
 
-> `text` is the canonical ground-truth annotation phrase.  
-> `ocr_text` is what Tesseract actually read (used only as a readability gate).
+> `text` / `annotation_text` — canonical ground-truth phrase from TextOCR.  
+> `ocr_text` — token Tesseract actually read (readability gate only).  
+> `caption_blip` — BLIP-generated visual description.
 
 ---
 

@@ -506,14 +506,21 @@ class DatasetCreator:
                       f"sharp focus, high resolution photography")
 
             accepted.append({
-                "image_id":   img_id,
-                "image_path": str(img_path),
-                "text":       final_text,
-                "ocr_text":   ocr_text,
-                "caption":    blip_caption,
-                "prompt":     prompt,
-                "metadata": {"ocr_confidence": float(ocr_conf),
-                              "text_length": len(final_text), **metrics},
+                "image_id":        img_id,
+                "image_path":      str(img_path),
+                "text":            final_text,
+                "annotation_text": final_text,
+                "ocr_text":        ocr_text,
+                "caption_blip":    blip_caption,
+                "caption_textcaps": "",      # populated if TextCaps loaded
+                "prompt":          prompt,
+                "metadata": {
+                    "ocr_confidence": float(ocr_conf),
+                    "text_length":    len(final_text),
+                    "word_count":     len(final_text.split()),
+                    "source":         "TextOCR",
+                    **metrics,
+                },
             })
             print(f"  #ACCEPTED {len(accepted):4d}  "
                   f"text='{final_text}'  ocr='{ocr_text}'  conf={ocr_conf}",
@@ -547,22 +554,26 @@ class DatasetCreator:
                 dst = self.out_dir / split_name / "images" / filename
                 shutil.copy2(rec["image_path"], dst)
                 entry = {
-                    "id":       global_id,
-                    "image_id": rec["image_id"],
-                    "filename": filename,
-                    "filepath": f"{split_name}/images/{filename}",
-                    "split":    split_name,
-                    "text":     rec["text"],
-                    "ocr_text": rec["ocr_text"],
-                    "caption":  rec["caption"],
-                    "prompt":   rec["prompt"],
-                    "metadata": rec["metadata"],
+                    "id":               global_id,
+                    "image_id":         rec["image_id"],
+                    "filename":         filename,
+                    "filepath":         f"{split_name}/images/{filename}",
+                    "split":            split_name,
+                    "text":             rec["text"],
+                    "annotation_text":  rec["annotation_text"],
+                    "ocr_text":         rec["ocr_text"],
+                    "caption_blip":     rec["caption_blip"],
+                    "caption_textcaps": rec["caption_textcaps"],
+                    "prompt":           rec["prompt"],
+                    "metadata":         rec["metadata"],
                 }
                 split_data.append(entry)
                 all_records.append(entry)
                 global_id += 1
             with open(self.out_dir / f"{split_name}.json", "w") as fh:
-                json.dump({"split": split_name, "data": split_data}, fh, indent=2)
+                json.dump({"split": split_name,
+                           "count": len(split_data),
+                           "data": split_data}, fh, indent=2)
 
         with open(self.out_dir / "dataset_complete.json", "w") as fh:
             json.dump({
@@ -602,8 +613,8 @@ class DatasetCreator:
             print(f"  id={e['id']}  text='{e['text']}'  "
                   f"ocr='{e['ocr_text']}'  conf={e['metadata']['ocr_confidence']:.0f}",
                   flush=True)
-            print(f"    caption: {e['caption']}", flush=True)
-            print(f"    prompt : {e['prompt']}", flush=True)
+            print(f"    caption_blip: {e['caption_blip']}", flush=True)
+            print(f"    prompt      : {e['prompt']}", flush=True)
 
 
 # ─── Entry point ──────────────────────────────────────────────────────────────
