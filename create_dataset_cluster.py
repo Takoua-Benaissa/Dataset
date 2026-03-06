@@ -1,5 +1,5 @@
 """
-Text-in-Image Dataset Creation Pipeline  v8
+Text-in-Image Dataset Creation Pipeline  v9
 ============================================
 Loads the AnyWord-3M dataset (from HuggingFace: stzhao/AnyWord-3M) and filters
 for short, readable English text with high OCR confidence. Uses dataset captions
@@ -9,8 +9,10 @@ train / val / test splits.
 Key filtering criteria
 ──────────────────────
   * Language        : English only (annotation language field + langdetect)
-  * Phrase length   : 1–5 words (< 6 words)
+  * Phrase length   : 1–5 words per annotation (< 6 words)
   * OCR gate        : Tesseract confidence >= 85 %
+  * Phrase OCR      : Full-image OCR reconstructs complete visible phrase;
+                      annotation must be consistent with reconstruction
   * Density filter  : reject dense text images (books, newspapers)
   * Bbox height     : >= 30 px
   * Image quality   : min 256 px, sharpness >= 80, contrast >= 20
@@ -56,7 +58,7 @@ print("[IMPORTS_DONE]", flush=True)
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-VERSION = "8.0"
+VERSION = "9.0"
 
 # Image quality
 MIN_RESOLUTION  = 256
@@ -80,6 +82,11 @@ MIN_BBOX_HEIGHT  = 30   # pixels
 # OCR gate
 MIN_OCR_CONF     = 85
 MIN_OCR_COVERAGE = 0.3
+
+# Full-phrase reconstruction (full-image OCR pass)
+MIN_PHRASE_WORD_CONF = 50   # per-word confidence to include in reconstruction
+MAX_PHRASE_WORDS     = 10   # max words accepted in a reconstructed phrase
+MAX_PHRASE_CHARS     = 80   # max chars accepted in a reconstructed phrase
 
 # Run target
 TARGET_IMAGES    = 1000
@@ -319,6 +326,210 @@ def verify_text_with_ocr(
         return None, 0
 
 
+# ─── Full-phrase OCR reconstruction ───────────────────────────────────────────
+
+def _group_words_into_lines(words: List[Dict]) -> List[Dict]:
+    """
+    Group individual word dicts (with keys left/top/width/height/text/conf)
+    into horizontal lines using vertical-center proximity.
+    Returns a list of line dicts: {words, cy, top, bottom}.
+    """
+    if not words:
+        return []
+
+    # Annotate each word with its vertical centre
+    for w in words:
+        w["cy"] = w["top"] + w["height"] / 2.0
+
+    words_sorted = sorted(words, key=lambda w: w["cy"])
+    avg_height = sum(w["height"] for w in words) / len(words)
+    threshold = avg_height * 0.7
+
+    lines: List[Dict] = []
+    current: List[Dict] = [words_sorted[0]]
+    current_cy: float = words_sorted[0]["cy"]
+
+    for w in words_sorted[1:]:
+        if abs(w["cy"] - current_cy) <= threshold:
+            current.append(w)
+            current_cy = sum(ww["cy"] for ww in current) / len(current)
+        else:
+            lines.append({
+                "words":  current,
+                "cy":     current_cy,
+                "top":    min(ww["top"] for ww in current),
+                "bottom": max(ww["top"] + ww["height"] for ww in current),
+            })
+            current = [w]
+            current_cy = w["cy"]
+
+    lines.append({
+        "words":  current,
+        "cy":     sum(ww["cy"] for ww in current) / len(current),
+        "top":    min(ww["top"] for ww in current),
+        "bottom": max(ww["top"] + ww["height"] for ww in current),
+    })
+    return lines
+
+
+def _find_lines_near_bbox(lines: List[Dict], anchor_bbox: List[int]) -> List[Dict]:
+    """
+    Return lines that overlap vertically with anchor_bbox, plus any adjacent
+    stacked lines that are likely part of the same multi-line phrase.
+    Falls back to the single closest line when nothing overlaps.
+    """
+    ax, ay, aw, ah = anchor_bbox
+    anchor_top = ay
+    anchor_bottom = ay + ah
+
+    # Lines that overlap vertically with the anchor
+    overlapping = [
+        l for l in lines
+        if l["top"] <= anchor_bottom and l["bottom"] >= anchor_top
+    ]
+
+    if not overlapping:
+        # No overlap: pick the closest line to the anchor centre
+        anchor_cy = ay + ah / 2.0
+        return [min(lines, key=lambda l: abs(l["cy"] - anchor_cy))]
+
+    # Additionally gather adjacent stacked lines (multi-line phrase on a label/sign)
+    avg_line_h = sum(
+        max(w["height"] for w in l["words"]) for l in overlapping
+    ) / len(overlapping)
+    gap_threshold = avg_line_h * 1.5
+
+    result = list(overlapping)
+    for line in sorted(lines, key=lambda l: l["cy"]):
+        if line in result:
+            continue
+        if any(abs(line["cy"] - r["cy"]) <= gap_threshold for r in result):
+            result.append(line)
+
+    return result
+
+
+def reconstruct_full_phrase_ocr(
+    image: Image.Image,
+    anchor_bbox: Optional[List[int]] = None,
+) -> Tuple[Optional[str], float]:
+    """
+    Run Tesseract on the full image to reconstruct the complete visible phrase.
+
+    Strategy
+    --------
+    1. Run Tesseract (PSM 3 → 11 → 6) with word-level output.
+    2. Keep words with per-word confidence >= MIN_PHRASE_WORD_CONF.
+    3. Group words into horizontal lines.
+    4. Identify lines that overlap with / are adjacent to anchor_bbox.
+    5. Sort selected lines top-to-bottom, words left-to-right.
+    6. Return joined phrase and average confidence.
+    """
+    try:
+        img = image.convert("RGB")
+
+        best_words: List[Dict] = []
+        for psm in [3, 11, 6]:
+            cfg = f"--psm {psm} --oem 1 -l eng"
+            d = pytesseract.image_to_data(
+                img, config=cfg, output_type=pytesseract.Output.DICT)
+            words: List[Dict] = []
+            for i, text in enumerate(d["text"]):
+                text = text.strip()
+                if not text or not re.search(r"[A-Za-z]", text):
+                    continue
+                try:
+                    conf = int(d["conf"][i])
+                except (ValueError, TypeError):
+                    conf = -1
+                if conf < MIN_PHRASE_WORD_CONF:
+                    continue
+                words.append({
+                    "text":   text,
+                    "conf":   conf,
+                    "left":   d["left"][i],
+                    "top":    d["top"][i],
+                    "width":  d["width"][i],
+                    "height": d["height"][i],
+                })
+            if len(words) > len(best_words):
+                best_words = words
+            if len(best_words) >= 2:
+                break
+
+        if not best_words:
+            return None, 0
+
+        lines = _group_words_into_lines(best_words)
+        if not lines:
+            return None, 0
+
+        selected_lines = (
+            _find_lines_near_bbox(lines, anchor_bbox)
+            if anchor_bbox is not None else lines
+        )
+
+        # Sort selected lines top-to-bottom; words left-to-right within each
+        phrase_words: List[Dict] = []
+        for line in sorted(selected_lines, key=lambda l: l["cy"]):
+            phrase_words.extend(sorted(line["words"], key=lambda w: w["left"]))
+
+        if not phrase_words:
+            return None, 0
+
+        phrase = " ".join(w["text"] for w in phrase_words)
+        avg_conf = float(sum(w["conf"] for w in phrase_words) / len(phrase_words))
+
+        # Sanity-check the reconstructed phrase
+        word_count = len(phrase.split())
+        if word_count > MAX_PHRASE_WORDS or len(phrase) > MAX_PHRASE_CHARS:
+            return None, 0
+        if not re.search(r"[A-Za-z]", phrase):
+            return None, 0
+        # Reject if non-ASCII creeps in
+        if re.search(r"[^\x00-\x7F]", phrase):
+            return None, 0
+
+        return phrase, avg_conf
+
+    except Exception:
+        return None, 0
+
+
+def _is_annotation_consistent_with_phrase(anno: str, phrase: str) -> bool:
+    """
+    Return True if *anno* is semantically consistent with the OCR-reconstructed
+    *phrase*.  Handles:
+      - exact match          : "ROLLING" in "ROLLING STONES"
+      - annotation is a word fragment of phrase : "ENTRE" vs "ENTREPRENEUR"
+      - phrase is a subset of annotation        : "I AM" vs "I AM AN ENTREPRENEUR"
+    """
+    if not anno or not phrase:
+        return False
+
+    a = anno.lower().strip()
+    p = phrase.lower().strip()
+
+    # Direct substring containment in either direction
+    if a in p or p in a:
+        return True
+
+    # Token-level partial matching (handles word-fragment cases like ENTRE/ENTREPRENEUR)
+    a_tokens = a.split()
+    p_tokens = p.split()
+
+    for atok in a_tokens:
+        for ptok in p_tokens:
+            if atok in ptok or ptok in atok:
+                return True
+
+    # Token set overlap
+    if set(a_tokens) & set(p_tokens):
+        return True
+
+    return False
+
+
 # ─── Image quality ────────────────────────────────────────────────────────────
 
 def check_image_quality(img_array: np.ndarray) -> Tuple[bool, Dict]:
@@ -444,39 +655,67 @@ class DatasetCreator:
         if not ok:
             return None
 
-        # OCR verification
+        # ── OCR gate: verify the annotation text is readable ──────────────────
         anno_text = best["text"]
         anno_bbox = best["bbox"]
-        ocr_text, ocr_conf = verify_text_with_ocr(
+        ocr_token, ocr_conf = verify_text_with_ocr(
             pil_image, expected_text=anno_text, bbox=anno_bbox)
-        if ocr_text is None:
+        if ocr_token is None:
             return None
 
-        # Get caption from dataset
+        # ── Full-phrase reconstruction: read ALL text visible in the image ──
+        reconstructed, phrase_conf = reconstruct_full_phrase_ocr(
+            pil_image, anchor_bbox=anno_bbox)
+
+        # Decide what text to use in the prompt
+        if reconstructed is not None:
+            if _is_annotation_consistent_with_phrase(anno_text, reconstructed):
+                # Use the fuller, reconstructed phrase when it is consistent and
+                # at least as long as the annotation (covers partial-word cases)
+                if len(reconstructed.split()) >= len(anno_text.split()):
+                    final_text = reconstructed
+                    final_conf = phrase_conf
+                    phrase_reconstructed = True
+                else:
+                    # Reconstruction shorter than annotation — keep annotation
+                    final_text = anno_text
+                    final_conf = float(ocr_conf)
+                    phrase_reconstructed = False
+            else:
+                # Reconstruction exists but is inconsistent with the annotation
+                # → the image text is ambiguous; discard the sample
+                return None
+        else:
+            # Reconstruction failed (low confidence / unreadable image overall)
+            # Fall back to the annotation text we already verified
+            final_text = anno_text
+            final_conf = float(ocr_conf)
+            phrase_reconstructed = False
+
+        # ── Caption & prompt ───────────────────────────────────────────────
         caption = sample.get("caption", "").strip()
         if not caption:
             caption = "a photograph"
 
-        # Build prompt
-        final_text = anno_text
         prompt = (f"{caption}, "
                   f"with the text \u201c{final_text}\u201d clearly visible, "
                   f"sharp focus, high resolution photography")
 
         return {
-            "image":           pil_image,
-            "image_id":        sample.get("img_name", "unknown"),
-            "text":            final_text,
-            "annotation_text": final_text,
-            "ocr_text":        ocr_text,
-            "caption":         caption,
-            "prompt":          prompt,
-            "subset":          subset_name,
+            "image":              pil_image,
+            "image_id":           sample.get("img_name", "unknown"),
+            "text":               final_text,
+            "annotation_text":    anno_text,
+            "ocr_text":           ocr_token,
+            "caption":            caption,
+            "prompt":             prompt,
+            "subset":             subset_name,
             "metadata": {
-                "ocr_confidence": float(ocr_conf),
-                "text_length":    len(final_text),
-                "word_count":     len(final_text.split()),
-                "source":         f"AnyWord-3M/{subset_name}",
+                "ocr_confidence":       final_conf,
+                "phrase_reconstructed": phrase_reconstructed,
+                "text_length":          len(final_text),
+                "word_count":           len(final_text.split()),
+                "source":               f"AnyWord-3M/{subset_name}",
                 **metrics,
             },
         }
@@ -599,19 +838,24 @@ class DatasetCreator:
                     "version":     VERSION,
                     "description": (
                         "Text-in-image dataset built from AnyWord-3M. "
-                        "Filtered for short English text, OCR-verified."),
+                        "Filtered for short English text, OCR-verified. "
+                        "Full-image OCR reconstruction used to capture the "
+                        "complete visible phrase (not just a partial annotation)."),
                     "source_dataset": DATASET_NAME,
                     "subsets_used": self.subsets,
                     "thresholds": {
-                        "min_resolution":   MIN_RESOLUTION,
-                        "min_sharpness":    MIN_SHARPNESS,
-                        "min_ocr_conf":     MIN_OCR_CONF,
-                        "min_ocr_coverage": MIN_OCR_COVERAGE,
-                        "max_text_len":     MAX_TEXT_LEN,
-                        "max_words":        MAX_WORDS,
-                        "max_text_regions": MAX_TEXT_REGIONS,
-                        "max_total_chars":  MAX_TOTAL_CHARS,
-                        "min_bbox_height":  MIN_BBOX_HEIGHT,
+                        "min_resolution":      MIN_RESOLUTION,
+                        "min_sharpness":       MIN_SHARPNESS,
+                        "min_ocr_conf":        MIN_OCR_CONF,
+                        "min_ocr_coverage":    MIN_OCR_COVERAGE,
+                        "min_phrase_word_conf": MIN_PHRASE_WORD_CONF,
+                        "max_phrase_words":    MAX_PHRASE_WORDS,
+                        "max_phrase_chars":    MAX_PHRASE_CHARS,
+                        "max_text_len":        MAX_TEXT_LEN,
+                        "max_words":           MAX_WORDS,
+                        "max_text_regions":    MAX_TEXT_REGIONS,
+                        "max_total_chars":     MAX_TOTAL_CHARS,
+                        "min_bbox_height":     MIN_BBOX_HEIGHT,
                     },
                     "statistics": {
                         "total": len(all_records),
@@ -642,6 +886,7 @@ class DatasetCreator:
 def main():
     print(f"[START] Text-in-Image Dataset Pipeline  v{VERSION}", flush=True)
     print(f"[START] Source: AnyWord-3M (HuggingFace)", flush=True)
+    print(f"[START] Full-phrase OCR reconstruction enabled", flush=True)
 
     parser = argparse.ArgumentParser(
         description="Create text-in-image training dataset from AnyWord-3M")
