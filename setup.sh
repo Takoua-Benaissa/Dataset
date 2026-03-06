@@ -1,6 +1,7 @@
 #!/bin/bash
 # ============================================================
-# Environment Setup for Dataset Creation Pipeline
+# Environment Setup for Dataset Creation Pipeline (v8)
+# Source: AnyWord-3M (HuggingFace)
 # Run once before submitting sbatch jobs.
 # ============================================================
 
@@ -27,7 +28,7 @@ echo "  Python: $(python --version)"
 echo "[2/4] Installing Python packages..."
 pip install --upgrade pip -q
 pip install -r requirements.txt -q
-echo "  Installed: torch, transformers, pytesseract, opencv-python, etc."
+echo "  Installed: torch, transformers, pytesseract, opencv-python, datasets, langdetect, etc."
 
 # ---- 3. Verify Tesseract ----
 echo "[3/4] Checking Tesseract OCR..."
@@ -39,25 +40,13 @@ else
     echo "  On cluster: module load tesseract (if available)"
 fi
 
-# ---- 4. Verify data ----
-echo "[4/4] Checking data files..."
+# ---- 4. Verify HuggingFace access ----
+echo "[4/4] Checking HuggingFace datasets access..."
+python -c "from datasets import load_dataset; print('  HuggingFace datasets library: OK')" 2>/dev/null || \
+    echo "  WARNING: Could not import datasets library. Run: pip install datasets"
 
-ANNOTATIONS="$HOME/data/TextCaps_0.1_test.json"
-IMAGES="$HOME/data/test_images"
-
-if [ -f "$ANNOTATIONS" ]; then
-    entries=$(python -c "import json; d=json.load(open('$ANNOTATIONS')); print(len(d.get('data',[])))")
-    echo "  Annotations: $ANNOTATIONS ($entries entries)"
-else
-    echo "  WARNING: Annotations not found: $ANNOTATIONS"
-fi
-
-if [ -d "$IMAGES" ]; then
-    count=$(find "$IMAGES" -type f \( -name "*.jpg" -o -name "*.png" \) | wc -l)
-    echo "  Images: $IMAGES ($count files)"
-else
-    echo "  WARNING: Images directory not found: $IMAGES"
-fi
+python -c "from langdetect import detect; print('  langdetect: OK')" 2>/dev/null || \
+    echo "  WARNING: Could not import langdetect. Run: pip install langdetect"
 
 # ---- Create output dirs ----
 mkdir -p dataset_output logs
@@ -65,8 +54,11 @@ mkdir -p dataset_output logs
 echo ""
 echo "Setup complete!"
 echo ""
-echo "To submit the job:"
-echo "  sbatch run_pipeline.sbatch"
+echo "To run the pipeline (streaming, no download needed):"
+echo "  python create_dataset_cluster.py --output dataset_output --max-images 1000"
+echo ""
+echo "To submit on SLURM:"
+echo "  sbatch job_creation_dataset.sh"
 echo ""
 echo "To monitor:"
 echo "  squeue -u \$USER"

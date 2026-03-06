@@ -1,190 +1,136 @@
 #!/usr/bin/env python3
 """
-Download datasets for the text-in-image generation project.
+Download / pre-cache the AnyWord-3M dataset from HuggingFace.
 
-Downloads TextOCR + TextCaps annotations and images from TextVQA/Flickr.
-Both datasets share the same image pool (~28k images).
-
-Datasets:
-  - TextOCR: Ground-truth text region annotations (bbox + transcription)
-  - TextCaps: Image captions referencing visible text
+The main pipeline (create_dataset_cluster.py) uses HuggingFace streaming by
+default, so downloading is optional. Use this script to pre-download the
+dataset for faster repeated runs or offline usage.
 
 Usage:
-    # Download annotations only (fast, ~500 MB)
-    python download_datasets.py --data-dir ~/data
+    # Download default subsets (laion + OCR subsets)
+    python download_datasets.py --data-dir ~/data/anyword3m
 
-    # Download annotations + images from Flickr
-    python download_datasets.py --data-dir ~/data --download-images
+    # Download specific subsets
+    python download_datasets.py --data-dir ~/data/anyword3m --subsets laion OCR_COCO_Text
+
+    # List all available subsets
+    python download_datasets.py --list-subsets
 """
 
-import json
 import argparse
 import os
-import time
-from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.request import urlretrieve
+import sys
 
 
-# ── Annotation URLs ───────────────────────────────────────────────────────────
-ANNOTATION_URLS = {
-    "TextOCR_0.1_train.json":
-        "https://dl.fbaipublicfiles.com/textvqa/data/textocr/TextOCR_0.1_train.json",
-    "TextOCR_0.1_val.json":
-        "https://dl.fbaipublicfiles.com/textvqa/data/textocr/TextOCR_0.1_val.json",
-    "TextCaps_0.1_train.json":
-        "https://dl.fbaipublicfiles.com/textvqa/data/textcaps/TextCaps_0.1_train.json",
-    "TextCaps_0.1_val.json":
-        "https://dl.fbaipublicfiles.com/textvqa/data/textcaps/TextCaps_0.1_val.json",
-}
+DATASET_NAME = "stzhao/AnyWord-3M"
+
+ALL_SUBSETS = [
+    "laion",
+    "OCR_Art",
+    "OCR_COCO_Text",
+    "OCR_LSVT",
+    "OCR_MTWI2018",
+    "OCR_ReCTS",
+    "OCR_icdar2017rctw",
+    "OCR_mlt2019",
+    "wukong_1of5",
+    "wukong_2of5",
+    "wukong_3of5",
+    "wukong_4of5",
+    "wukong_5of5",
+]
+
+DEFAULT_SUBSETS = [
+    "laion",
+    "OCR_COCO_Text",
+    "OCR_mlt2019",
+    "OCR_Art",
+]
 
 
-def download_file(url, dest, desc=""):
-    """Download a single file with skip-if-exists logic."""
-    if dest.exists() and dest.stat().st_size > 1000:
-        print(f"  [SKIP] {desc or dest.name} ({dest.stat().st_size / 1e6:.1f} MB)")
-        return True
-    print(f"  [GET]  {desc or dest.name} ...", end="", flush=True)
-    try:
-        urlretrieve(url, str(dest))
-        print(f" OK ({dest.stat().st_size / 1e6:.1f} MB)")
-        return True
-    except Exception as e:
-        print(f" FAIL: {e}")
-        return False
+def list_subsets():
+    """Print all available subsets."""
+    print(f"\nAvailable subsets for {DATASET_NAME}:")
+    print("=" * 50)
+    for s in ALL_SUBSETS:
+        marker = " (default)" if s in DEFAULT_SUBSETS else ""
+        print(f"  {s}{marker}")
+    print(f"\nTotal: {len(ALL_SUBSETS)} subsets")
+    print(f"Default: {len(DEFAULT_SUBSETS)} subsets")
 
 
-def download_one_image(args):
-    """Download a single image. Returns (image_id, success, message)."""
-    image_id, url, dest = args
-    if dest.exists():
-        return image_id, True, "cached"
-    try:
-        urlretrieve(url, str(dest))
-        return image_id, True, "ok"
-    except Exception as e:
-        return image_id, False, str(e)[:60]
+def download_subsets(subsets, data_dir):
+    """Download specified subsets using HuggingFace datasets library."""
+    from datasets import load_dataset
 
+    os.makedirs(data_dir, exist_ok=True)
+    print(f"\nDownloading {len(subsets)} subset(s) to: {data_dir}")
+    print(f"Dataset: {DATASET_NAME}")
+    print("=" * 50)
 
-def download_images_from_textcaps(json_path, output_dir, workers=20, limit=0):
-    """Download images referenced in a TextCaps JSON from Flickr."""
-    print(f"\n  Loading URLs from {Path(json_path).name} ...")
-    with open(json_path) as f:
-        data = json.load(f)
+    for subset in subsets:
+        print(f"\n[{subset}] Downloading ...", flush=True)
+        try:
+            ds = load_dataset(
+                DATASET_NAME,
+                subset,
+                cache_dir=data_dir,
+                trust_remote_code=True,
+            )
+            for split_name, split_ds in ds.items():
+                print(f"  {split_name}: {len(split_ds)} samples", flush=True)
+            print(f"  OK", flush=True)
+        except Exception as e:
+            print(f"  FAILED: {e}", flush=True)
 
-    images = {}
-    for entry in data["data"]:
-        iid = entry["image_id"]
-        if iid not in images:
-            url = entry.get("flickr_300k_url") or entry.get("flickr_original_url", "")
-            if url:
-                images[iid] = url
-
-    output_dir = Path(output_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    tasks = []
-    for iid, url in images.items():
-        dest = output_dir / f"{iid}.jpg"
-        if not dest.exists():
-            tasks.append((iid, url, dest))
-
-    already = len(images) - len(tasks)
-    print(f"  Unique images   : {len(images)}")
-    print(f"  Already on disk : {already}")
-    print(f"  To download     : {len(tasks)}")
-
-    if limit > 0:
-        tasks = tasks[:limit]
-
-    if not tasks:
-        print("  Nothing to download.")
-        return
-
-    ok = fail = 0
-    t0 = time.time()
-
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(download_one_image, t): t for t in tasks}
-        for i, future in enumerate(as_completed(futures), 1):
-            _, success, _ = future.result()
-            ok += success
-            fail += (not success)
-            if i % 500 == 0 or i == len(tasks):
-                elapsed = time.time() - t0
-                rate = i / elapsed if elapsed > 0 else 0
-                eta = (len(tasks) - i) / rate / 60 if rate > 0 else 0
-                print(f"    [{i}/{len(tasks)}] ok={ok} fail={fail} "
-                      f"{rate:.1f} img/s  ETA {eta:.1f}min")
-
-    total = len(list(output_dir.glob("*.jpg")))
-    print(f"  Done: {ok} downloaded, {fail} failed. Total: {total}")
+    print("\n" + "=" * 50)
+    print("Download complete.")
+    print(f"Cache directory: {data_dir}")
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Download TextOCR & TextCaps datasets"
+        description=f"Download AnyWord-3M dataset ({DATASET_NAME})"
     )
     parser.add_argument(
         "--data-dir",
-        default=os.path.expanduser("~/data"),
-        help="Root data directory (default: ~/data)",
+        default=os.path.expanduser("~/data/anyword3m"),
+        help="Directory to cache the dataset (default: ~/data/anyword3m)",
     )
     parser.add_argument(
-        "--download-images",
-        action="store_true",
-        help="Also download images from Flickr",
+        "--subsets",
+        nargs="+",
+        default=None,
+        help="Subsets to download (default: laion + OCR subsets)",
     )
-    parser.add_argument("--workers", type=int, default=20)
-    parser.add_argument("--limit", type=int, default=0,
-                        help="Max images to download (0 = all)")
+    parser.add_argument(
+        "--list-subsets",
+        action="store_true",
+        help="List all available subsets and exit",
+    )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Download ALL subsets (warning: ~214 GB total)",
+    )
     args = parser.parse_args()
 
-    data_dir = Path(args.data_dir)
-    data_dir.mkdir(parents=True, exist_ok=True)
+    if args.list_subsets:
+        list_subsets()
+        sys.exit(0)
 
-    print("=" * 55)
-    print("  TextOCR + TextCaps Dataset Downloader")
-    print("=" * 55)
+    subsets = args.subsets
+    if subsets is None:
+        subsets = ALL_SUBSETS if args.all else DEFAULT_SUBSETS
 
-    # ── Step 1: Annotation JSONs ──────────────────────────────────────────────
-    print("\n[1/2] Downloading annotation files...")
-    for filename, url in ANNOTATION_URLS.items():
-        dest = data_dir / filename
-        download_file(url, dest, desc=filename)
+    # Validate subset names
+    for s in subsets:
+        if s not in ALL_SUBSETS:
+            print(f"ERROR: Unknown subset '{s}'")
+            print(f"Valid subsets: {', '.join(ALL_SUBSETS)}")
+            sys.exit(1)
 
-    # ── Step 2: Images ────────────────────────────────────────────────────────
-    if args.download_images:
-        print("\n[2/2] Downloading images from Flickr...")
-        images_dir = data_dir / "train_images"
-
-        for json_name in ["TextCaps_0.1_train.json", "TextCaps_0.1_val.json"]:
-            json_path = data_dir / json_name
-            if json_path.exists():
-                download_images_from_textcaps(
-                    json_path, images_dir,
-                    workers=args.workers, limit=args.limit,
-                )
-    else:
-        print("\n[2/2] Skipping image download (use --download-images to enable)")
-
-    # ── Summary ───────────────────────────────────────────────────────────────
-    print("\n" + "=" * 55)
-    print("  Download Summary")
-    print("=" * 55)
-    for json_file in sorted(data_dir.glob("*.json")):
-        size = json_file.stat().st_size
-        print(f"  {json_file.name:40s} {size / 1e6:8.1f} MB")
-
-    images_dir = data_dir / "train_images"
-    if images_dir.exists():
-        count = len(list(images_dir.glob("*.jpg")))
-        print(f"  {'train_images/':40s} {count:>5d} images")
-
-    test_dir = data_dir / "test_images"
-    if test_dir.exists():
-        count = len(list(test_dir.glob("*.jpg")))
-        print(f"  {'test_images/':40s} {count:>5d} images")
+    download_subsets(subsets, args.data_dir)
 
 
 if __name__ == "__main__":

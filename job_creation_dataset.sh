@@ -13,7 +13,8 @@
 set -euo pipefail
 
 echo "=========================================="
-echo "  Text-in-Image Dataset Pipeline  v7"
+echo "  Text-in-Image Dataset Pipeline  v8"
+echo "  Source: AnyWord-3M (HuggingFace)"
 echo "=========================================="
 echo "Job ID : $SLURM_JOB_ID"
 echo "Node   : $(hostname)"
@@ -43,49 +44,29 @@ for _td in "$HOME/miniconda3/share/tessdata" \
     fi
 done
 echo "Tesseract: $(tesseract --version 2>&1 | head -1)"
-echo "TESSDATA : $TESSDATA_PREFIX"
+echo "TESSDATA : ${TESSDATA_PREFIX:-not found}"
 echo ""
 
-# ── Paths ─────────────────────────────────────────────────────────────────────
-TRAIN_IMAGES="$HOME/data/train_images"   # TextOCR/TextCaps train images
-TEST_IMAGES="$HOME/data/test_images"     # TextOCR/TextCaps test images
+# ── Configuration ─────────────────────────────────────────────────────────────
 OUTPUT_DIR="$PROJECT_DIR/dataset_output"
-MAX_IMAGES=100    # raise to 1000+ for production runs
-BATCH_SIZE=16
+MAX_IMAGES=1000
 
-# TextOCR ground-truth annotation files
-TEXTOCR_TRAIN="$HOME/data/TextOCR_0.1_train.json"
-TEXTOCR_VAL="$HOME/data/TextOCR_0.1_val.json"
+# HuggingFace cache (optional — set to a fast local disk if available)
+export HF_HOME="${HF_HOME:-$HOME/.cache/huggingface}"
 
-# Verify annotation files exist
-for f in "$TEXTOCR_TRAIN" "$TEXTOCR_VAL"; do
-    if [ ! -f "$f" ]; then
-        echo "WARNING: annotation file not found: $f"
-    fi
-done
-
-TRAIN_COUNT=$(ls "$TRAIN_IMAGES"/*.jpg 2>/dev/null | wc -l)
-TEST_COUNT=$(ls  "$TEST_IMAGES"/*.jpg  2>/dev/null | wc -l)
-
-echo "Available images:"
-echo "  train_images : $TRAIN_COUNT"
-echo "  test_images  : $TEST_COUNT"
-echo ""
 echo "Configuration:"
-echo "  Annotations : $TEXTOCR_TRAIN  $TEXTOCR_VAL"
-echo "  Image dirs  : $TRAIN_IMAGES  $TEST_IMAGES"
-echo "  Output dir  : $OUTPUT_DIR"
-echo "  Max images  : $MAX_IMAGES"
+echo "  Dataset   : stzhao/AnyWord-3M (HuggingFace, streaming)"
+echo "  Subsets   : laion, OCR_COCO_Text, OCR_mlt2019, OCR_Art"
+echo "  Output    : $OUTPUT_DIR"
+echo "  Max images: $MAX_IMAGES"
+echo "  HF cache  : $HF_HOME"
 echo ""
 
 # ── Run pipeline ─────────────────────────────────────────────────────────────
 echo "Starting pipeline at $(date)..."
 python -u create_dataset_cluster.py \
-    --annotation-files "$TEXTOCR_TRAIN" "$TEXTOCR_VAL" \
-    --image-dirs       "$TRAIN_IMAGES"  "$TEST_IMAGES" \
-    --output           "$OUTPUT_DIR" \
-    --max-images       "$MAX_IMAGES" \
-    --batch-size       "$BATCH_SIZE"
+    --output     "$OUTPUT_DIR" \
+    --max-images "$MAX_IMAGES"
 
 # ── Report ────────────────────────────────────────────────────────────────────
 echo ""

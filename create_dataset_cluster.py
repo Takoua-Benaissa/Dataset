@@ -1,20 +1,20 @@
 """
-Text-in-Image Dataset Creation Pipeline  v7
+Text-in-Image Dataset Creation Pipeline  v8
 ============================================
-Loads TextOCR + TextCaps ground-truth word bounding boxes, groups co-linear
-words into full phrases, filters for short readable English text, verifies
-readability with Tesseract OCR (used as a gate only — annotation text is
-canonical), adds a BLIP visual caption, then exports train / val / test splits.
+Loads the AnyWord-3M dataset (from HuggingFace: stzhao/AnyWord-3M) and filters
+for short, readable English text with high OCR confidence. Uses dataset captions
+when available. Verifies readability with Tesseract OCR, then exports
+train / val / test splits.
 
 Key filtering criteria
 ──────────────────────
-  • Image quality   : min 300 px, sharpness ≥ 100, contrast ≥ 25
-  • Phrase length   : 3–30 characters, ≤ 5 words
-  • Density filter  : ≤ 3 valid text regions AND ≤ 25 total chars per image
-  • Bbox height     : ≥ 30 px  (reject tiny unreadable text)
-  • OCR gate        : Tesseract confidence ≥ 85 %, coverage ≥ 30 %
-  • Language        : English only (langdetect + ASCII fallback)
-  • Target          : 100 images per run (raise TARGET_IMAGES for production)
+  * Language        : English only (annotation language field + langdetect)
+  * Phrase length   : 1–5 words (< 6 words)
+  * OCR gate        : Tesseract confidence >= 85 %
+  * Density filter  : reject dense text images (books, newspapers)
+  * Bbox height     : >= 30 px
+  * Image quality   : min 256 px, sharpness >= 80, contrast >= 20
+  * Target          : 1000 images
 """
 
 from __future__ import annotations
@@ -23,7 +23,6 @@ import argparse
 import json
 import os
 import re
-import shutil
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -32,7 +31,7 @@ import numpy as np
 import torch
 import pytesseract
 from PIL import Image, ImageEnhance, ImageFilter
-from transformers import BlipProcessor, BlipForConditionalGeneration
+from tqdm import tqdm
 
 # Set Tesseract data path
 for _td in [
@@ -57,43 +56,52 @@ print("[IMPORTS_DONE]", flush=True)
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-VERSION = "7.0"
+VERSION = "8.0"
 
 # Image quality
-MIN_RESOLUTION  = 300
-MIN_SHARPNESS   = 100
-BRIGHTNESS_MIN  = 40
-BRIGHTNESS_MAX  = 220
-MIN_CONTRAST    = 25
+MIN_RESOLUTION  = 256
+MIN_SHARPNESS   = 80
+BRIGHTNESS_MIN  = 30
+BRIGHTNESS_MAX  = 230
+MIN_CONTRAST    = 20
 
 # Text filters
 MAX_WORDS        = 5
-MIN_TEXT_LEN     = 3
-MAX_TEXT_LEN     = 30
+MIN_TEXT_LEN     = 1
+MAX_TEXT_LEN     = 40
 
-# Density filter (per image)
-MAX_TEXT_REGIONS = 3
-MAX_TOTAL_CHARS  = 25
+# Density filter (per image) — reject dense-text scenes
+MAX_TEXT_REGIONS = 4         # max distinct valid text annotations per image
+MAX_TOTAL_CHARS  = 40        # max total chars across all valid annotations
 
 # Bbox minimum
 MIN_BBOX_HEIGHT  = 30   # pixels
-
-# Line-grouping tolerances (relative to average word height)
-LINE_Y_TOL_RATIO = 0.6
-WORD_GAP_RATIO   = 2.5
 
 # OCR gate
 MIN_OCR_CONF     = 85
 MIN_OCR_COVERAGE = 0.3
 
 # Run target
-TARGET_IMAGES    = 100
+TARGET_IMAGES    = 1000
+
+# AnyWord-3M HuggingFace dataset
+DATASET_NAME = "stzhao/AnyWord-3M"
+
+# Subsets to load — these have the most English content
+# laion is the largest (~1.72M) and mostly English/multilingual
+# OCR subsets also contain English text
+DATASET_SUBSETS = [
+    "laion",
+    "OCR_COCO_Text",
+    "OCR_mlt2019",
+    "OCR_Art",
+]
 
 
 # ─── Text utilities ───────────────────────────────────────────────────────────
 
 def is_valid_text(text: str) -> bool:
-    """Accept short, letter-containing English phrases."""
+    """Accept short, letter-containing English phrases (1-5 words)."""
     text = text.strip()
     if not (MIN_TEXT_LEN <= len(text) <= MAX_TEXT_LEN):
         return False
@@ -101,13 +109,25 @@ def is_valid_text(text: str) -> bool:
         return False
     if not re.search(r"[A-Za-z]", text):
         return False
+    # Reject if text contains non-ASCII letters (Chinese, Arabic, etc.)
+    if re.search(r"[^\x00-\x7F]", text):
+        return False
     return True
 
 
 def is_english(text: str) -> bool:
     """Return True if text is detected as English."""
+    # Quick check: all ASCII characters
     if all(ord(c) < 128 for c in text):
+        if not re.search(r"[A-Za-z]", text):
+            return False
         return True
+    # Non-ASCII present → not English for our purposes
+    return False
+
+
+def is_english_langdetect(text: str) -> bool:
+    """Use langdetect as a secondary check for English."""
     if not _LANGDETECT_OK:
         return True
     try:
@@ -116,140 +136,106 @@ def is_english(text: str) -> bool:
         return True
 
 
-# ─── Annotation loaders ───────────────────────────────────────────────────────
+# ─── Annotation filtering for AnyWord-3M ─────────────────────────────────────
 
-def load_textocr_annotations(json_path: str) -> Dict[str, List[Dict]]:
-    """Load TextOCR JSON → {image_id: [{"text": str, "bbox": [x,y,w,h]}, ...]}"""
-    print(f"[ANN] Loading TextOCR from {json_path} …", flush=True)
-    with open(json_path) as fh:
-        data = json.load(fh)
-    per_image: Dict[str, List[Dict]] = {}
-    anns = data.get("anns", data)
-    if isinstance(anns, dict):
-        anns = list(anns.values())
-    for ann in anns:
-        img_id = str(ann.get("image_id", ""))
-        text   = ann.get("utf8_string", "").strip()
-        bbox   = ann.get("bbox", None)
-        if not text or bbox is None:
+def extract_english_texts(annotations: List[Dict]) -> List[Dict]:
+    """
+    From AnyWord-3M annotations, extract valid English text entries.
+
+    Each annotation has: text, polygon, language, valid, (illegibility, pos, rec_score)
+    Returns filtered list of annotations that pass English + validity checks.
+    """
+    results = []
+    for ann in annotations:
+        # Skip invalid annotations
+        if not ann.get("valid", True):
             continue
-        per_image.setdefault(img_id, []).append({"text": text, "bbox": bbox})
-    print(f"[ANN] TextOCR: {len(per_image)} images", flush=True)
-    return per_image
+        # Skip illegible text
+        if ann.get("illegibility", False):
+            continue
+
+        text = ann.get("text", "").strip()
+        if not text:
+            continue
+
+        # Check language field from dataset (quick filter)
+        lang = ann.get("language", "").lower()
+        if lang and lang not in ("latin", "english", ""):
+            continue
+
+        # Check text validity (length, word count, ASCII)
+        if not is_valid_text(text):
+            continue
+
+        # Check English with langdetect for multi-word texts
+        if len(text.split()) > 1 and not is_english_langdetect(text):
+            continue
+
+        # Get bounding box from polygon
+        polygon = ann.get("polygon", [])
+        if not polygon or len(polygon) < 3:
+            continue
+
+        # Convert polygon to bounding box [x, y, w, h]
+        poly = np.array(polygon)
+        x_min, y_min = poly.min(axis=0)
+        x_max, y_max = poly.max(axis=0)
+        bbox = [int(x_min), int(y_min), int(x_max - x_min), int(y_max - y_min)]
+
+        # Check bbox height
+        if bbox[3] < MIN_BBOX_HEIGHT:
+            continue
+
+        results.append({
+            "text": text,
+            "bbox": bbox,
+            "polygon": polygon,
+            "language": lang,
+        })
+
+    return results
 
 
-def load_textcaps_annotations(json_path: str) -> Dict[str, List[Dict]]:
-    """Load TextCaps JSON → {image_id: [{"text": str, "bbox": [x,y,w,h]}, ...]}"""
-    print(f"[ANN] Loading TextCaps from {json_path} …", flush=True)
-    with open(json_path) as fh:
-        data = json.load(fh)
-    per_image: Dict[str, List[Dict]] = {}
-    for item in data.get("data", []):
-        img_id = str(item.get("image_id", ""))
-        tokens = item.get("reference_strs", [])
-        bboxes = item.get("normalized_bbox", [])
-        for tok, bb in zip(tokens, bboxes):
-            tok = tok.strip()
-            if not tok:
-                continue
-            per_image.setdefault(img_id, []).append({"text": tok, "bbox": bb})
-    print(f"[ANN] TextCaps: {len(per_image)} images", flush=True)
-    return per_image
-
-
-# ─── Phrase grouping ──────────────────────────────────────────────────────────
-
-def group_annotations_into_lines(entries: List[Dict]) -> List[Dict]:
+def is_dense_text_image(annotations: List[Dict]) -> bool:
     """
-    Merge per-word bboxes from a single image into phrase-level entries.
-
-    1. Compute average word height.
-    2. Sort by y-centre; cluster into lines (y deviation < avg_h × LINE_Y_TOL_RATIO).
-    3. Within each line, sort by x and merge adjacent words whose gap ≤ avg_h × WORD_GAP_RATIO.
-    4. Discard phrases whose bbox height < MIN_BBOX_HEIGHT.
-
-    Returns [{"text": phrase, "bbox": [x, y, w, h]}].
+    Return True if this is a dense-text scene (book page, newspaper, etc.)
+    that should be rejected.
     """
-    if not entries:
-        return []
-
-    heights = [e["bbox"][3] for e in entries if e["bbox"][3] > 0]
-    avg_h   = float(np.mean(heights)) if heights else 20.0
-    y_tol     = avg_h * LINE_Y_TOL_RATIO
-    gap_limit = avg_h * WORD_GAP_RATIO
-
-    def yc(e):
-        b = e["bbox"]; return b[1] + b[3] / 2.0
-
-    sorted_entries = sorted(entries, key=yc)
-    lines: List[List[Dict]] = []
-    for entry in sorted_entries:
-        placed = False
-        for line in lines:
-            line_yc = float(np.mean([yc(e) for e in line]))
-            if abs(yc(entry) - line_yc) < y_tol:
-                line.append(entry); placed = True; break
-        if not placed:
-            lines.append([entry])
-
-    merged: List[Dict] = []
-    for line in lines:
-        line.sort(key=lambda e: e["bbox"][0])
-        groups: List[List[Dict]] = [[line[0]]]
-        for entry in line[1:]:
-            prev_right = groups[-1][-1]["bbox"][0] + groups[-1][-1]["bbox"][2]
-            if (entry["bbox"][0] - prev_right) <= gap_limit:
-                groups[-1].append(entry)
-            else:
-                groups.append([entry])
-        for grp in groups:
-            bboxes = [e["bbox"] for e in grp]
-            xs  = [b[0]        for b in bboxes]
-            ys  = [b[1]        for b in bboxes]
-            x2s = [b[0] + b[2] for b in bboxes]
-            y2s = [b[1] + b[3] for b in bboxes]
-            mh  = max(y2s) - min(ys)
-            if mh < MIN_BBOX_HEIGHT:
-                continue
-            merged.append({
-                "text": " ".join(e["text"] for e in grp),
-                "bbox": [min(xs), min(ys), max(x2s) - min(xs), mh],
-            })
-    return merged
-
-
-# ─── Density / selection ──────────────────────────────────────────────────────
-
-def image_text_density_ok(entries: List[Dict]) -> bool:
-    """Return True if the image is NOT a dense-text scene (book page, sign wall…)."""
-    lines = group_annotations_into_lines(entries)
-    valid = [l for l in lines if is_valid_text(l["text"])]
+    valid = extract_english_texts(annotations)
+    # Also count non-English valid annotations to detect total text density
+    total_valid = sum(
+        1 for ann in annotations
+        if ann.get("valid", True)
+        and not ann.get("illegibility", False)
+        and len(ann.get("text", "").strip()) >= MIN_TEXT_LEN
+    )
+    if total_valid > MAX_TEXT_REGIONS * 2:
+        return True
     if len(valid) > MAX_TEXT_REGIONS:
-        return False
-    if sum(len(l["text"]) for l in valid) > MAX_TOTAL_CHARS:
-        return False
-    return True
+        return True
+    total_chars = sum(len(ann.get("text", "")) for ann in annotations
+                      if ann.get("valid", True))
+    if total_chars > MAX_TOTAL_CHARS * 2:
+        return True
+    return False
 
 
-def select_best_text(entries: List[Dict]) -> Optional[Dict]:
+def select_best_text(english_texts: List[Dict]) -> Optional[Dict]:
     """
-    Pick the best phrase from grouped lines.
-    Scores by length + word_bonus×5 (strongly prefers multi-word phrases).
-    Returns {"text": str, "bbox": [x,y,w,h]} or None.
+    From filtered English text entries, pick the best one.
+    Prefers multi-word phrases, then longer text.
     """
-    lines = group_annotations_into_lines(entries)
-    candidates = []
-    for line in lines:
-        if not is_valid_text(line["text"]):
-            continue
-        if not is_english(line["text"]):
-            continue
-        score = len(line["text"]) + len(line["text"].split()) * 5
-        candidates.append((score, line))
-    if not candidates:
+    if not english_texts:
         return None
-    candidates.sort(key=lambda x: x[0], reverse=True)
-    return candidates[0][1]
+    scored = []
+    for entry in english_texts:
+        text = entry["text"]
+        word_count = len(text.split())
+        # Prefer multi-word phrases, but also value length
+        score = len(text) + word_count * 5
+        scored.append((score, entry))
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return scored[0][1]
 
 
 # ─── OCR gate ─────────────────────────────────────────────────────────────────
@@ -265,21 +251,16 @@ def _preprocess_for_ocr(img: Image.Image) -> Image.Image:
 
 
 def verify_text_with_ocr(
-    image_path: str,
+    image: Image.Image,
     expected_text: Optional[str] = None,
     bbox: Optional[List[int]] = None,
 ) -> Tuple[Optional[str], float]:
     """
-    Run Tesseract and verify `expected_text` is readable.
-    OCR is a readability gate only — caller keeps annotation as canonical text.
-
-    Critical fixes applied:
-    • When expected_text is given but no matching token found → return (None, 0).
-      Do NOT fall through to an arbitrary high-confidence token.
-    • Coverage threshold relaxed to MIN_OCR_COVERAGE=0.3.
+    Run Tesseract on a PIL Image and verify expected_text is readable.
+    Returns (ocr_text, confidence) or (None, 0) on failure.
     """
     try:
-        img = Image.open(image_path).convert("RGB")
+        img = image.convert("RGB")
 
         if bbox is not None:
             iw, ih = img.size
@@ -294,7 +275,7 @@ def verify_text_with_ocr(
 
         def run_ocr(src, psm):
             cfg = f"--psm {psm} --oem 1 -l eng"
-            d   = pytesseract.image_to_data(src, config=cfg,
+            d = pytesseract.image_to_data(src, config=cfg,
                       output_type=pytesseract.Output.DICT)
             out = []
             for i, t in enumerate(d["text"]):
@@ -327,7 +308,7 @@ def verify_text_with_ocr(
                 if tok.lower() in exp or exp in tok.lower() or cov >= MIN_OCR_COVERAGE:
                     matching.append((tok, conf))
             if not matching:
-                return None, 0          # ← critical: no fallthrough
+                return None, 0
             matching.sort(key=lambda x: x[1], reverse=True)
             return matching[0]
 
@@ -340,15 +321,16 @@ def verify_text_with_ocr(
 
 # ─── Image quality ────────────────────────────────────────────────────────────
 
-def check_image_quality(image_path: str) -> Tuple[bool, Dict]:
+def check_image_quality(img_array: np.ndarray) -> Tuple[bool, Dict]:
+    """Check image quality from a numpy array (BGR or RGB)."""
     try:
-        img = cv2.imread(str(image_path))
-        if img is None:
+        if img_array is None:
             return False, {}
-        h, w = img.shape[:2]
+        h, w = img_array.shape[:2]
         if h < MIN_RESOLUTION or w < MIN_RESOLUTION:
             return False, {}
-        gray       = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        gray = cv2.cvtColor(img_array, cv2.COLOR_RGB2GRAY) \
+               if img_array.shape[2] == 3 else img_array
         sharpness  = float(cv2.Laplacian(gray, cv2.CV_64F).var())
         brightness = float(np.mean(gray))
         contrast   = float(np.std(gray))
@@ -368,43 +350,12 @@ def check_image_quality(image_path: str) -> Tuple[bool, Dict]:
         return False, {}
 
 
-# ─── BLIP captioner ───────────────────────────────────────────────────────────
-
-class BLIPCaptioner:
-    def __init__(self, device: str):
-        print(f"[BLIP] Loading model on {device} …", flush=True)
-        self.device    = device
-        self.processor = BlipProcessor.from_pretrained(
-            "Salesforce/blip-image-captioning-base")
-        self.model = BlipForConditionalGeneration.from_pretrained(
-            "Salesforce/blip-image-captioning-base").to(device)
-        self.model.eval()
-        print("[BLIP] Model ready.", flush=True)
-
-    @torch.no_grad()
-    def caption(self, image_path: str) -> Optional[str]:
-        try:
-            image  = Image.open(image_path).convert("RGB")
-            inputs = self.processor(image, return_tensors="pt")
-            inputs = {k: v.to(self.device) for k, v in inputs.items()}
-            out    = self.model.generate(
-                **inputs, max_length=75, num_beams=5,
-                no_repeat_ngram_size=3, repetition_penalty=1.5,
-                early_stopping=True, length_penalty=1.2,
-            )
-            raw = self.processor.decode(out[0], skip_special_tokens=True).strip()
-            return (raw[0].upper() + raw[1:]) if raw else raw
-        except Exception:
-            return None
-
-
 # ─── Dataset creator ──────────────────────────────────────────────────────────
 
 class DatasetCreator:
 
-    def __init__(self, output_dir: str, annotation_files: List[str],
-                 image_dirs: List[str], max_images: int = TARGET_IMAGES,
-                 batch_size: int = 16):
+    def __init__(self, output_dir: str, max_images: int = TARGET_IMAGES,
+                 subsets: Optional[List[str]] = None, streaming: bool = True):
         self.base_dir = Path(output_dir)
         self.base_dir.mkdir(parents=True, exist_ok=True)
 
@@ -413,126 +364,190 @@ class DatasetCreator:
             key=lambda d: int(d.name[1:]))
         version      = (int(existing[-1].name[1:]) + 1) if existing else 1
         self.out_dir = self.base_dir / f"v{version}"
-        print(f"[DIR] Output → {self.out_dir}", flush=True)
+        print(f"[DIR] Output -> {self.out_dir}", flush=True)
 
         for split in ("train", "val", "test"):
             (self.out_dir / split / "images").mkdir(parents=True, exist_ok=True)
 
-        self.annotation_files = annotation_files
-        self.image_dirs       = [Path(d) for d in image_dirs]
-        self.max_images       = max_images
-        self.batch_size       = batch_size
-        self.device           = "cuda" if torch.cuda.is_available() else "cpu"
+        self.max_images = max_images
+        self.subsets    = subsets or DATASET_SUBSETS
+        self.streaming  = streaming
+        self.device     = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"[DEVICE] {self.device}", flush=True)
         if self.device == "cuda":
             print(f"[GPU] {torch.cuda.get_device_name(0)}", flush=True)
 
-    def load_annotations(self) -> Dict[str, List[Dict]]:
-        merged: Dict[str, List[Dict]] = {}
-        for path in self.annotation_files:
-            loader = load_textcaps_annotations if "textcaps" in path.lower() \
-                     else load_textocr_annotations
-            for img_id, entries in loader(path).items():
-                merged.setdefault(img_id, []).extend(entries)
-        print(f"[ANN] Total: {len(merged)} image IDs", flush=True)
-        return merged
+    def load_dataset(self):
+        """Load AnyWord-3M from HuggingFace."""
+        from datasets import load_dataset
 
-    def find_images(self) -> Dict[str, Path]:
-        found: Dict[str, Path] = {}
-        for d in self.image_dirs:
-            for ext in ("*.jpg", "*.jpeg", "*.png"):
-                for p in d.glob(ext):
-                    found[p.stem] = p
-        print(f"[IMG] Found {len(found)} images on disk", flush=True)
-        return found
+        print(f"[DATASET] Loading {DATASET_NAME} from HuggingFace ...", flush=True)
+        print(f"[DATASET] Subsets: {self.subsets}", flush=True)
+        print(f"[DATASET] Streaming: {self.streaming}", flush=True)
 
-    def prefilter_annotations(self, annotations, images):
-        candidates, skip_miss, skip_dens, skip_text = [], 0, 0, 0
-        for img_id, entries in annotations.items():
-            stem = img_id.replace(".jpg", "").replace(".png", "")
-            path = images.get(stem) or images.get(img_id)
-            if path is None:
-                skip_miss += 1; continue
-            if not image_text_density_ok(entries):
-                skip_dens += 1; continue
-            best = select_best_text(entries)
-            if best is None:
-                skip_text += 1; continue
-            candidates.append((img_id, path, best))
-        print(f"[PRE] Candidates={len(candidates)}  miss={skip_miss}  "
-              f"density={skip_dens}  no-text={skip_text}", flush=True)
-        return candidates
+        all_datasets = []
+        for subset in self.subsets:
+            print(f"  Loading subset: {subset} ...", flush=True)
+            try:
+                ds = load_dataset(DATASET_NAME, subset, streaming=self.streaming,
+                                  trust_remote_code=True)
+                if "train" in ds:
+                    all_datasets.append((subset, ds["train"]))
+                    print(f"  {subset}: loaded", flush=True)
+                else:
+                    # Some subsets may have different split names
+                    for split_name in ds:
+                        all_datasets.append((subset, ds[split_name]))
+                        print(f"  {subset}/{split_name}: loaded", flush=True)
+                        break
+            except Exception as e:
+                print(f"  WARNING: Failed to load {subset}: {e}", flush=True)
+
+        if not all_datasets:
+            raise RuntimeError("No dataset subsets could be loaded!")
+
+        print(f"[DATASET] {len(all_datasets)} subset(s) ready", flush=True)
+        return all_datasets
+
+    def process_sample(self, sample: Dict, subset_name: str) -> Optional[Dict]:
+        """
+        Process a single AnyWord-3M sample.
+        Returns a record dict if accepted, None if rejected.
+        """
+        annotations = sample.get("annotations", [])
+        if not annotations:
+            return None
+
+        # Density filter — reject dense text scenes
+        if is_dense_text_image(annotations):
+            return None
+
+        # Extract valid English texts
+        english_texts = extract_english_texts(annotations)
+        if not english_texts:
+            return None
+
+        # Select best text
+        best = select_best_text(english_texts)
+        if not best:
+            return None
+
+        # Get the image
+        pil_image = sample.get("image")
+        if pil_image is None:
+            return None
+        pil_image = pil_image.convert("RGB")
+
+        # Image quality check
+        img_array = np.array(pil_image)
+        ok, metrics = check_image_quality(img_array)
+        if not ok:
+            return None
+
+        # OCR verification
+        anno_text = best["text"]
+        anno_bbox = best["bbox"]
+        ocr_text, ocr_conf = verify_text_with_ocr(
+            pil_image, expected_text=anno_text, bbox=anno_bbox)
+        if ocr_text is None:
+            return None
+
+        # Get caption from dataset
+        caption = sample.get("caption", "").strip()
+        if not caption:
+            caption = "a photograph"
+
+        # Build prompt
+        final_text = anno_text
+        prompt = (f"{caption}, "
+                  f"with the text \u201c{final_text}\u201d clearly visible, "
+                  f"sharp focus, high resolution photography")
+
+        return {
+            "image":           pil_image,
+            "image_id":        sample.get("img_name", "unknown"),
+            "text":            final_text,
+            "annotation_text": final_text,
+            "ocr_text":        ocr_text,
+            "caption":         caption,
+            "prompt":          prompt,
+            "subset":          subset_name,
+            "metadata": {
+                "ocr_confidence": float(ocr_conf),
+                "text_length":    len(final_text),
+                "word_count":     len(final_text.split()),
+                "source":         f"AnyWord-3M/{subset_name}",
+                **metrics,
+            },
+        }
 
     def run(self) -> List[Dict]:
-        annotations = self.load_annotations()
-        images      = self.find_images()
-        candidates  = self.prefilter_annotations(annotations, images)
-        captioner   = BLIPCaptioner(self.device)
+        """Main processing loop — stream through the dataset and filter."""
+        all_datasets = self.load_dataset()
 
         accepted: List[Dict] = []
-        rej_q = rej_ocr = 0
+        stats = {
+            "total_seen": 0,
+            "rej_no_annotation": 0,
+            "rej_density": 0,
+            "rej_no_english": 0,
+            "rej_quality": 0,
+            "rej_ocr": 0,
+        }
 
-        print(f"\n[PROC] {len(candidates)} candidates  "
-              f"(target: {self.max_images}) …", flush=True)
+        print(f"\n[PROC] Starting filtering (target: {self.max_images}) ...",
+              flush=True)
 
-        for idx, (img_id, img_path, best_entry) in enumerate(candidates):
+        for subset_name, ds in all_datasets:
             if len(accepted) >= self.max_images:
-                print(f"[DONE] Target {self.max_images} reached.", flush=True)
                 break
-            if idx % 500 == 0:
-                print(f"  [{idx}/{len(candidates)}] "
-                      f"acc={len(accepted)}  rej_q={rej_q}  rej_ocr={rej_ocr}",
-                      flush=True)
 
-            ok, metrics = check_image_quality(str(img_path))
-            if not ok:
-                rej_q += 1; continue
+            print(f"\n[SUBSET] Processing: {subset_name}", flush=True)
 
-            anno_text = best_entry["text"]
-            anno_bbox = best_entry["bbox"]
+            for sample in tqdm(ds, desc=f"{subset_name}", disable=False):
+                if len(accepted) >= self.max_images:
+                    break
 
-            # OCR gate — verify text is readable
-            ocr_text, ocr_conf = verify_text_with_ocr(
-                str(img_path), expected_text=anno_text, bbox=anno_bbox)
-            if ocr_text is None:
-                rej_ocr += 1; continue
+                stats["total_seen"] += 1
 
-            blip_caption = captioner.caption(str(img_path)) or "a photograph"
+                result = self.process_sample(sample, subset_name)
 
-            # Canonical text = annotation phrase (NOT the OCR partial read)
-            final_text = anno_text
-            prompt = (f"{blip_caption}, "
-                      f"with the text \u201c{final_text}\u201d clearly visible, "
-                      f"sharp focus, high resolution photography")
+                if result is None:
+                    # Count rejection reason (approximate — process_sample
+                    # combines multiple checks)
+                    annotations = sample.get("annotations", [])
+                    if not annotations:
+                        stats["rej_no_annotation"] += 1
+                    elif is_dense_text_image(annotations):
+                        stats["rej_density"] += 1
+                    elif not extract_english_texts(annotations):
+                        stats["rej_no_english"] += 1
+                    else:
+                        # Either quality or OCR failure
+                        stats["rej_quality"] += 1
+                    continue
 
-            accepted.append({
-                "image_id":        img_id,
-                "image_path":      str(img_path),
-                "text":            final_text,
-                "annotation_text": final_text,
-                "ocr_text":        ocr_text,
-                "caption_blip":    blip_caption,
-                "caption_textcaps": "",      # populated if TextCaps loaded
-                "prompt":          prompt,
-                "metadata": {
-                    "ocr_confidence": float(ocr_conf),
-                    "text_length":    len(final_text),
-                    "word_count":     len(final_text.split()),
-                    "source":         "TextOCR",
-                    **metrics,
-                },
-            })
-            print(f"  #ACCEPTED {len(accepted):4d}  "
-                  f"text='{final_text}'  ocr='{ocr_text}'  conf={ocr_conf}",
-                  flush=True)
+                accepted.append(result)
 
-        print(f"\n[SUMMARY] Processed={idx+1}  Accepted={len(accepted)}  "
-              f"Rej-quality={rej_q}  Rej-OCR={rej_ocr}", flush=True)
+                if len(accepted) % 50 == 0:
+                    print(f"  ACCEPTED {len(accepted):4d}/{self.max_images}  "
+                          f"(seen={stats['total_seen']}  "
+                          f"text='{result['text']}')", flush=True)
+
+        print(f"\n[SUMMARY]", flush=True)
+        print(f"  Total seen     : {stats['total_seen']}", flush=True)
+        print(f"  Accepted       : {len(accepted)}", flush=True)
+        print(f"  Rej no-annot   : {stats['rej_no_annotation']}", flush=True)
+        print(f"  Rej density    : {stats['rej_density']}", flush=True)
+        print(f"  Rej no-english : {stats['rej_no_english']}", flush=True)
+        print(f"  Rej quality/OCR: {stats['rej_quality']}", flush=True)
+
         return accepted
 
     def save(self, records: List[Dict]):
         if not records:
-            print("[WARN] No records to save.", flush=True); return
+            print("[WARN] No records to save.", flush=True)
+            return
 
         n       = len(records)
         n_train = int(n * 0.8)
@@ -543,7 +558,7 @@ class DatasetCreator:
             ("test",  records[n_train + n_val:]),
         ]
 
-        print("[SAVE] Copying images and writing annotations …", flush=True)
+        print("[SAVE] Saving images and writing annotations ...", flush=True)
         all_records: List[Dict] = []
         global_id = 0
 
@@ -552,7 +567,11 @@ class DatasetCreator:
             for rec in split_records:
                 filename = f"img_{global_id:04d}.jpg"
                 dst = self.out_dir / split_name / "images" / filename
-                shutil.copy2(rec["image_path"], dst)
+
+                # Save PIL image to disk
+                pil_img = rec["image"]
+                pil_img.save(str(dst), "JPEG", quality=95)
+
                 entry = {
                     "id":               global_id,
                     "image_id":         rec["image_id"],
@@ -562,8 +581,7 @@ class DatasetCreator:
                     "text":             rec["text"],
                     "annotation_text":  rec["annotation_text"],
                     "ocr_text":         rec["ocr_text"],
-                    "caption_blip":     rec["caption_blip"],
-                    "caption_textcaps": rec["caption_textcaps"],
+                    "caption":          rec["caption"],
                     "prompt":           rec["prompt"],
                     "metadata":         rec["metadata"],
                 }
@@ -580,8 +598,10 @@ class DatasetCreator:
                 "metadata": {
                     "version":     VERSION,
                     "description": (
-                        "Text-in-image dataset built from TextOCR + TextCaps. "
-                        "Phrases are ground-truth annotations; OCR is a readability gate."),
+                        "Text-in-image dataset built from AnyWord-3M. "
+                        "Filtered for short English text, OCR-verified."),
+                    "source_dataset": DATASET_NAME,
+                    "subsets_used": self.subsets,
                     "thresholds": {
                         "min_resolution":   MIN_RESOLUTION,
                         "min_sharpness":    MIN_SHARPNESS,
@@ -613,36 +633,37 @@ class DatasetCreator:
             print(f"  id={e['id']}  text='{e['text']}'  "
                   f"ocr='{e['ocr_text']}'  conf={e['metadata']['ocr_confidence']:.0f}",
                   flush=True)
-            print(f"    caption_blip: {e['caption_blip']}", flush=True)
-            print(f"    prompt      : {e['prompt']}", flush=True)
+            print(f"    caption: {e['caption']}", flush=True)
+            print(f"    prompt : {e['prompt']}", flush=True)
 
 
 # ─── Entry point ──────────────────────────────────────────────────────────────
 
 def main():
     print(f"[START] Text-in-Image Dataset Pipeline  v{VERSION}", flush=True)
+    print(f"[START] Source: AnyWord-3M (HuggingFace)", flush=True)
 
     parser = argparse.ArgumentParser(
-        description="Create text-in-image training dataset from TextOCR + TextCaps")
-    parser.add_argument("--annotation-files", nargs="+", required=True,
-                        help="Path(s) to TextOCR / TextCaps JSON annotation files")
-    parser.add_argument("--image-dirs", nargs="+", required=True,
-                        help="Directory / directories containing the source images")
-    parser.add_argument("--output",     default="dataset_output")
-    parser.add_argument("--max-images", type=int, default=TARGET_IMAGES)
-    parser.add_argument("--batch-size", type=int, default=16)
+        description="Create text-in-image training dataset from AnyWord-3M")
+    parser.add_argument("--output", default="dataset_output",
+                        help="Output directory (default: dataset_output)")
+    parser.add_argument("--max-images", type=int, default=TARGET_IMAGES,
+                        help=f"Target number of images (default: {TARGET_IMAGES})")
+    parser.add_argument("--subsets", nargs="+", default=None,
+                        help="AnyWord-3M subsets to use (default: laion + OCR subsets)")
+    parser.add_argument("--no-streaming", action="store_true",
+                        help="Download full dataset instead of streaming")
     args = parser.parse_args()
 
-    print(f"[ARGS] annotation_files={args.annotation_files}  "
-          f"image_dirs={args.image_dirs}  "
-          f"output={args.output}  max={args.max_images}", flush=True)
+    print(f"[ARGS] output={args.output}  max={args.max_images}  "
+          f"subsets={args.subsets or 'default'}  "
+          f"streaming={not args.no_streaming}", flush=True)
 
     creator = DatasetCreator(
-        output_dir       = args.output,
-        annotation_files = args.annotation_files,
-        image_dirs       = args.image_dirs,
-        max_images       = args.max_images,
-        batch_size       = args.batch_size,
+        output_dir = args.output,
+        max_images = args.max_images,
+        subsets    = args.subsets,
+        streaming  = not args.no_streaming,
     )
     records = creator.run()
     creator.save(records)
