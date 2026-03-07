@@ -1,0 +1,2532 @@
+{
+  "metadata": {
+    "version": "8.0",
+    "description": "Text-in-image dataset built from AnyWord-3M. Filtered for short English text, OCR-verified.",
+    "source_dataset": "stzhao/AnyWord-3M",
+    "subsets_used": [
+      "laion",
+      "OCR_COCO_Text",
+      "OCR_mlt2019",
+      "OCR_Art"
+    ],
+    "thresholds": {
+      "min_resolution": 256,
+      "min_sharpness": 80,
+      "min_ocr_conf": 85,
+      "min_ocr_coverage": 0.3,
+      "max_text_len": 40,
+      "max_words": 5,
+      "max_text_regions": 4,
+      "max_total_chars": 40,
+      "min_bbox_height": 30
+    },
+    "statistics": {
+      "total": 100,
+      "train": 80,
+      "val": 10,
+      "test": 10
+    }
+  },
+  "data": [
+    {
+      "id": 0,
+      "image_id": "001520075.jpg",
+      "filename": "img_0000.jpg",
+      "filepath": "train/images/img_0000.jpg",
+      "split": "train",
+      "text": "ROLLING",
+      "annotation_text": "ROLLING",
+      "ocr_text": "ROLLING",
+      "caption": "the rolling stones shine a light",
+      "prompt": "the rolling stones shine a light, with the text \u201cROLLING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 518.2,
+        "brightness": 120.77,
+        "contrast": 103.32,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "image_id": "001520065.jpg",
+      "filename": "img_0001.jpg",
+      "filepath": "train/images/img_0001.jpg",
+      "split": "train",
+      "text": "holiday",
+      "annotation_text": "holiday",
+      "ocr_text": "FOR",
+      "caption": "holiday gift guide for new moms",
+      "prompt": "holiday gift guide for new moms, with the text \u201choliday\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 535.19,
+        "brightness": 223.93,
+        "contrast": 74.75,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "001520019.jpg",
+      "filename": "img_0002.jpg",
+      "filepath": "train/images/img_0002.jpg",
+      "split": "train",
+      "text": "Large",
+      "annotation_text": "Large",
+      "ocr_text": "Large",
+      "caption": "crafts aus large 3d punch",
+      "prompt": "crafts aus large 3d punch, with the text \u201cLarge\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 263.31,
+        "brightness": 185.6,
+        "contrast": 55.66,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image_id": "001520080.jpg",
+      "filename": "img_0003.jpg",
+      "filepath": "train/images/img_0003.jpg",
+      "split": "train",
+      "text": "APPRENTICE",
+      "annotation_text": "APPRENTICE",
+      "ocr_text": "APPRENTICE",
+      "caption": "the cover of the book apprentice in death",
+      "prompt": "the cover of the book apprentice in death, with the text \u201cAPPRENTICE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 478.32,
+        "brightness": 132.69,
+        "contrast": 100.57,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "image_id": "001520014.jpg",
+      "filename": "img_0004.jpg",
+      "filepath": "train/images/img_0004.jpg",
+      "split": "train",
+      "text": "Square",
+      "annotation_text": "Square",
+      "ocr_text": "Square",
+      "caption": "hudson square apartments - new jersey",
+      "prompt": "hudson square apartments - new jersey, with the text \u201cSquare\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1541.65,
+        "brightness": 117.71,
+        "contrast": 71.63,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "image_id": "001520038.jpg",
+      "filename": "img_0005.jpg",
+      "filepath": "train/images/img_0005.jpg",
+      "split": "train",
+      "text": "UNRELEASED",
+      "annotation_text": "UNRELEASED",
+      "ocr_text": "GCOD",
+      "caption": "i period & kanye west - good music remixes & unreleased",
+      "prompt": "i period & kanye west - good music remixes & unreleased, with the text \u201cUNRELEASED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1598.92,
+        "brightness": 146.29,
+        "contrast": 65.57,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "image_id": "001520055.jpg",
+      "filename": "img_0006.jpg",
+      "filepath": "train/images/img_0006.jpg",
+      "split": "train",
+      "text": "Nederlandse",
+      "annotation_text": "Nederlandse",
+      "ocr_text": "Mediation",
+      "caption": "navigator - nederlands meditations",
+      "prompt": "navigator - nederlands meditations, with the text \u201cNederlandse\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 11,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1142.45,
+        "brightness": 129.12,
+        "contrast": 60.94,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "image_id": "001520131.jpg",
+      "filename": "img_0007.jpg",
+      "filepath": "train/images/img_0007.jpg",
+      "split": "train",
+      "text": "SOURCE",
+      "annotation_text": "SOURCE",
+      "ocr_text": "SOURCE",
+      "caption": "combat source kill ant bait, 1 lb",
+      "prompt": "combat source kill ant bait, 1 lb, with the text \u201cSOURCE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 496.21,
+        "brightness": 191.24,
+        "contrast": 80.89,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "image_id": "001520078.jpg",
+      "filename": "img_0008.jpg",
+      "filepath": "train/images/img_0008.jpg",
+      "split": "train",
+      "text": "HORROR",
+      "annotation_text": "HORROR",
+      "ocr_text": "1490758",
+      "caption": "a green hand holding a horror film night sign by jonathan",
+      "prompt": "a green hand holding a horror film night sign by jonathan, with the text \u201cHORROR\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 748.07,
+        "brightness": 205.08,
+        "contrast": 72.84,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "image_id": "001520061.jpg",
+      "filename": "img_0009.jpg",
+      "filepath": "train/images/img_0009.jpg",
+      "split": "train",
+      "text": "christmas",
+      "annotation_text": "christmas",
+      "ocr_text": "christmas",
+      "caption": "london venues for every type of christmas party",
+      "prompt": "london venues for every type of christmas party, with the text \u201cchristmas\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2604.98,
+        "brightness": 199.3,
+        "contrast": 58.56,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "image_id": "001520194.jpg",
+      "filename": "img_0010.jpg",
+      "filepath": "train/images/img_0010.jpg",
+      "split": "train",
+      "text": "FIRING",
+      "annotation_text": "FIRING",
+      "ocr_text": "FIRING",
+      "caption": "the firing squad podcast logo",
+      "prompt": "the firing squad podcast logo, with the text \u201cFIRING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 358.4,
+        "brightness": 65.17,
+        "contrast": 65.1,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "image_id": "001520204.jpg",
+      "filename": "img_0011.jpg",
+      "filepath": "train/images/img_0011.jpg",
+      "split": "train",
+      "text": "MONEY!",
+      "annotation_text": "MONEY!",
+      "ocr_text": "MONEY!",
+      "caption": "show me the money button",
+      "prompt": "show me the money button, with the text \u201cMONEY!\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 211.06,
+        "brightness": 176.62,
+        "contrast": 70.88,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "image_id": "001520155.jpg",
+      "filename": "img_0012.jpg",
+      "filepath": "train/images/img_0012.jpg",
+      "split": "train",
+      "text": "AVENUE",
+      "annotation_text": "AVENUE",
+      "ocr_text": "AVENUE",
+      "caption": "pop avenue - party band | new york, ny",
+      "prompt": "pop avenue - party band | new york, ny, with the text \u201cAVENUE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 291.98,
+        "brightness": 70.2,
+        "contrast": 60.08,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "image_id": "001520152.jpg",
+      "filename": "img_0013.jpg",
+      "filepath": "train/images/img_0013.jpg",
+      "split": "train",
+      "text": "VEGAS",
+      "annotation_text": "VEGAS",
+      "ocr_text": "VEGAS",
+      "caption": "a welcome sign for fabulous las vegas",
+      "prompt": "a welcome sign for fabulous las vegas, with the text \u201cVEGAS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 623.32,
+        "brightness": 81.39,
+        "contrast": 83.12,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "image_id": "001520221.jpg",
+      "filename": "img_0014.jpg",
+      "filepath": "train/images/img_0014.jpg",
+      "split": "train",
+      "text": "RANGERS",
+      "annotation_text": "RANGERS",
+      "ocr_text": "NEW",
+      "caption": "new york rangers logo png",
+      "prompt": "new york rangers logo png, with the text \u201cRANGERS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 421.4,
+        "brightness": 172.06,
+        "contrast": 77.51,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "image_id": "001520226.jpg",
+      "filename": "img_0015.jpg",
+      "filepath": "train/images/img_0015.jpg",
+      "split": "train",
+      "text": "COLLISION",
+      "annotation_text": "COLLISION",
+      "ocr_text": "COLLISION",
+      "caption": "forward collision warning logo",
+      "prompt": "forward collision warning logo, with the text \u201cCOLLISION\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 164.71,
+        "brightness": 219.23,
+        "contrast": 39.12,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "image_id": "001520181.jpg",
+      "filename": "img_0016.jpg",
+      "filepath": "train/images/img_0016.jpg",
+      "split": "train",
+      "text": "APPLES",
+      "annotation_text": "APPLES",
+      "ocr_text": "APPLES",
+      "caption": "an old advertisement for tie - on apples",
+      "prompt": "an old advertisement for tie - on apples, with the text \u201cAPPLES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 332.0,
+        "brightness": 87.21,
+        "contrast": 55.02,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "image_id": "001520240.jpg",
+      "filename": "img_0017.jpg",
+      "filepath": "train/images/img_0017.jpg",
+      "split": "train",
+      "text": "SUPER",
+      "annotation_text": "SUPER",
+      "ocr_text": "100%",
+      "caption": "100% pure super mom canvas print",
+      "prompt": "100% pure super mom canvas print, with the text \u201cSUPER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 89.53,
+        "brightness": 220.44,
+        "contrast": 54.78,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "image_id": "001520278.jpg",
+      "filename": "img_0018.jpg",
+      "filepath": "train/images/img_0018.jpg",
+      "split": "train",
+      "text": "sticky",
+      "annotation_text": "sticky",
+      "ocr_text": "10",
+      "caption": "tour series surf wax",
+      "prompt": "tour series surf wax, with the text \u201csticky\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 600.78,
+        "brightness": 140.67,
+        "contrast": 83.19,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "image_id": "001520260.jpg",
+      "filename": "img_0019.jpg",
+      "filepath": "train/images/img_0019.jpg",
+      "split": "train",
+      "text": "HORSES",
+      "annotation_text": "HORSES",
+      "ocr_text": "HORSES",
+      "caption": "a women's t - shirt that says all i care about is riding horses",
+      "prompt": "a women's t - shirt that says all i care about is riding horses, with the text \u201cHORSES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 712.87,
+        "brightness": 134.27,
+        "contrast": 116.19,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "image_id": "001520287.jpg",
+      "filename": "img_0020.jpg",
+      "filepath": "train/images/img_0020.jpg",
+      "split": "train",
+      "text": "PayPal",
+      "annotation_text": "PayPal",
+      "ocr_text": "NOW",
+      "caption": "smooth pay now with paypal",
+      "prompt": "smooth pay now with paypal, with the text \u201cPayPal\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 132.31,
+        "brightness": 196.19,
+        "contrast": 51.52,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "image_id": "001520270.jpg",
+      "filename": "img_0021.jpg",
+      "filepath": "train/images/img_0021.jpg",
+      "split": "train",
+      "text": "Evolution",
+      "annotation_text": "Evolution",
+      "ocr_text": "Evolution",
+      "caption": "evolution 3 color permanent hair color",
+      "prompt": "evolution 3 color permanent hair color, with the text \u201cEvolution\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 473.66,
+        "brightness": 223.6,
+        "contrast": 48.32,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "image_id": "001520326.jpg",
+      "filename": "img_0022.jpg",
+      "filepath": "train/images/img_0022.jpg",
+      "split": "train",
+      "text": "animated",
+      "annotation_text": "animated",
+      "ocr_text": "animated",
+      "caption": "animated silhouette of people walking in front of the words animated silhouette",
+      "prompt": "animated silhouette of people walking in front of the words animated silhouette, with the text \u201canimated\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 377.52,
+        "brightness": 186.65,
+        "contrast": 78.31,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "image_id": "001520267.jpg",
+      "filename": "img_0023.jpg",
+      "filepath": "train/images/img_0023.jpg",
+      "split": "train",
+      "text": "ASTON",
+      "annotation_text": "ASTON",
+      "ocr_text": "ASTON",
+      "caption": "the conquer the aston shaw mountain logo",
+      "prompt": "the conquer the aston shaw mountain logo, with the text \u201cASTON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 268.58,
+        "brightness": 94.53,
+        "contrast": 36.81,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "image_id": "001520312.jpg",
+      "filename": "img_0024.jpg",
+      "filepath": "train/images/img_0024.jpg",
+      "split": "train",
+      "text": "EMPIRE",
+      "annotation_text": "EMPIRE",
+      "ocr_text": "EMPIRE",
+      "caption": "world empire online logo",
+      "prompt": "world empire online logo, with the text \u201cEMPIRE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 697.52,
+        "brightness": 175.26,
+        "contrast": 91.45,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "image_id": "001520303.jpg",
+      "filename": "img_0025.jpg",
+      "filepath": "train/images/img_0025.jpg",
+      "split": "train",
+      "text": "RAINBOW",
+      "annotation_text": "RAINBOW",
+      "ocr_text": "RAIN",
+      "caption": "no rain, no rainbow",
+      "prompt": "no rain, no rainbow, with the text \u201cRAINBOW\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 240.0,
+        "brightness": 196.64,
+        "contrast": 51.2,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "image_id": "001520291.jpg",
+      "filename": "img_0026.jpg",
+      "filepath": "train/images/img_0026.jpg",
+      "split": "train",
+      "text": "SMALE",
+      "annotation_text": "SMALE",
+      "ocr_text": "GEEK",
+      "caption": "the cover of geek girl, with glasses on",
+      "prompt": "the cover of geek girl, with glasses on, with the text \u201cSMALE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 321.38,
+        "brightness": 159.19,
+        "contrast": 63.88,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "image_id": "001520374.jpg",
+      "filename": "img_0027.jpg",
+      "filepath": "train/images/img_0027.jpg",
+      "split": "train",
+      "text": "Athletic",
+      "annotation_text": "Athletic",
+      "ocr_text": "LIFETIME",
+      "caption": "lifetime athletic events logo",
+      "prompt": "lifetime athletic events logo, with the text \u201cAthletic\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 710.89,
+        "brightness": 59.76,
+        "contrast": 57.64,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "image_id": "001520333.jpg",
+      "filename": "img_0028.jpg",
+      "filepath": "train/images/img_0028.jpg",
+      "split": "train",
+      "text": "BRACE",
+      "annotation_text": "BRACE",
+      "ocr_text": "BRACE",
+      "caption": "brace yourselves zombie land twinkle jokes are coming - brace yourself zombie land twinkle jokes are coming",
+      "prompt": "brace yourselves zombie land twinkle jokes are coming - brace yourself zombie land twinkle jokes are coming, with the text \u201cBRACE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2538.28,
+        "brightness": 184.48,
+        "contrast": 92.94,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "image_id": "001520393.jpg",
+      "filename": "img_0029.jpg",
+      "filepath": "train/images/img_0029.jpg",
+      "split": "train",
+      "text": "CAREERS",
+      "annotation_text": "CAREERS",
+      "ocr_text": "CAREERS",
+      "caption": "careers in the public humanities",
+      "prompt": "careers in the public humanities, with the text \u201cCAREERS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 572.01,
+        "brightness": 42.91,
+        "contrast": 55.56,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "image_id": "001520415.jpg",
+      "filename": "img_0030.jpg",
+      "filepath": "train/images/img_0030.jpg",
+      "split": "train",
+      "text": "Sorry",
+      "annotation_text": "Sorry",
+      "ocr_text": "339320878",
+      "caption": "sorry written on the stone",
+      "prompt": "sorry written on the stone, with the text \u201cSorry\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 6746.0,
+        "brightness": 187.13,
+        "contrast": 59.16,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "image_id": "001520429.jpg",
+      "filename": "img_0031.jpg",
+      "filepath": "train/images/img_0031.jpg",
+      "split": "train",
+      "text": "ROCK",
+      "annotation_text": "ROCK",
+      "ocr_text": "QUANTUM",
+      "caption": "the cover of the game ministry of rock",
+      "prompt": "the cover of the game ministry of rock, with the text \u201cROCK\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1753.86,
+        "brightness": 106.05,
+        "contrast": 84.58,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "image_id": "001520443.jpg",
+      "filename": "img_0032.jpg",
+      "filepath": "train/images/img_0032.jpg",
+      "split": "train",
+      "text": "REICHSHOF",
+      "annotation_text": "REICHSHOF",
+      "ocr_text": "REICHSHOF",
+      "caption": "reichshof hamburg logo",
+      "prompt": "reichshof hamburg logo, with the text \u201cREICHSHOF\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 205.52,
+        "brightness": 31.72,
+        "contrast": 38.25,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "image_id": "001520442.jpg",
+      "filename": "img_0033.jpg",
+      "filepath": "train/images/img_0033.jpg",
+      "split": "train",
+      "text": "FITNESS",
+      "annotation_text": "FITNESS",
+      "ocr_text": "FITNESS",
+      "caption": "fitness is magic t-shirt",
+      "prompt": "fitness is magic t-shirt, with the text \u201cFITNESS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 252.57,
+        "brightness": 219.54,
+        "contrast": 33.24,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "image_id": "001520448.jpg",
+      "filename": "img_0034.jpg",
+      "filepath": "train/images/img_0034.jpg",
+      "split": "train",
+      "text": "CORPS",
+      "annotation_text": "CORPS",
+      "ocr_text": "ER",
+      "caption": "starfighter corps ace t-shirt",
+      "prompt": "starfighter corps ace t-shirt, with the text \u201cCORPS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 3319.29,
+        "brightness": 166.87,
+        "contrast": 80.99,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "image_id": "001520457.jpg",
+      "filename": "img_0035.jpg",
+      "filepath": "train/images/img_0035.jpg",
+      "split": "train",
+      "text": "UNITEDSTATES",
+      "annotation_text": "UNITEDSTATES",
+      "ocr_text": "UNITEDSTATES",
+      "caption": "national geographic kids united states atlas",
+      "prompt": "national geographic kids united states atlas, with the text \u201cUNITEDSTATES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 12,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 578.55,
+        "brightness": 158.68,
+        "contrast": 56.72,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "image_id": "001520504.jpg",
+      "filename": "img_0036.jpg",
+      "filepath": "train/images/img_0036.jpg",
+      "split": "train",
+      "text": "NAMES",
+      "annotation_text": "NAMES",
+      "ocr_text": "NAMES",
+      "caption": "neon wifi names logo design",
+      "prompt": "neon wifi names logo design, with the text \u201cNAMES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 96.81,
+        "brightness": 30.65,
+        "contrast": 34.91,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "image_id": "001520539.jpg",
+      "filename": "img_0037.jpg",
+      "filepath": "train/images/img_0037.jpg",
+      "split": "train",
+      "text": "WISCONSIN",
+      "annotation_text": "WISCONSIN",
+      "ocr_text": "WISCONSIN",
+      "caption": "harley davidson white t-shirt with the logo of wisconsin",
+      "prompt": "harley davidson white t-shirt with the logo of wisconsin, with the text \u201cWISCONSIN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 658.21,
+        "brightness": 208.33,
+        "contrast": 68.29,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "image_id": "001520526.jpg",
+      "filename": "img_0038.jpg",
+      "filepath": "train/images/img_0038.jpg",
+      "split": "train",
+      "text": "PlayStation.Plus",
+      "annotation_text": "PlayStation.Plus",
+      "ocr_text": "PlayStation.Plus",
+      "caption": "hong playstation plus card 12 months",
+      "prompt": "hong playstation plus card 12 months, with the text \u201cPlayStation.Plus\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 16,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 171.89,
+        "brightness": 127.05,
+        "contrast": 72.86,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "image_id": "001520579.jpg",
+      "filename": "img_0039.jpg",
+      "filepath": "train/images/img_0039.jpg",
+      "split": "train",
+      "text": "YORKE",
+      "annotation_text": "YORKE",
+      "ocr_text": "YORKER",
+      "caption": "the new yorker cover - september 1, 2010",
+      "prompt": "the new yorker cover - september 1, 2010, with the text \u201cYORKE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 116.9,
+        "brightness": 179.53,
+        "contrast": 43.23,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "image_id": "001520587.jpg",
+      "filename": "img_0040.jpg",
+      "filepath": "train/images/img_0040.jpg",
+      "split": "train",
+      "text": "WHISPERER",
+      "annotation_text": "WHISPERER",
+      "ocr_text": "WHISPERER",
+      "caption": "the elephant whisperer",
+      "prompt": "the elephant whisperer, with the text \u201cWHISPERER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 572.21,
+        "brightness": 171.13,
+        "contrast": 88.55,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "image_id": "001520556.jpg",
+      "filename": "img_0041.jpg",
+      "filepath": "train/images/img_0041.jpg",
+      "split": "train",
+      "text": "RED",
+      "annotation_text": "RED",
+      "ocr_text": "RED",
+      "caption": "simply red - live at montreal - cd",
+      "prompt": "simply red - live at montreal - cd, with the text \u201cRED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 276.01,
+        "brightness": 89.31,
+        "contrast": 49.05,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "image_id": "001520563.jpg",
+      "filename": "img_0042.jpg",
+      "filepath": "train/images/img_0042.jpg",
+      "split": "train",
+      "text": "Crossing",
+      "annotation_text": "Crossing",
+      "ocr_text": "Animal",
+      "caption": "animal crossing direct logo",
+      "prompt": "animal crossing direct logo, with the text \u201cCrossing\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 214.99,
+        "brightness": 183.87,
+        "contrast": 62.86,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "image_id": "001520624.jpg",
+      "filename": "img_0043.jpg",
+      "filepath": "train/images/img_0043.jpg",
+      "split": "train",
+      "text": "DEAD",
+      "annotation_text": "DEAD",
+      "ocr_text": "Alp",
+      "caption": "dead alive car seat belt",
+      "prompt": "dead alive car seat belt, with the text \u201cDEAD\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 848.23,
+        "brightness": 172.04,
+        "contrast": 105.13,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "image_id": "001520594.jpg",
+      "filename": "img_0044.jpg",
+      "filepath": "train/images/img_0044.jpg",
+      "split": "train",
+      "text": "Licensed",
+      "annotation_text": "Licensed",
+      "ocr_text": "Licensed",
+      "caption": "a playboy licensed case for the samsung s3",
+      "prompt": "a playboy licensed case for the samsung s3, with the text \u201cLicensed\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 232.58,
+        "brightness": 214.3,
+        "contrast": 63.07,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "image_id": "001520627.jpg",
+      "filename": "img_0045.jpg",
+      "filepath": "train/images/img_0045.jpg",
+      "split": "train",
+      "text": "jacobs",
+      "annotation_text": "jacobs",
+      "ocr_text": "jacobs",
+      "caption": "a business card with fork and spoon on it",
+      "prompt": "a business card with fork and spoon on it, with the text \u201cjacobs\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 85.39,
+        "brightness": 189.91,
+        "contrast": 74.37,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "image_id": "001520441.jpg",
+      "filename": "img_0046.jpg",
+      "filepath": "train/images/img_0046.jpg",
+      "split": "train",
+      "text": "THE",
+      "annotation_text": "THE",
+      "ocr_text": "ORDER",
+      "caption": "the cover of the book mail order bride",
+      "prompt": "the cover of the book mail order bride, with the text \u201cTHE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 467.82,
+        "brightness": 74.76,
+        "contrast": 79.21,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "image_id": "001520644.jpg",
+      "filename": "img_0047.jpg",
+      "filepath": "train/images/img_0047.jpg",
+      "split": "train",
+      "text": "SWINGS",
+      "annotation_text": "SWINGS",
+      "ocr_text": "19",
+      "caption": "graco baby swings",
+      "prompt": "graco baby swings, with the text \u201cSWINGS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2772.8,
+        "brightness": 157.37,
+        "contrast": 56.1,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "image_id": "001520664.jpg",
+      "filename": "img_0048.jpg",
+      "filepath": "train/images/img_0048.jpg",
+      "split": "train",
+      "text": "BAZOOKA",
+      "annotation_text": "BAZOOKA",
+      "ocr_text": "BAZOOKA",
+      "caption": "bazooka energy drink in a can",
+      "prompt": "bazooka energy drink in a can, with the text \u201cBAZOOKA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 233.15,
+        "brightness": 216.82,
+        "contrast": 69.38,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "image_id": "001520685.jpg",
+      "filename": "img_0049.jpg",
+      "filepath": "train/images/img_0049.jpg",
+      "split": "train",
+      "text": "THESUN",
+      "annotation_text": "THESUN",
+      "ocr_text": "BEFORE",
+      "caption": "before the sun hits",
+      "prompt": "before the sun hits, with the text \u201cTHESUN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 374.22,
+        "brightness": 111.04,
+        "contrast": 67.89,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "image_id": "001520588.jpg",
+      "filename": "img_0050.jpg",
+      "filepath": "train/images/img_0050.jpg",
+      "split": "train",
+      "text": "TICKETS",
+      "annotation_text": "TICKETS",
+      "ocr_text": "\u2018TICKETS",
+      "caption": "black canyon tickets logo",
+      "prompt": "black canyon tickets logo, with the text \u201cTICKETS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 4606.61,
+        "brightness": 169.84,
+        "contrast": 107.51,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "image_id": "001520707.jpg",
+      "filename": "img_0051.jpg",
+      "filepath": "train/images/img_0051.jpg",
+      "split": "train",
+      "text": "REAGAN'S",
+      "annotation_text": "REAGAN'S",
+      "ocr_text": "REAGAN'S",
+      "caption": "reagan's in the house - las wasted youth",
+      "prompt": "reagan's in the house - las wasted youth, with the text \u201cREAGAN'S\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 743.39,
+        "brightness": 152.1,
+        "contrast": 94.66,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "image_id": "001520693.jpg",
+      "filename": "img_0052.jpg",
+      "filepath": "train/images/img_0052.jpg",
+      "split": "train",
+      "text": "ELDORADO",
+      "annotation_text": "ELDORADO",
+      "ocr_text": "DORADO",
+      "caption": "europa universalis el dorado",
+      "prompt": "europa universalis el dorado, with the text \u201cELDORADO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 563.06,
+        "brightness": 104.44,
+        "contrast": 99.93,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "image_id": "001520715.jpg",
+      "filename": "img_0053.jpg",
+      "filepath": "train/images/img_0053.jpg",
+      "split": "train",
+      "text": "BOOK",
+      "annotation_text": "BOOK",
+      "ocr_text": "BUSINESS",
+      "caption": "the milwaukee business journal book of lists",
+      "prompt": "the milwaukee business journal book of lists, with the text \u201cBOOK\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 817.21,
+        "brightness": 221.04,
+        "contrast": 70.8,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "image_id": "001520723.jpg",
+      "filename": "img_0054.jpg",
+      "filepath": "train/images/img_0054.jpg",
+      "split": "train",
+      "text": "Series",
+      "annotation_text": "Series",
+      "ocr_text": "Series",
+      "caption": "the graphtec high performance fc 9000 series",
+      "prompt": "the graphtec high performance fc 9000 series, with the text \u201cSeries\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 263.66,
+        "brightness": 185.48,
+        "contrast": 74.58,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "image_id": "001520752.jpg",
+      "filename": "img_0055.jpg",
+      "filepath": "train/images/img_0055.jpg",
+      "split": "train",
+      "text": "ALWAYS",
+      "annotation_text": "ALWAYS",
+      "ocr_text": "ALWAYS",
+      "caption": "always fresh ipad mini cases",
+      "prompt": "always fresh ipad mini cases, with the text \u201cALWAYS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 125.55,
+        "brightness": 184.91,
+        "contrast": 73.25,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "image_id": "001520737.jpg",
+      "filename": "img_0056.jpg",
+      "filepath": "train/images/img_0056.jpg",
+      "split": "train",
+      "text": "WARRIORS",
+      "annotation_text": "WARRIORS",
+      "ocr_text": "WARRIORS",
+      "caption": "dynasty warriors gundam reborn",
+      "prompt": "dynasty warriors gundam reborn, with the text \u201cWARRIORS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1516.12,
+        "brightness": 100.42,
+        "contrast": 68.75,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "image_id": "001520770.jpg",
+      "filename": "img_0057.jpg",
+      "filepath": "train/images/img_0057.jpg",
+      "split": "train",
+      "text": "STICKMAN",
+      "annotation_text": "STICKMAN",
+      "ocr_text": "BRe",
+      "caption": "stickman brews logo",
+      "prompt": "stickman brews logo, with the text \u201cSTICKMAN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 505.96,
+        "brightness": 159.1,
+        "contrast": 113.8,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "image_id": "001520753.jpg",
+      "filename": "img_0058.jpg",
+      "filepath": "train/images/img_0058.jpg",
+      "split": "train",
+      "text": "DRAGONS",
+      "annotation_text": "DRAGONS",
+      "ocr_text": "ACTIVITY",
+      "caption": "the dragons activity book with a dragon on the cover",
+      "prompt": "the dragons activity book with a dragon on the cover, with the text \u201cDRAGONS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2071.14,
+        "brightness": 91.59,
+        "contrast": 75.77,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "image_id": "001520771.jpg",
+      "filename": "img_0059.jpg",
+      "filepath": "train/images/img_0059.jpg",
+      "split": "train",
+      "text": "Graffiti",
+      "annotation_text": "Graffiti",
+      "ocr_text": "Graffiti",
+      "caption": "graffiti art deutschland, germany",
+      "prompt": "graffiti art deutschland, germany, with the text \u201cGraffiti\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 868.29,
+        "brightness": 76.14,
+        "contrast": 80.42,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "image_id": "001520779.jpg",
+      "filename": "img_0060.jpg",
+      "filepath": "train/images/img_0060.jpg",
+      "split": "train",
+      "text": "PURGE",
+      "annotation_text": "PURGE",
+      "ocr_text": "THE",
+      "caption": "the purge 4-movie collection blu-ray",
+      "prompt": "the purge 4-movie collection blu-ray, with the text \u201cPURGE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 367.21,
+        "brightness": 113.31,
+        "contrast": 90.17,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "image_id": "001520794.jpg",
+      "filename": "img_0061.jpg",
+      "filepath": "train/images/img_0061.jpg",
+      "split": "train",
+      "text": "SARDINIA",
+      "annotation_text": "SARDINIA",
+      "ocr_text": "SARDINIA",
+      "caption": "map of italy sardinia vector map of italy sardinia map of italy sardinia map of italy sardinia map of it",
+      "prompt": "map of italy sardinia vector map of italy sardinia map of italy sardinia map of italy sardinia map of it, with the text \u201cSARDINIA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 506.19,
+        "brightness": 220.4,
+        "contrast": 84.34,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "image_id": "001520793.jpg",
+      "filename": "img_0062.jpg",
+      "filepath": "train/images/img_0062.jpg",
+      "split": "train",
+      "text": "Pennycuick",
+      "annotation_text": "Pennycuick",
+      "ocr_text": "Projects",
+      "caption": "flash cs5 projects",
+      "prompt": "flash cs5 projects, with the text \u201cPennycuick\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 788.28,
+        "brightness": 171.38,
+        "contrast": 87.47,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "image_id": "001520802.jpg",
+      "filename": "img_0063.jpg",
+      "filepath": "train/images/img_0063.jpg",
+      "split": "train",
+      "text": "boardshop",
+      "annotation_text": "boardshop",
+      "ocr_text": "boardshop",
+      "caption": "edge boardshop logo",
+      "prompt": "edge boardshop logo, with the text \u201cboardshop\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 101.56,
+        "brightness": 177.11,
+        "contrast": 102.79,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "image_id": "001520814.jpg",
+      "filename": "img_0064.jpg",
+      "filepath": "train/images/img_0064.jpg",
+      "split": "train",
+      "text": "ATHLETIC",
+      "annotation_text": "ATHLETIC",
+      "ocr_text": "ATHLETIC",
+      "caption": "interstate eight athletic conference",
+      "prompt": "interstate eight athletic conference, with the text \u201cATHLETIC\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1709.05,
+        "brightness": 200.36,
+        "contrast": 86.82,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "image_id": "001520762.jpg",
+      "filename": "img_0065.jpg",
+      "filepath": "train/images/img_0065.jpg",
+      "split": "train",
+      "text": "CHARLES",
+      "annotation_text": "CHARLES",
+      "ocr_text": "AMBASSADOR",
+      "caption": "the cover of charles the lion dog",
+      "prompt": "the cover of charles the lion dog, with the text \u201cCHARLES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1747.26,
+        "brightness": 178.45,
+        "contrast": 48.68,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "image_id": "001520839.jpg",
+      "filename": "img_0066.jpg",
+      "filepath": "train/images/img_0066.jpg",
+      "split": "train",
+      "text": "LIGHT",
+      "annotation_text": "LIGHT",
+      "ocr_text": "USING",
+      "caption": "bud light 18 pack",
+      "prompt": "bud light 18 pack, with the text \u201cLIGHT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1776.08,
+        "brightness": 177.16,
+        "contrast": 95.99,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "image_id": "001520848.jpg",
+      "filename": "img_0067.jpg",
+      "filepath": "train/images/img_0067.jpg",
+      "split": "train",
+      "text": "WEDDING",
+      "annotation_text": "WEDDING",
+      "ocr_text": "ASHLEY",
+      "caption": "gold watercolor wedding invitation",
+      "prompt": "gold watercolor wedding invitation, with the text \u201cWEDDING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 374.67,
+        "brightness": 221.05,
+        "contrast": 45.22,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "image_id": "001520844.jpg",
+      "filename": "img_0068.jpg",
+      "filepath": "train/images/img_0068.jpg",
+      "split": "train",
+      "text": "Pocket",
+      "annotation_text": "Pocket",
+      "ocr_text": "Pocket",
+      "caption": "java pocket book",
+      "prompt": "java pocket book, with the text \u201cPocket\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 538.65,
+        "brightness": 127.71,
+        "contrast": 105.33,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "image_id": "001520887.jpg",
+      "filename": "img_0069.jpg",
+      "filepath": "train/images/img_0069.jpg",
+      "split": "train",
+      "text": "Curriculum",
+      "annotation_text": "Curriculum",
+      "ocr_text": "Curriculum",
+      "caption": "atelier homeschool art curriculum",
+      "prompt": "atelier homeschool art curriculum, with the text \u201cCurriculum\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 559.36,
+        "brightness": 123.86,
+        "contrast": 58.28,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "image_id": "001520889.jpg",
+      "filename": "img_0070.jpg",
+      "filepath": "train/images/img_0070.jpg",
+      "split": "train",
+      "text": "HUNGER",
+      "annotation_text": "HUNGER",
+      "ocr_text": "HUNGER",
+      "caption": "kraft fight hunger bowl logo",
+      "prompt": "kraft fight hunger bowl logo, with the text \u201cHUNGER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 303.41,
+        "brightness": 201.36,
+        "contrast": 62.12,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "image_id": "001520731.jpg",
+      "filename": "img_0071.jpg",
+      "filepath": "train/images/img_0071.jpg",
+      "split": "train",
+      "text": "PEOPLE",
+      "annotation_text": "PEOPLE",
+      "ocr_text": "PEOPLE",
+      "caption": "the other people podcast with brad lister",
+      "prompt": "the other people podcast with brad lister, with the text \u201cPEOPLE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 174.1,
+        "brightness": 211.91,
+        "contrast": 53.89,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "image_id": "001520811.jpg",
+      "filename": "img_0072.jpg",
+      "filepath": "train/images/img_0072.jpg",
+      "split": "train",
+      "text": "Vienna",
+      "annotation_text": "Vienna",
+      "ocr_text": "Vienna",
+      "caption": "time out vienna",
+      "prompt": "time out vienna, with the text \u201cVienna\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 135.99,
+        "brightness": 152.1,
+        "contrast": 69.48,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "image_id": "001520895.jpg",
+      "filename": "img_0073.jpg",
+      "filepath": "train/images/img_0073.jpg",
+      "split": "train",
+      "text": "Imprecations",
+      "annotation_text": "Imprecations",
+      "ocr_text": "NICK",
+      "caption": "the cover of the book the impressions of daemons",
+      "prompt": "the cover of the book the impressions of daemons, with the text \u201cImprecations\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 12,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 441.31,
+        "brightness": 63.0,
+        "contrast": 41.75,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "image_id": "001520902.jpg",
+      "filename": "img_0074.jpg",
+      "filepath": "train/images/img_0074.jpg",
+      "split": "train",
+      "text": "couple",
+      "annotation_text": "couple",
+      "ocr_text": "MERDE",
+      "caption": "the cover of the book vie de merde en couple",
+      "prompt": "the cover of the book vie de merde en couple, with the text \u201ccouple\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1360.12,
+        "brightness": 106.03,
+        "contrast": 78.53,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "image_id": "001520957.jpg",
+      "filename": "img_0075.jpg",
+      "filepath": "train/images/img_0075.jpg",
+      "split": "train",
+      "text": "Chris",
+      "annotation_text": "Chris",
+      "ocr_text": "Chris",
+      "caption": "a birthday party sign with a tiger and the number one",
+      "prompt": "a birthday party sign with a tiger and the number one, with the text \u201cChris\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 339.08,
+        "brightness": 211.4,
+        "contrast": 60.48,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "image_id": "001520952.jpg",
+      "filename": "img_0076.jpg",
+      "filepath": "train/images/img_0076.jpg",
+      "split": "train",
+      "text": "QUESTION",
+      "annotation_text": "QUESTION",
+      "ocr_text": "QUESTION",
+      "caption": "i mustache you a question heart sticker",
+      "prompt": "i mustache you a question heart sticker, with the text \u201cQUESTION\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 181.16,
+        "brightness": 222.63,
+        "contrast": 62.35,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "image_id": "001520963.jpg",
+      "filename": "img_0077.jpg",
+      "filepath": "train/images/img_0077.jpg",
+      "split": "train",
+      "text": "BASEBALL",
+      "annotation_text": "BASEBALL",
+      "ocr_text": "BASEBALL",
+      "caption": "eat sleep baseball repeat",
+      "prompt": "eat sleep baseball repeat, with the text \u201cBASEBALL\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 826.7,
+        "brightness": 181.09,
+        "contrast": 96.71,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "image_id": "001520940.jpg",
+      "filename": "img_0078.jpg",
+      "filepath": "train/images/img_0078.jpg",
+      "split": "train",
+      "text": "Netherlands",
+      "annotation_text": "Netherlands",
+      "ocr_text": "Netherlands",
+      "caption": "live love the netherlands ipad folio cases",
+      "prompt": "live love the netherlands ipad folio cases, with the text \u201cNetherlands\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 11,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 142.3,
+        "brightness": 220.68,
+        "contrast": 50.54,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "image_id": "001520969.jpg",
+      "filename": "img_0079.jpg",
+      "filepath": "train/images/img_0079.jpg",
+      "split": "train",
+      "text": "FITTED",
+      "annotation_text": "FITTED",
+      "ocr_text": "FITTED",
+      "caption": "a table with the words 30 round fitted on it",
+      "prompt": "a table with the words 30 round fitted on it, with the text \u201cFITTED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 263.84,
+        "brightness": 201.95,
+        "contrast": 58.93,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 80,
+      "image_id": "001520990.jpg",
+      "filename": "img_0080.jpg",
+      "filepath": "val/images/img_0080.jpg",
+      "split": "val",
+      "text": "AUGUST",
+      "annotation_text": "AUGUST",
+      "ocr_text": "AUGUST",
+      "caption": "india 15 august independence day logo",
+      "prompt": "india 15 august independence day logo, with the text \u201cAUGUST\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 769.65,
+        "brightness": 226.73,
+        "contrast": 53.79,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "image_id": "001520992.jpg",
+      "filename": "img_0081.jpg",
+      "filepath": "val/images/img_0081.jpg",
+      "split": "val",
+      "text": "BATTLEGROUNDS",
+      "annotation_text": "BATTLEGROUNDS",
+      "ocr_text": "GALA",
+      "caption": "star wars galactic battlegrounds",
+      "prompt": "star wars galactic battlegrounds, with the text \u201cBATTLEGROUNDS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 412.36,
+        "brightness": 91.41,
+        "contrast": 50.07,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "image_id": "001521002.jpg",
+      "filename": "img_0082.jpg",
+      "filepath": "val/images/img_0082.jpg",
+      "split": "val",
+      "text": "PROAUDIO",
+      "annotation_text": "PROAUDIO",
+      "ocr_text": "ABEL",
+      "caption": "capsun pro audio label sampler ii",
+      "prompt": "capsun pro audio label sampler ii, with the text \u201cPROAUDIO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2719.51,
+        "brightness": 109.52,
+        "contrast": 79.4,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "image_id": "001521033.jpg",
+      "filename": "img_0083.jpg",
+      "filepath": "val/images/img_0083.jpg",
+      "split": "val",
+      "text": "FUNKY",
+      "annotation_text": "FUNKY",
+      "ocr_text": "Your",
+      "caption": "funky move your body - oji",
+      "prompt": "funky move your body - oji, with the text \u201cFUNKY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 491.3,
+        "brightness": 125.88,
+        "contrast": 63.32,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "image_id": "001521024.jpg",
+      "filename": "img_0084.jpg",
+      "filepath": "val/images/img_0084.jpg",
+      "split": "val",
+      "text": "SHORT",
+      "annotation_text": "SHORT",
+      "ocr_text": "114697421",
+      "caption": "short sale rubber stamp on a white background",
+      "prompt": "short sale rubber stamp on a white background, with the text \u201cSHORT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 568.19,
+        "brightness": 197.3,
+        "contrast": 78.48,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "image_id": "001521045.jpg",
+      "filename": "img_0085.jpg",
+      "filepath": "val/images/img_0085.jpg",
+      "split": "val",
+      "text": "WARNING",
+      "annotation_text": "WARNING",
+      "ocr_text": "WARNING",
+      "caption": "warning tattoo artist postcard",
+      "prompt": "warning tattoo artist postcard, with the text \u201cWARNING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 347.74,
+        "brightness": 191.86,
+        "contrast": 99.29,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "image_id": "001521057.jpg",
+      "filename": "img_0086.jpg",
+      "filepath": "val/images/img_0086.jpg",
+      "split": "val",
+      "text": "Yoga",
+      "annotation_text": "Yoga",
+      "ocr_text": "Yoga",
+      "caption": "i love yoga round sticker",
+      "prompt": "i love yoga round sticker, with the text \u201cYoga\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 86.09,
+        "brightness": 216.38,
+        "contrast": 66.91,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "image_id": "001521022.jpg",
+      "filename": "img_0087.jpg",
+      "filepath": "val/images/img_0087.jpg",
+      "split": "val",
+      "text": "NONETHE",
+      "annotation_text": "NONETHE",
+      "ocr_text": "TODA!",
+      "caption": "75 today and none the wiser coffee mug",
+      "prompt": "75 today and none the wiser coffee mug, with the text \u201cNONETHE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 224.23,
+        "brightness": 217.84,
+        "contrast": 55.6,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "image_id": "001520988.jpg",
+      "filename": "img_0088.jpg",
+      "filepath": "val/images/img_0088.jpg",
+      "split": "val",
+      "text": "Christmas",
+      "annotation_text": "Christmas",
+      "ocr_text": "Part",
+      "caption": "christmas party games for kids",
+      "prompt": "christmas party games for kids, with the text \u201cChristmas\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 698.57,
+        "brightness": 105.59,
+        "contrast": 62.29,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "image_id": "001521073.jpg",
+      "filename": "img_0089.jpg",
+      "filepath": "val/images/img_0089.jpg",
+      "split": "val",
+      "text": "RESCUE",
+      "annotation_text": "RESCUE",
+      "ocr_text": "RESCUE",
+      "caption": "a model of a fire truck with a red and white chevy rescue van",
+      "prompt": "a model of a fire truck with a red and white chevy rescue van, with the text \u201cRESCUE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 725.68,
+        "brightness": 145.05,
+        "contrast": 90.39,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "image_id": "001521085.jpg",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "PRIVATE",
+      "annotation_text": "PRIVATE",
+      "ocr_text": "BER",
+      "caption": "the movie private number is shown",
+      "prompt": "the movie private number is shown, with the text \u201cPRIVATE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 405.93,
+        "brightness": 93.17,
+        "contrast": 60.54,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "001521052.jpg",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "show",
+      "annotation_text": "show",
+      "ocr_text": "SNOW",
+      "caption": "sam the show logo on a yellow background",
+      "prompt": "sam the show logo on a yellow background, with the text \u201cshow\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 4945.87,
+        "brightness": 165.38,
+        "contrast": 97.15,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "001521059.jpg",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "WALES",
+      "annotation_text": "WALES",
+      "ocr_text": "AR",
+      "caption": "hen party south wales",
+      "prompt": "hen party south wales, with the text \u201cWALES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1203.55,
+        "brightness": 107.65,
+        "contrast": 49.44,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "001521076.jpg",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "ENTRE",
+      "annotation_text": "ENTRE",
+      "ocr_text": "PRE",
+      "caption": "i am an entrepreneur pillow",
+      "prompt": "i am an entrepreneur pillow, with the text \u201cENTRE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 88.23,
+        "brightness": 211.55,
+        "contrast": 56.3,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "001521098.jpg",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "VALENTINES",
+      "annotation_text": "VALENTINES",
+      "ocr_text": "LE",
+      "caption": "barry white - valentine's day edition",
+      "prompt": "barry white - valentine's day edition, with the text \u201cVALENTINES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 699.74,
+        "brightness": 184.2,
+        "contrast": 65.54,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "001521096.jpg",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "Probably",
+      "annotation_text": "Probably",
+      "ocr_text": "Probal",
+      "caption": "this is probably vodka wine tumbler",
+      "prompt": "this is probably vodka wine tumbler, with the text \u201cProbably\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 680.58,
+        "brightness": 179.29,
+        "contrast": 55.73,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "001521124.jpg",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "Australian",
+      "annotation_text": "Australian",
+      "ocr_text": "Breed",
+      "caption": "australian kelpie breed of champions logo",
+      "prompt": "australian kelpie breed of champions logo, with the text \u201cAustralian\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 314.5,
+        "brightness": 220.98,
+        "contrast": 73.37,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "001521043.jpg",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "Experience",
+      "annotation_text": "Experience",
+      "ocr_text": "Experience",
+      "caption": "the nintendo experience best buy",
+      "prompt": "the nintendo experience best buy, with the text \u201cExperience\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 304.21,
+        "brightness": 111.1,
+        "contrast": 65.07,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "001521107.jpg",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "RTUNE",
+      "annotation_text": "RTUNE",
+      "ocr_text": "FORTUNE",
+      "caption": "james fortune - live through it",
+      "prompt": "james fortune - live through it, with the text \u201cRTUNE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1319.65,
+        "brightness": 119.13,
+        "contrast": 103.23,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "001521053.jpg",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "SUNTABLE",
+      "annotation_text": "SUNTABLE",
+      "ocr_text": "SUNTABLE",
+      "caption": "hachira suntable no 19 ethiopia",
+      "prompt": "hachira suntable no 19 ethiopia, with the text \u201cSUNTABLE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 586.82,
+        "brightness": 222.25,
+        "contrast": 35.44,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

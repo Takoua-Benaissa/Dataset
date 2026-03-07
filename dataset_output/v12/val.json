@@ -1,0 +1,32 @@
+{
+  "split": "val",
+  "count": 1,
+  "data": [
+    {
+      "id": 8,
+      "image_id": "001520204.jpg",
+      "filename": "img_0008.jpg",
+      "filepath": "val/images/img_0008.jpg",
+      "split": "val",
+      "text": "MONEY!",
+      "annotation_text": "MONEY!",
+      "ocr_text": "MONEY!",
+      "caption": "show me the money button",
+      "prompt": "show me the money button, with the text \u201cMONEY!\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": false,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 211.06,
+        "brightness": 176.62,
+        "contrast": 70.88,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

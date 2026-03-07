@@ -1,0 +1,256 @@
+{
+  "split": "val",
+  "count": 10,
+  "data": [
+    {
+      "id": 80,
+      "image_id": "001520990.jpg",
+      "filename": "img_0080.jpg",
+      "filepath": "val/images/img_0080.jpg",
+      "split": "val",
+      "text": "AUGUST",
+      "annotation_text": "AUGUST",
+      "ocr_text": "AUGUST",
+      "caption": "india 15 august independence day logo",
+      "prompt": "india 15 august independence day logo, with the text \u201cAUGUST\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 769.65,
+        "brightness": 226.73,
+        "contrast": 53.79,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "image_id": "001520992.jpg",
+      "filename": "img_0081.jpg",
+      "filepath": "val/images/img_0081.jpg",
+      "split": "val",
+      "text": "BATTLEGROUNDS",
+      "annotation_text": "BATTLEGROUNDS",
+      "ocr_text": "GALA",
+      "caption": "star wars galactic battlegrounds",
+      "prompt": "star wars galactic battlegrounds, with the text \u201cBATTLEGROUNDS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 412.36,
+        "brightness": 91.41,
+        "contrast": 50.07,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "image_id": "001521002.jpg",
+      "filename": "img_0082.jpg",
+      "filepath": "val/images/img_0082.jpg",
+      "split": "val",
+      "text": "PROAUDIO",
+      "annotation_text": "PROAUDIO",
+      "ocr_text": "ABEL",
+      "caption": "capsun pro audio label sampler ii",
+      "prompt": "capsun pro audio label sampler ii, with the text \u201cPROAUDIO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2719.51,
+        "brightness": 109.52,
+        "contrast": 79.4,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "image_id": "001521033.jpg",
+      "filename": "img_0083.jpg",
+      "filepath": "val/images/img_0083.jpg",
+      "split": "val",
+      "text": "FUNKY",
+      "annotation_text": "FUNKY",
+      "ocr_text": "Your",
+      "caption": "funky move your body - oji",
+      "prompt": "funky move your body - oji, with the text \u201cFUNKY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 491.3,
+        "brightness": 125.88,
+        "contrast": 63.32,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "image_id": "001521024.jpg",
+      "filename": "img_0084.jpg",
+      "filepath": "val/images/img_0084.jpg",
+      "split": "val",
+      "text": "SHORT",
+      "annotation_text": "SHORT",
+      "ocr_text": "114697421",
+      "caption": "short sale rubber stamp on a white background",
+      "prompt": "short sale rubber stamp on a white background, with the text \u201cSHORT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 568.19,
+        "brightness": 197.3,
+        "contrast": 78.48,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "image_id": "001521045.jpg",
+      "filename": "img_0085.jpg",
+      "filepath": "val/images/img_0085.jpg",
+      "split": "val",
+      "text": "WARNING",
+      "annotation_text": "WARNING",
+      "ocr_text": "WARNING",
+      "caption": "warning tattoo artist postcard",
+      "prompt": "warning tattoo artist postcard, with the text \u201cWARNING\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 347.74,
+        "brightness": 191.86,
+        "contrast": 99.29,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "image_id": "001521057.jpg",
+      "filename": "img_0086.jpg",
+      "filepath": "val/images/img_0086.jpg",
+      "split": "val",
+      "text": "Yoga",
+      "annotation_text": "Yoga",
+      "ocr_text": "Yoga",
+      "caption": "i love yoga round sticker",
+      "prompt": "i love yoga round sticker, with the text \u201cYoga\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 86.09,
+        "brightness": 216.38,
+        "contrast": 66.91,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "image_id": "001521022.jpg",
+      "filename": "img_0087.jpg",
+      "filepath": "val/images/img_0087.jpg",
+      "split": "val",
+      "text": "NONETHE",
+      "annotation_text": "NONETHE",
+      "ocr_text": "TODA!",
+      "caption": "75 today and none the wiser coffee mug",
+      "prompt": "75 today and none the wiser coffee mug, with the text \u201cNONETHE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 224.23,
+        "brightness": 217.84,
+        "contrast": 55.6,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "image_id": "001520988.jpg",
+      "filename": "img_0088.jpg",
+      "filepath": "val/images/img_0088.jpg",
+      "split": "val",
+      "text": "Christmas",
+      "annotation_text": "Christmas",
+      "ocr_text": "Part",
+      "caption": "christmas party games for kids",
+      "prompt": "christmas party games for kids, with the text \u201cChristmas\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 698.57,
+        "brightness": 105.59,
+        "contrast": 62.29,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "image_id": "001521073.jpg",
+      "filename": "img_0089.jpg",
+      "filepath": "val/images/img_0089.jpg",
+      "split": "val",
+      "text": "RESCUE",
+      "annotation_text": "RESCUE",
+      "ocr_text": "RESCUE",
+      "caption": "a model of a fire truck with a red and white chevy rescue van",
+      "prompt": "a model of a fire truck with a red and white chevy rescue van, with the text \u201cRESCUE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 725.68,
+        "brightness": 145.05,
+        "contrast": 90.39,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

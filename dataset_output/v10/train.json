@@ -1,0 +1,2086 @@
+{
+  "split": "train",
+  "count": 80,
+  "data": [
+    {
+      "id": 0,
+      "image_id": "4e40fcde84677d90",
+      "filename": "img_0000.jpg",
+      "filepath": "train/images/img_0000.jpg",
+      "split": "train",
+      "text": "SRB",
+      "annotation_text": "SRB",
+      "ocr_text": "SRB",
+      "caption_blip": "A close up of a license plate on a car",
+      "caption_textcaps": "",
+      "prompt": "A close up of a license plate on a car, with the text \u201cSRB\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1327.04,
+        "brightness": 130.56,
+        "contrast": 70.5,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "image_id": "3b686fabd9152b76",
+      "filename": "img_0001.jpg",
+      "filepath": "train/images/img_0001.jpg",
+      "split": "train",
+      "text": "ORIGINAL",
+      "annotation_text": "ORIGINAL",
+      "ocr_text": "PILSEN",
+      "caption_blip": "A glass filled with liquid next to a bottle",
+      "caption_textcaps": "",
+      "prompt": "A glass filled with liquid next to a bottle, with the text \u201cORIGINAL\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 780.96,
+        "brightness": 70.31,
+        "contrast": 79.14,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "1b4b5ff55491907d",
+      "filename": "img_0002.jpg",
+      "filepath": "train/images/img_0002.jpg",
+      "split": "train",
+      "text": "STOP",
+      "annotation_text": "STOP",
+      "ocr_text": "STOP",
+      "caption_blip": "A stop sign in front of a palm tree",
+      "caption_textcaps": "",
+      "prompt": "A stop sign in front of a palm tree, with the text \u201cSTOP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1602.68,
+        "brightness": 136.3,
+        "contrast": 47.55,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image_id": "b6430b5d71ac594b",
+      "filename": "img_0003.jpg",
+      "filepath": "train/images/img_0003.jpg",
+      "split": "train",
+      "text": "Satellite",
+      "annotation_text": "Satellite",
+      "ocr_text": "Shot",
+      "caption_blip": "A gray hoodie with the word sale on it",
+      "caption_textcaps": "",
+      "prompt": "A gray hoodie with the word sale on it, with the text \u201cSatellite\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 575.34,
+        "brightness": 59.42,
+        "contrast": 50.97,
+        "resolution": [
+          640,
+          478
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "image_id": "ef8b953494875da3",
+      "filename": "img_0004.jpg",
+      "filepath": "train/images/img_0004.jpg",
+      "split": "train",
+      "text": "FISHERMEN'S GROTTO",
+      "annotation_text": "FISHERMEN'S GROTTO",
+      "ocr_text": "ISH",
+      "caption_blip": "A group of boats docked in a harbor",
+      "caption_textcaps": "",
+      "prompt": "A group of boats docked in a harbor, with the text \u201cFISHERMEN'S GROTTO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 18,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 9506.78,
+        "brightness": 111.81,
+        "contrast": 79.89,
+        "resolution": [
+          640,
+          491
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "image_id": "de47e668fa1032e8",
+      "filename": "img_0005.jpg",
+      "filepath": "train/images/img_0005.jpg",
+      "split": "train",
+      "text": "10 SEGNALE 2",
+      "annotation_text": "10 SEGNALE 2",
+      "ocr_text": "SEGNALE",
+      "caption_blip": "A clock on the wall",
+      "caption_textcaps": "",
+      "prompt": "A clock on the wall, with the text \u201c10 SEGNALE 2\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 12,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 829.44,
+        "brightness": 148.46,
+        "contrast": 57.2,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "image_id": "686f7b098477c82b",
+      "filename": "img_0006.jpg",
+      "filepath": "train/images/img_0006.jpg",
+      "split": "train",
+      "text": "i18n",
+      "annotation_text": "i18n",
+      "ocr_text": "AD",
+      "caption_blip": "White tablecloth on the table",
+      "caption_textcaps": "",
+      "prompt": "White tablecloth on the table, with the text \u201ci18n\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 354.49,
+        "brightness": 123.61,
+        "contrast": 62.67,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "image_id": "2a9788701398e5e0",
+      "filename": "img_0007.jpg",
+      "filepath": "train/images/img_0007.jpg",
+      "split": "train",
+      "text": "HOT BABES",
+      "annotation_text": "HOT BABES",
+      "ocr_text": "BABES",
+      "caption_blip": "A large billboard on the side of a building",
+      "caption_textcaps": "",
+      "prompt": "A large billboard on the side of a building, with the text \u201cHOT BABES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1540.8,
+        "brightness": 51.23,
+        "contrast": 50.14,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "image_id": "047a0a11e087b2df",
+      "filename": "img_0008.jpg",
+      "filepath": "train/images/img_0008.jpg",
+      "split": "train",
+      "text": "Yardley Wood",
+      "annotation_text": "Yardley Wood",
+      "ocr_text": "ar",
+      "caption_blip": "A sign that is on the side of a road",
+      "caption_textcaps": "",
+      "prompt": "A sign that is on the side of a road, with the text \u201cYardley Wood\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1401.55,
+        "brightness": 162.48,
+        "contrast": 70.21,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "image_id": "03b10f45eb118bd5",
+      "filename": "img_0009.jpg",
+      "filepath": "train/images/img_0009.jpg",
+      "split": "train",
+      "text": "What's In My Pocket?",
+      "annotation_text": "What's In My Pocket?",
+      "ocr_text": "Concealed",
+      "caption_blip": "The contents of a gun, holster, and cell case",
+      "caption_textcaps": "",
+      "prompt": "The contents of a gun, holster, and cell case, with the text \u201cWhat's In My Pocket?\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 20,
+        "word_count": 4,
+        "source": "TextOCR",
+        "sharpness": 3356.41,
+        "brightness": 102.99,
+        "contrast": 64.31,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "image_id": "ef51768d4b1b7253",
+      "filename": "img_0010.jpg",
+      "filepath": "train/images/img_0010.jpg",
+      "split": "train",
+      "text": "Olympic transportation.",
+      "annotation_text": "Olympic transportation.",
+      "ocr_text": "spectators",
+      "caption_blip": "A screenshot of a cell phone with a blue background",
+      "caption_textcaps": "",
+      "prompt": "A screenshot of a cell phone with a blue background, with the text \u201cOlympic transportation.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 23,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 2886.87,
+        "brightness": 154.37,
+        "contrast": 67.11,
+        "resolution": [
+          498,
+          532
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "image_id": "e386dfe2a31a305a",
+      "filename": "img_0011.jpg",
+      "filepath": "train/images/img_0011.jpg",
+      "split": "train",
+      "text": "Mary Shelley",
+      "annotation_text": "Mary Shelley",
+      "ocr_text": "SMITH",
+      "caption_blip": "The cover of frankenstein by mary smith",
+      "caption_textcaps": "",
+      "prompt": "The cover of frankenstein by mary smith, with the text \u201cMary Shelley\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 8211.62,
+        "brightness": 97.85,
+        "contrast": 67.72,
+        "resolution": [
+          421,
+          640
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "image_id": "b9d6920b112504db",
+      "filename": "img_0012.jpg",
+      "filepath": "train/images/img_0012.jpg",
+      "split": "train",
+      "text": "BLUE JAY",
+      "annotation_text": "BLUE JAY",
+      "ocr_text": "Expedia.ca",
+      "caption_blip": "A baseball player throwing a ball on the field",
+      "caption_textcaps": "",
+      "prompt": "A baseball player throwing a ball on the field, with the text \u201cBLUE JAY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 8,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1291.63,
+        "brightness": 129.57,
+        "contrast": 51.25,
+        "resolution": [
+          482,
+          640
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "image_id": "4eac90f28eea6bb1",
+      "filename": "img_0013.jpg",
+      "filepath": "train/images/img_0013.jpg",
+      "split": "train",
+      "text": "EXTRA COLD",
+      "annotation_text": "EXTRA COLD",
+      "ocr_text": "INNES",
+      "caption_blip": "A glass of beer sitting on a bar",
+      "caption_textcaps": "",
+      "prompt": "A glass of beer sitting on a bar, with the text \u201cEXTRA COLD\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 325.38,
+        "brightness": 59.52,
+        "contrast": 71.49,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "image_id": "1c284541de9fa037",
+      "filename": "img_0014.jpg",
+      "filepath": "train/images/img_0014.jpg",
+      "split": "train",
+      "text": "SIDNEY BECHET",
+      "annotation_text": "SIDNEY BECHET",
+      "ocr_text": "Andre",
+      "caption_blip": "A cd with a picture of a man on the cover",
+      "caption_textcaps": "",
+      "prompt": "A cd with a picture of a man on the cover, with the text \u201cSIDNEY BECHET\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 13,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1087.24,
+        "brightness": 107.7,
+        "contrast": 68.96,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "image_id": "a278f1773944fbf7",
+      "filename": "img_0015.jpg",
+      "filepath": "train/images/img_0015.jpg",
+      "split": "train",
+      "text": "Ford",
+      "annotation_text": "Ford",
+      "ocr_text": "DELT",
+      "caption_blip": "A baseball game is being played in a stadium",
+      "caption_textcaps": "",
+      "prompt": "A baseball game is being played in a stadium, with the text \u201cFord\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 7901.62,
+        "brightness": 112.6,
+        "contrast": 53.71,
+        "resolution": [
+          640,
+          333
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "image_id": "ad7003f84cd50392",
+      "filename": "img_0016.jpg",
+      "filepath": "train/images/img_0016.jpg",
+      "split": "train",
+      "text": "MEALS",
+      "annotation_text": "MEALS",
+      "ocr_text": "\u201cVO",
+      "caption_blip": "A pile of food sitting on a kitchen counter",
+      "caption_textcaps": "",
+      "prompt": "A pile of food sitting on a kitchen counter, with the text \u201cMEALS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 2257.48,
+        "brightness": 79.84,
+        "contrast": 49.11,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "image_id": "00ab9f2e1a54dc14",
+      "filename": "img_0017.jpg",
+      "filepath": "train/images/img_0017.jpg",
+      "split": "train",
+      "text": "Thomas Dry HOWIE . .",
+      "annotation_text": "Thomas Dry HOWIE . .",
+      "ocr_text": "Dry",
+      "caption_blip": "A sign with a picture of a man on it",
+      "caption_textcaps": "",
+      "prompt": "A sign with a picture of a man on it, with the text \u201cThomas Dry HOWIE . .\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 20,
+        "word_count": 5,
+        "source": "TextOCR",
+        "sharpness": 631.31,
+        "brightness": 135.49,
+        "contrast": 44.13,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "image_id": "1a0daecc117f39f0",
+      "filename": "img_0018.jpg",
+      "filepath": "train/images/img_0018.jpg",
+      "split": "train",
+      "text": "BUSINESS",
+      "annotation_text": "BUSINESS",
+      "ocr_text": "for",
+      "caption_blip": "A newspaper with a picture of a building on it",
+      "caption_textcaps": "",
+      "prompt": "A newspaper with a picture of a building on it, with the text \u201cBUSINESS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1757.94,
+        "brightness": 139.83,
+        "contrast": 43.94,
+        "resolution": [
+          640,
+          360
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "image_id": "00ea362de70610ac",
+      "filename": "img_0019.jpg",
+      "filepath": "train/images/img_0019.jpg",
+      "split": "train",
+      "text": "MAYACAMA",
+      "annotation_text": "MAYACAMA",
+      "ocr_text": "AC",
+      "caption_blip": "A bottle of wine sitting on top of a counter",
+      "caption_textcaps": "",
+      "prompt": "A bottle of wine sitting on top of a counter, with the text \u201cMAYACAMA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 359.28,
+        "brightness": 65.84,
+        "contrast": 55.77,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "image_id": "6dce09aa278dc365",
+      "filename": "img_0020.jpg",
+      "filepath": "train/images/img_0020.jpg",
+      "split": "train",
+      "text": "far .",
+      "annotation_text": "far .",
+      "ocr_text": "Bu",
+      "caption_blip": "A book with an open page on it",
+      "caption_textcaps": "",
+      "prompt": "A book with an open page on it, with the text \u201cfar .\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1217.42,
+        "brightness": 136.8,
+        "contrast": 38.69,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "image_id": "186e87a83ad28e64",
+      "filename": "img_0021.jpg",
+      "filepath": "train/images/img_0021.jpg",
+      "split": "train",
+      "text": "ONE CUCUMBER",
+      "annotation_text": "ONE CUCUMBER",
+      "ocr_text": "SQUARE",
+      "caption_blip": "A bottle of perfume sitting on top of a table",
+      "caption_textcaps": "",
+      "prompt": "A bottle of perfume sitting on top of a table, with the text \u201cONE CUCUMBER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1739.96,
+        "brightness": 119.01,
+        "contrast": 54.25,
+        "resolution": [
+          313,
+          640
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "image_id": "1a6eeacd1866d7c1",
+      "filename": "img_0022.jpg",
+      "filepath": "train/images/img_0022.jpg",
+      "split": "train",
+      "text": "SAM'S",
+      "annotation_text": "SAM'S",
+      "ocr_text": "SAMS",
+      "caption_blip": "A brick building with a sign that says sam ' s",
+      "caption_textcaps": "",
+      "prompt": "A brick building with a sign that says sam ' s, with the text \u201cSAM'S\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1288.41,
+        "brightness": 90.73,
+        "contrast": 57.71,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "image_id": "32c951d2e81929c8",
+      "filename": "img_0023.jpg",
+      "filepath": "train/images/img_0023.jpg",
+      "split": "train",
+      "text": "STOP",
+      "annotation_text": "STOP",
+      "ocr_text": "By",
+      "caption_blip": "A stop sign on the side of a bridge",
+      "caption_textcaps": "",
+      "prompt": "A stop sign on the side of a bridge, with the text \u201cSTOP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 845.09,
+        "brightness": 66.32,
+        "contrast": 55.17,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "image_id": "795bf3d3acfb0b01",
+      "filename": "img_0024.jpg",
+      "filepath": "train/images/img_0024.jpg",
+      "split": "train",
+      "text": "THERE!",
+      "annotation_text": "THERE!",
+      "ocr_text": "HI",
+      "caption_blip": "A couple of cards sitting on top of a table",
+      "caption_textcaps": "",
+      "prompt": "A couple of cards sitting on top of a table, with the text \u201cTHERE!\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1251.49,
+        "brightness": 110.19,
+        "contrast": 72.51,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "image_id": "48acfe2c30a5f823",
+      "filename": "img_0025.jpg",
+      "filepath": "train/images/img_0025.jpg",
+      "split": "train",
+      "text": "CIBERNOVA",
+      "annotation_text": "CIBERNOVA",
+      "ocr_text": "810",
+      "caption_blip": "A computer sitting on top of a table",
+      "caption_textcaps": "",
+      "prompt": "A computer sitting on top of a table, with the text \u201cCIBERNOVA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 471.19,
+        "brightness": 120.63,
+        "contrast": 52.26,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "image_id": "54623649fa83fc87",
+      "filename": "img_0026.jpg",
+      "filepath": "train/images/img_0026.jpg",
+      "split": "train",
+      "text": ". FREDERIK POHL",
+      "annotation_text": ". FREDERIK POHL",
+      "ocr_text": "FRE",
+      "caption_blip": "A book with the title of the novel ' s title",
+      "caption_textcaps": "",
+      "prompt": "A book with the title of the novel ' s title, with the text \u201c. FREDERIK POHL\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 15,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 1728.47,
+        "brightness": 89.36,
+        "contrast": 51.4,
+        "resolution": [
+          401,
+          640
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "image_id": "9e0e57d6c00b4f6a",
+      "filename": "img_0027.jpg",
+      "filepath": "train/images/img_0027.jpg",
+      "split": "train",
+      "text": "19:00 H.",
+      "annotation_text": "19:00 H.",
+      "ocr_text": "MATERIAL",
+      "caption_blip": "A poster for an event with the words in spanish and english",
+      "caption_textcaps": "",
+      "prompt": "A poster for an event with the words in spanish and english, with the text \u201c19:00 H.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 4491.09,
+        "brightness": 148.8,
+        "contrast": 71.88,
+        "resolution": [
+          335,
+          640
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "image_id": "50b45f584485de8b",
+      "filename": "img_0028.jpg",
+      "filepath": "train/images/img_0028.jpg",
+      "split": "train",
+      "text": ". rida",
+      "annotation_text": ". rida",
+      "ocr_text": "42",
+      "caption_blip": "A baseball player pitching a ball on the field",
+      "caption_textcaps": "",
+      "prompt": "A baseball player pitching a ball on the field, with the text \u201c. rida\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 6,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 687.38,
+        "brightness": 104.46,
+        "contrast": 64.7,
+        "resolution": [
+          512,
+          640
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "image_id": "ac0640b0d081b678",
+      "filename": "img_0029.jpg",
+      "filepath": "train/images/img_0029.jpg",
+      "split": "train",
+      "text": ". Rip",
+      "annotation_text": ". Rip",
+      "ocr_text": "RiP",
+      "caption_blip": "A black and white photo of graffiti writing on a wall",
+      "caption_textcaps": "",
+      "prompt": "A black and white photo of graffiti writing on a wall, with the text \u201c. Rip\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 5,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 857.83,
+        "brightness": 140.06,
+        "contrast": 92.19,
+        "resolution": [
+          640,
+          640
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "image_id": "3806628c6edef636",
+      "filename": "img_0030.jpg",
+      "filepath": "train/images/img_0030.jpg",
+      "split": "train",
+      "text": "TD Comfort",
+      "annotation_text": "TD Comfort",
+      "ocr_text": "Zone",
+      "caption_blip": "A baseball player swinging a bat at home plate",
+      "caption_textcaps": "",
+      "prompt": "A baseball player swinging a bat at home plate, with the text \u201cTD Comfort\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1782.42,
+        "brightness": 92.97,
+        "contrast": 51.47,
+        "resolution": [
+          639,
+          428
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "image_id": "9461605e239ad669",
+      "filename": "img_0031.jpg",
+      "filepath": "train/images/img_0031.jpg",
+      "split": "train",
+      "text": "CUBS R",
+      "annotation_text": "CUBS R",
+      "ocr_text": "SS",
+      "caption_blip": "A man holding a beer in front of a brick wall",
+      "caption_textcaps": "",
+      "prompt": "A man holding a beer in front of a brick wall, with the text \u201cCUBS R\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.0,
+        "text_length": 6,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 2312.38,
+        "brightness": 110.43,
+        "contrast": 54.68,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "image_id": "71af68c37549605f",
+      "filename": "img_0032.jpg",
+      "filepath": "train/images/img_0032.jpg",
+      "split": "train",
+      "text": "LOUIS VUITTON",
+      "annotation_text": "LOUIS VUITTON",
+      "ocr_text": "LOUIS",
+      "caption_blip": "Louis vu store in singapore",
+      "caption_textcaps": "",
+      "prompt": "Louis vu store in singapore, with the text \u201cLOUIS VUITTON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 946.36,
+        "brightness": 87.96,
+        "contrast": 58.24,
+        "resolution": [
+          640,
+          401
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "image_id": "6199d76c04024577",
+      "filename": "img_0033.jpg",
+      "filepath": "train/images/img_0033.jpg",
+      "split": "train",
+      "text": "Skyworth .",
+      "annotation_text": "Skyworth .",
+      "ocr_text": "Skyworth",
+      "caption_blip": "A large screen with a picture of a man on it",
+      "caption_textcaps": "",
+      "prompt": "A large screen with a picture of a man on it, with the text \u201cSkyworth .\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 2195.37,
+        "brightness": 71.07,
+        "contrast": 80.48,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "image_id": "deb620c79d8f493c",
+      "filename": "img_0034.jpg",
+      "filepath": "train/images/img_0034.jpg",
+      "split": "train",
+      "text": "LARENDON HILLS",
+      "annotation_text": "LARENDON HILLS",
+      "ocr_text": "GRENACHE",
+      "caption_blip": "A bottle of wine sitting on a table",
+      "caption_textcaps": "",
+      "prompt": "A bottle of wine sitting on a table, with the text \u201cLARENDON HILLS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 14,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 606.25,
+        "brightness": 67.31,
+        "contrast": 58.73,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "image_id": "0225679831f27341",
+      "filename": "img_0035.jpg",
+      "filepath": "train/images/img_0035.jpg",
+      "split": "train",
+      "text": "CUSTOMER SERVICE",
+      "annotation_text": "CUSTOMER SERVICE",
+      "ocr_text": "SERVICE",
+      "caption_blip": "A store filled with lots of different items",
+      "caption_textcaps": "",
+      "prompt": "A store filled with lots of different items, with the text \u201cCUSTOMER SERVICE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 16,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1453.54,
+        "brightness": 118.71,
+        "contrast": 64.16,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "image_id": "71024b21b14a3956",
+      "filename": "img_0036.jpg",
+      "filepath": "train/images/img_0036.jpg",
+      "split": "train",
+      "text": "SEIRIN 10",
+      "annotation_text": "SEIRIN 10",
+      "ocr_text": "10",
+      "caption_blip": "A group of people standing around a basketball court",
+      "caption_textcaps": "",
+      "prompt": "A group of people standing around a basketball court, with the text \u201cSEIRIN 10\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 9,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 3006.97,
+        "brightness": 128.06,
+        "contrast": 61.17,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "image_id": "17fcdd6f288857ca",
+      "filename": "img_0037.jpg",
+      "filepath": "train/images/img_0037.jpg",
+      "split": "train",
+      "text": "21422 ORES",
+      "annotation_text": "21422 ORES",
+      "ocr_text": "Bluetooth",
+      "caption_blip": "A cell phone sitting on top of a table",
+      "caption_textcaps": "",
+      "prompt": "A cell phone sitting on top of a table, with the text \u201c21422 ORES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 806.55,
+        "brightness": 57.02,
+        "contrast": 58.71,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "image_id": "480284553cd7eec5",
+      "filename": "img_0038.jpg",
+      "filepath": "train/images/img_0038.jpg",
+      "split": "train",
+      "text": "HAMME .",
+      "annotation_text": "HAMME .",
+      "ocr_text": "TIME",
+      "caption_blip": "A woman in a white shirt and black shorts",
+      "caption_textcaps": "",
+      "prompt": "A woman in a white shirt and black shorts, with the text \u201cHAMME .\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 7,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 402.06,
+        "brightness": 62.08,
+        "contrast": 68.16,
+        "resolution": [
+          426,
+          639
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "image_id": "3d52d8eeb7d04bc0",
+      "filename": "img_0039.jpg",
+      "filepath": "train/images/img_0039.jpg",
+      "split": "train",
+      "text": "THE BIG IDEA",
+      "annotation_text": "THE BIG IDEA",
+      "ocr_text": "THE",
+      "caption_blip": "A large billboard on the side of a building",
+      "caption_textcaps": "",
+      "prompt": "A large billboard on the side of a building, with the text \u201cTHE BIG IDEA\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 12,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 2425.03,
+        "brightness": 139.97,
+        "contrast": 49.38,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "image_id": "221dc4ac9ba1c1ce",
+      "filename": "img_0040.jpg",
+      "filepath": "train/images/img_0040.jpg",
+      "split": "train",
+      "text": "LOUIS VUITTON",
+      "annotation_text": "LOUIS VUITTON",
+      "ocr_text": "LOUIS",
+      "caption_blip": "Louis vu store in singapore",
+      "caption_textcaps": "",
+      "prompt": "Louis vu store in singapore, with the text \u201cLOUIS VUITTON\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1484.29,
+        "brightness": 86.78,
+        "contrast": 58.51,
+        "resolution": [
+          639,
+          420
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "image_id": "51b888cbc88334ab",
+      "filename": "img_0041.jpg",
+      "filepath": "train/images/img_0041.jpg",
+      "split": "train",
+      "text": "agi . .com",
+      "annotation_text": "agi . .com",
+      "ocr_text": "Close",
+      "caption_blip": "A tv screen with a basketball game on it",
+      "caption_textcaps": "",
+      "prompt": "A tv screen with a basketball game on it, with the text \u201cagi . .com\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 10,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 1416.42,
+        "brightness": 55.95,
+        "contrast": 64.68,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "image_id": "04227bf3dded146f",
+      "filename": "img_0042.jpg",
+      "filepath": "train/images/img_0042.jpg",
+      "split": "train",
+      "text": "The Great",
+      "annotation_text": "The Great",
+      "ocr_text": "Great",
+      "caption_blip": "An advertisement for a camper van with the words ' the great indoors '",
+      "caption_textcaps": "",
+      "prompt": "An advertisement for a camper van with the words ' the great indoors ', with the text \u201cThe Great\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 7683.44,
+        "brightness": 198.04,
+        "contrast": 84.04,
+        "resolution": [
+          484,
+          640
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "image_id": "708349975a7aa9fd",
+      "filename": "img_0043.jpg",
+      "filepath": "train/images/img_0043.jpg",
+      "split": "train",
+      "text": "nk TD Bank TD",
+      "annotation_text": "nk TD Bank TD",
+      "ocr_text": "nk",
+      "caption_blip": "A group of men standing next to each other men",
+      "caption_textcaps": "",
+      "prompt": "A group of men standing next to each other men, with the text \u201cnk TD Bank TD\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 13,
+        "word_count": 4,
+        "source": "TextOCR",
+        "sharpness": 299.56,
+        "brightness": 102.63,
+        "contrast": 64.07,
+        "resolution": [
+          640,
+          423
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "image_id": "5af997ee92a501c3",
+      "filename": "img_0044.jpg",
+      "filepath": "train/images/img_0044.jpg",
+      "split": "train",
+      "text": "EXPRESS",
+      "annotation_text": "EXPRESS",
+      "ocr_text": "PRE",
+      "caption_blip": "A young boy is playing baseball on the field",
+      "caption_textcaps": "",
+      "prompt": "A young boy is playing baseball on the field, with the text \u201cEXPRESS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1375.05,
+        "brightness": 97.37,
+        "contrast": 50.96,
+        "resolution": [
+          640,
+          463
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "image_id": "35539a5f30f9e095",
+      "filename": "img_0045.jpg",
+      "filepath": "train/images/img_0045.jpg",
+      "split": "train",
+      "text": "BRANDENBURGISCHE",
+      "annotation_text": "BRANDENBURGISCHE",
+      "ocr_text": "BRANDENBURG",
+      "caption_blip": "An old book sitting on top of a table",
+      "caption_textcaps": "",
+      "prompt": "An old book sitting on top of a table, with the text \u201cBRANDENBURGISCHE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 16,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1191.62,
+        "brightness": 118.82,
+        "contrast": 70.64,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "image_id": "d7a9fd8085ec7c83",
+      "filename": "img_0046.jpg",
+      "filepath": "train/images/img_0046.jpg",
+      "split": "train",
+      "text": "$10 FOR WRISTBAND",
+      "annotation_text": "$10 FOR WRISTBAND",
+      "ocr_text": "FOR",
+      "caption_blip": "A box of soap sitting on top of a table",
+      "caption_textcaps": "",
+      "prompt": "A box of soap sitting on top of a table, with the text \u201c$10 FOR WRISTBAND\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 17,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 275.63,
+        "brightness": 73.17,
+        "contrast": 57.36,
+        "resolution": [
+          640,
+          426
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "image_id": "6e9a958fa4e9dad4",
+      "filename": "img_0047.jpg",
+      "filepath": "train/images/img_0047.jpg",
+      "split": "train",
+      "text": "MICROWAVE",
+      "annotation_text": "MICROWAVE",
+      "ocr_text": "SPECIAL",
+      "caption_blip": "A cardboard box with the words special tv microwave computer",
+      "caption_textcaps": "",
+      "prompt": "A cardboard box with the words special tv microwave computer, with the text \u201cMICROWAVE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 182.8,
+        "brightness": 104.58,
+        "contrast": 47.18,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "image_id": "87ee6575c3059147",
+      "filename": "img_0048.jpg",
+      "filepath": "train/images/img_0048.jpg",
+      "split": "train",
+      "text": "Happy birthday!",
+      "annotation_text": "Happy birthday!",
+      "ocr_text": "Happy",
+      "caption_blip": "A laptop computer sitting on top of a bed",
+      "caption_textcaps": "",
+      "prompt": "A laptop computer sitting on top of a bed, with the text \u201cHappy birthday!\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 15,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 702.1,
+        "brightness": 106.35,
+        "contrast": 69.53,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "image_id": "30796ab4a3dbc83a",
+      "filename": "img_0049.jpg",
+      "filepath": "train/images/img_0049.jpg",
+      "split": "train",
+      "text": "iPhone",
+      "annotation_text": "iPhone",
+      "ocr_text": "iPhone",
+      "caption_blip": "A close up of an iphone on a table",
+      "caption_textcaps": "",
+      "prompt": "A close up of an iphone on a table, with the text \u201ciPhone\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 744.17,
+        "brightness": 106.06,
+        "contrast": 73.01,
+        "resolution": [
+          470,
+          639
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "image_id": "25177d06e1fbb86a",
+      "filename": "img_0050.jpg",
+      "filepath": "train/images/img_0050.jpg",
+      "split": "train",
+      "text": "project",
+      "annotation_text": "project",
+      "ocr_text": "For",
+      "caption_blip": "A person is typing on a laptop computer",
+      "caption_textcaps": "",
+      "prompt": "A person is typing on a laptop computer, with the text \u201cproject\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 888.27,
+        "brightness": 115.89,
+        "contrast": 49.62,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "image_id": "42d87533d6e69de7",
+      "filename": "img_0051.jpg",
+      "filepath": "train/images/img_0051.jpg",
+      "split": "train",
+      "text": "COLONIAL WARINES",
+      "annotation_text": "COLONIAL WARINES",
+      "ocr_text": "ARINES",
+      "caption_blip": "The poster for aliens colonials",
+      "caption_textcaps": "",
+      "prompt": "The poster for aliens colonials, with the text \u201cCOLONIAL WARINES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 16,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 2140.19,
+        "brightness": 151.63,
+        "contrast": 98.07,
+        "resolution": [
+          640,
+          640
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "image_id": "0555d9cdef6ba308",
+      "filename": "img_0052.jpg",
+      "filepath": "train/images/img_0052.jpg",
+      "split": "train",
+      "text": "VALUE city",
+      "annotation_text": "VALUE city",
+      "ocr_text": "Furniture",
+      "caption_blip": "A sign on the side of a building that says vault furniture",
+      "caption_textcaps": "",
+      "prompt": "A sign on the side of a building that says vault furniture, with the text \u201cVALUE city\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 896.8,
+        "brightness": 140.28,
+        "contrast": 66.86,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "image_id": "4f594e1de5ff1c6f",
+      "filename": "img_0053.jpg",
+      "filepath": "train/images/img_0053.jpg",
+      "split": "train",
+      "text": "WALL STREET JOURNAL",
+      "annotation_text": "WALL STREET JOURNAL",
+      "ocr_text": "Liberty",
+      "caption_blip": "A man holding up a newspaper in front of a crowd",
+      "caption_textcaps": "",
+      "prompt": "A man holding up a newspaper in front of a crowd, with the text \u201cWALL STREET JOURNAL\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 19,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 1262.24,
+        "brightness": 83.29,
+        "contrast": 60.62,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "image_id": "29b8e36ebe8e8a73",
+      "filename": "img_0054.jpg",
+      "filepath": "train/images/img_0054.jpg",
+      "split": "train",
+      "text": "10 CHA . ION 2",
+      "annotation_text": "10 CHA . ION 2",
+      "ocr_text": "CHA",
+      "caption_blip": "A white clock with black numbers on it",
+      "caption_textcaps": "",
+      "prompt": "A white clock with black numbers on it, with the text \u201c10 CHA . ION 2\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 14,
+        "word_count": 5,
+        "source": "TextOCR",
+        "sharpness": 282.0,
+        "brightness": 138.53,
+        "contrast": 37.84,
+        "resolution": [
+          639,
+          640
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "image_id": "9ef4ec10ff5ad281",
+      "filename": "img_0055.jpg",
+      "filepath": "train/images/img_0055.jpg",
+      "split": "train",
+      "text": "Tower",
+      "annotation_text": "Tower",
+      "ocr_text": "Tour",
+      "caption_blip": "The inside of a mall with many tables and chairs",
+      "caption_textcaps": "",
+      "prompt": "The inside of a mall with many tables and chairs, with the text \u201cTower\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 7758.36,
+        "brightness": 109.83,
+        "contrast": 63.87,
+        "resolution": [
+          639,
+          427
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "image_id": "50b07caed59a8f00",
+      "filename": "img_0056.jpg",
+      "filepath": "train/images/img_0056.jpg",
+      "split": "train",
+      "text": "MORROW",
+      "annotation_text": "MORROW",
+      "ocr_text": "MORROW",
+      "caption_blip": "A hockey jersey sitting on top of a bed",
+      "caption_textcaps": "",
+      "prompt": "A hockey jersey sitting on top of a bed, with the text \u201cMORROW\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1240.9,
+        "brightness": 108.77,
+        "contrast": 52.1,
+        "resolution": [
+          640,
+          383
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "image_id": "1ca191ad5e4fb70e",
+      "filename": "img_0057.jpg",
+      "filepath": "train/images/img_0057.jpg",
+      "split": "train",
+      "text": "TAMAGO",
+      "annotation_text": "TAMAGO",
+      "ocr_text": "als",
+      "caption_blip": "An open book with a red ribbon on it",
+      "caption_textcaps": "",
+      "prompt": "An open book with a red ribbon on it, with the text \u201cTAMAGO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 3936.94,
+        "brightness": 107.01,
+        "contrast": 52.53,
+        "resolution": [
+          640,
+          640
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "image_id": "2454148f94e521ce",
+      "filename": "img_0058.jpg",
+      "filepath": "train/images/img_0058.jpg",
+      "split": "train",
+      "text": "we . dig",
+      "annotation_text": "we . dig",
+      "ocr_text": "THE",
+      "caption_blip": "A painting of a bird on the cover of a magazine",
+      "caption_textcaps": "",
+      "prompt": "A painting of a bird on the cover of a magazine, with the text \u201cwe . dig\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 3486.64,
+        "brightness": 191.17,
+        "contrast": 69.03,
+        "resolution": [
+          490,
+          564
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "image_id": "22a4f695ac5fbda6",
+      "filename": "img_0059.jpg",
+      "filepath": "train/images/img_0059.jpg",
+      "split": "train",
+      "text": "Van de Voorde",
+      "annotation_text": "Van de Voorde",
+      "ocr_text": "Van",
+      "caption_blip": "A van parked on the side of a street",
+      "caption_textcaps": "",
+      "prompt": "A van parked on the side of a street, with the text \u201cVan de Voorde\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 13,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 2468.9,
+        "brightness": 134.97,
+        "contrast": 67.06,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "image_id": "b33dd94d0224e345",
+      "filename": "img_0060.jpg",
+      "filepath": "train/images/img_0060.jpg",
+      "split": "train",
+      "text": "90% 2 EURO",
+      "annotation_text": "90% 2 EURO",
+      "ocr_text": "RSA",
+      "caption_blip": "An image of a coin with the word 100 % on it",
+      "caption_textcaps": "",
+      "prompt": "An image of a coin with the word 100 % on it, with the text \u201c90% 2 EURO\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 10752.71,
+        "brightness": 108.01,
+        "contrast": 54.08,
+        "resolution": [
+          640,
+          400
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "image_id": "4659244589e53727",
+      "filename": "img_0061.jpg",
+      "filepath": "train/images/img_0061.jpg",
+      "split": "train",
+      "text": "Atta Mills",
+      "annotation_text": "Atta Mills",
+      "ocr_text": "John",
+      "caption_blip": "A large billboard on the side of a road",
+      "caption_textcaps": "",
+      "prompt": "A large billboard on the side of a road, with the text \u201cAtta Mills\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 2619.0,
+        "brightness": 161.25,
+        "contrast": 69.92,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "image_id": "236965790090bfd0",
+      "filename": "img_0062.jpg",
+      "filepath": "train/images/img_0062.jpg",
+      "split": "train",
+      "text": ". RT. 22",
+      "annotation_text": ". RT. 22",
+      "ocr_text": "LAN",
+      "caption_blip": "A stop sign and a street sign on a pole",
+      "caption_textcaps": "",
+      "prompt": "A stop sign and a street sign on a pole, with the text \u201c. RT. 22\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 8,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 5522.42,
+        "brightness": 82.62,
+        "contrast": 47.73,
+        "resolution": [
+          513,
+          640
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "image_id": "49b859fc9d38b3d7",
+      "filename": "img_0063.jpg",
+      "filepath": "train/images/img_0063.jpg",
+      "split": "train",
+      "text": "The Bay Course",
+      "annotation_text": "The Bay Course",
+      "ocr_text": "Bay",
+      "caption_blip": "The bay golf club",
+      "caption_textcaps": "",
+      "prompt": "The bay golf club, with the text \u201cThe Bay Course\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 14,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 3065.51,
+        "brightness": 139.61,
+        "contrast": 54.6,
+        "resolution": [
+          443,
+          640
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "image_id": "8f8b349fa0092a59",
+      "filename": "img_0064.jpg",
+      "filepath": "train/images/img_0064.jpg",
+      "split": "train",
+      "text": "Your World Of",
+      "annotation_text": "Your World Of",
+      "ocr_text": "Of",
+      "caption_blip": "An old book with a picture of people on it",
+      "caption_textcaps": "",
+      "prompt": "An old book with a picture of people on it, with the text \u201cYour World Of\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 13,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 2005.55,
+        "brightness": 189.32,
+        "contrast": 64.96,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "image_id": "18d6856aa125b358",
+      "filename": "img_0065.jpg",
+      "filepath": "train/images/img_0065.jpg",
+      "split": "train",
+      "text": "SCHOOLBUS",
+      "annotation_text": "SCHOOLBUS",
+      "ocr_text": "18-731",
+      "caption_blip": "A yellow school bus parked in a parking",
+      "caption_textcaps": "",
+      "prompt": "A yellow school bus parked in a parking, with the text \u201cSCHOOLBUS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 957.23,
+        "brightness": 132.99,
+        "contrast": 58.47,
+        "resolution": [
+          628,
+          640
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "image_id": "7afb4d0e6aaecd39",
+      "filename": "img_0066.jpg",
+      "filepath": "train/images/img_0066.jpg",
+      "split": "train",
+      "text": "HORSES",
+      "annotation_text": "HORSES",
+      "ocr_text": "HORSES",
+      "caption_blip": "A yellow and black sign on the side of a road",
+      "caption_textcaps": "",
+      "prompt": "A yellow and black sign on the side of a road, with the text \u201cHORSES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 573.16,
+        "brightness": 158.95,
+        "contrast": 50.32,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "image_id": "3bc5e936ee4a9805",
+      "filename": "img_0067.jpg",
+      "filepath": "train/images/img_0067.jpg",
+      "split": "train",
+      "text": "Pharmacy",
+      "annotation_text": "Pharmacy",
+      "ocr_text": "YOUR",
+      "caption_blip": "A pharmacy store filled with lots of products",
+      "caption_textcaps": "",
+      "prompt": "A pharmacy store filled with lots of products, with the text \u201cPharmacy\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1977.04,
+        "brightness": 116.14,
+        "contrast": 55.28,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "image_id": "6e39199fda8a19c4",
+      "filename": "img_0068.jpg",
+      "filepath": "train/images/img_0068.jpg",
+      "split": "train",
+      "text": "n Hawthorns",
+      "annotation_text": "n Hawthorns",
+      "ocr_text": "Hawthorns",
+      "caption_blip": "A sign that is on the side of a road",
+      "caption_textcaps": "",
+      "prompt": "A sign that is on the side of a road, with the text \u201cn Hawthorns\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 11,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 979.92,
+        "brightness": 117.17,
+        "contrast": 75.99,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "image_id": "8897bb7943ae23e8",
+      "filename": "img_0069.jpg",
+      "filepath": "train/images/img_0069.jpg",
+      "split": "train",
+      "text": "HE . RIX",
+      "annotation_text": "HE . RIX",
+      "ocr_text": "HE",
+      "caption_blip": "A group of girls playing soccer on a field",
+      "caption_textcaps": "",
+      "prompt": "A group of girls playing soccer on a field, with the text \u201cHE . RIX\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 8,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 2939.45,
+        "brightness": 111.27,
+        "contrast": 49.12,
+        "resolution": [
+          640,
+          426
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "image_id": "ff41b5cae289161c",
+      "filename": "img_0070.jpg",
+      "filepath": "train/images/img_0070.jpg",
+      "split": "train",
+      "text": "internatio",
+      "annotation_text": "internatio",
+      "ocr_text": "internatio",
+      "caption_blip": "A baseball player is standing on the field",
+      "caption_textcaps": "",
+      "prompt": "A baseball player is standing on the field, with the text \u201cinternatio\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 335.28,
+        "brightness": 103.22,
+        "contrast": 70.55,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "image_id": "b2fe0b11eaf39d24",
+      "filename": "img_0071.jpg",
+      "filepath": "train/images/img_0071.jpg",
+      "split": "train",
+      "text": "Nikon",
+      "annotation_text": "Nikon",
+      "ocr_text": "415",
+      "caption_blip": "A baseball game is being played in a stadium",
+      "caption_textcaps": "",
+      "prompt": "A baseball game is being played in a stadium, with the text \u201cNikon\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1137.89,
+        "brightness": 52.33,
+        "contrast": 31.59,
+        "resolution": [
+          639,
+          428
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "image_id": "01f83f94541937f5",
+      "filename": "img_0072.jpg",
+      "filepath": "train/images/img_0072.jpg",
+      "split": "train",
+      "text": "MARSTON'S",
+      "annotation_text": "MARSTON'S",
+      "ocr_text": "SMUG",
+      "caption_blip": "A sign that is on the side of a building",
+      "caption_textcaps": "",
+      "prompt": "A sign that is on the side of a building, with the text \u201cMARSTON'S\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 577.25,
+        "brightness": 57.16,
+        "contrast": 46.16,
+        "resolution": [
+          493,
+          640
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "image_id": "7035f9ed3ac7f0d5",
+      "filename": "img_0073.jpg",
+      "filepath": "train/images/img_0073.jpg",
+      "split": "train",
+      "text": "WLING.COM axis AXISS .",
+      "annotation_text": "WLING.COM axis AXISS .",
+      "ocr_text": "hoffotography.com",
+      "caption_blip": "A man wearing a shirt with a paddle on it",
+      "caption_textcaps": "",
+      "prompt": "A man wearing a shirt with a paddle on it, with the text \u201cWLING.COM axis AXISS .\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 22,
+        "word_count": 4,
+        "source": "TextOCR",
+        "sharpness": 1198.55,
+        "brightness": 88.44,
+        "contrast": 46.45,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "image_id": "d667cd804ce9cc36",
+      "filename": "img_0074.jpg",
+      "filepath": "train/images/img_0074.jpg",
+      "split": "train",
+      "text": "FASHION SHOP",
+      "annotation_text": "FASHION SHOP",
+      "ocr_text": "FASHION",
+      "caption_blip": "A store with clothes hanging out to dry",
+      "caption_textcaps": "",
+      "prompt": "A store with clothes hanging out to dry, with the text \u201cFASHION SHOP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 92.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 809.51,
+        "brightness": 115.21,
+        "contrast": 64.34,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "image_id": "b5b6518257493640",
+      "filename": "img_0075.jpg",
+      "filepath": "train/images/img_0075.jpg",
+      "split": "train",
+      "text": "RUM",
+      "annotation_text": "RUM",
+      "ocr_text": "ETATS",
+      "caption_blip": "A store filled with lots of bottles of wine",
+      "caption_textcaps": "",
+      "prompt": "A store filled with lots of bottles of wine, with the text \u201cRUM\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 3637.37,
+        "brightness": 124.99,
+        "contrast": 65.63,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "image_id": "584a17205c8a7bfe",
+      "filename": "img_0076.jpg",
+      "filepath": "train/images/img_0076.jpg",
+      "split": "train",
+      "text": "ANTWERP",
+      "annotation_text": "ANTWERP",
+      "ocr_text": "ANTWERP",
+      "caption_blip": "An image of two people walking down the street",
+      "caption_textcaps": "",
+      "prompt": "An image of two people walking down the street, with the text \u201cANTWERP\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1134.66,
+        "brightness": 94.1,
+        "contrast": 57.21,
+        "resolution": [
+          480,
+          640
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "image_id": "7c2edbfe00a870bd",
+      "filename": "img_0077.jpg",
+      "filepath": "train/images/img_0077.jpg",
+      "split": "train",
+      "text": "citi FIEL",
+      "annotation_text": "citi FIEL",
+      "ocr_text": "pepsi",
+      "caption_blip": "A baseball game is being played on the field",
+      "caption_textcaps": "",
+      "prompt": "A baseball game is being played on the field, with the text \u201cciti FIEL\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 9,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 857.66,
+        "brightness": 118.19,
+        "contrast": 62.44,
+        "resolution": [
+          639,
+          428
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "image_id": "0dfa60ae1ece1a32",
+      "filename": "img_0078.jpg",
+      "filepath": "train/images/img_0078.jpg",
+      "split": "train",
+      "text": "Google",
+      "annotation_text": "Google",
+      "ocr_text": "Google",
+      "caption_blip": "Two cell phones sitting on top of a wooden table",
+      "caption_textcaps": "",
+      "prompt": "Two cell phones sitting on top of a wooden table, with the text \u201cGoogle\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1093.99,
+        "brightness": 125.38,
+        "contrast": 67.85,
+        "resolution": [
+          640,
+          478
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "image_id": "072652dc1129ebdb",
+      "filename": "img_0079.jpg",
+      "filepath": "train/images/img_0079.jpg",
+      "split": "train",
+      "text": "Driscoll's",
+      "annotation_text": "Driscoll's",
+      "ocr_text": "Driscolls",
+      "caption_blip": "A table that has some kind of food on it",
+      "caption_textcaps": "",
+      "prompt": "A table that has some kind of food on it, with the text \u201cDriscoll's\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 2213.73,
+        "brightness": 107.76,
+        "contrast": 56.36,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "split": "val",
+  "count": 10,
+  "data": [
+    {
+      "id": 80,
+      "image_id": "c9e5e26166ceb694",
+      "filename": "img_0080.jpg",
+      "filepath": "val/images/img_0080.jpg",
+      "split": "val",
+      "text": "21st Century",
+      "annotation_text": "21st Century",
+      "ocr_text": "Century",
+      "caption_blip": "A wall that has pictures on it",
+      "caption_textcaps": "",
+      "prompt": "A wall that has pictures on it, with the text \u201c21st Century\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 636.67,
+        "brightness": 107.16,
+        "contrast": 55.76,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "image_id": "4b341cc067ef6805",
+      "filename": "img_0081.jpg",
+      "filepath": "val/images/img_0081.jpg",
+      "split": "val",
+      "text": "STEAK SAUCE",
+      "annotation_text": "STEAK SAUCE",
+      "ocr_text": "AK",
+      "caption_blip": "A green plate with a steak on it",
+      "caption_textcaps": "",
+      "prompt": "A green plate with a steak on it, with the text \u201cSTEAK SAUCE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 11,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 225.49,
+        "brightness": 89.75,
+        "contrast": 62.37,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "image_id": "74cfce52400ae0ff",
+      "filename": "img_0082.jpg",
+      "filepath": "val/images/img_0082.jpg",
+      "split": "val",
+      "text": "Rio de Janeiro 9",
+      "annotation_text": "Rio de Janeiro 9",
+      "ocr_text": "Rio",
+      "caption_blip": "A clock with a world map in the background",
+      "caption_textcaps": "",
+      "prompt": "A clock with a world map in the background, with the text \u201cRio de Janeiro 9\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 16,
+        "word_count": 4,
+        "source": "TextOCR",
+        "sharpness": 226.08,
+        "brightness": 104.93,
+        "contrast": 56.5,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "image_id": "b207e125798ded4d",
+      "filename": "img_0083.jpg",
+      "filepath": "val/images/img_0083.jpg",
+      "split": "val",
+      "text": "Door opener",
+      "annotation_text": "Door opener",
+      "ocr_text": "Door",
+      "caption_blip": "A bathroom door with a sign on it",
+      "caption_textcaps": "",
+      "prompt": "A bathroom door with a sign on it, with the text \u201cDoor opener\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 11,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 258.83,
+        "brightness": 47.03,
+        "contrast": 49.09,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "image_id": "7753fb8d4210b330",
+      "filename": "img_0084.jpg",
+      "filepath": "val/images/img_0084.jpg",
+      "split": "val",
+      "text": "DIE FLEDERMAUS",
+      "annotation_text": "DIE FLEDERMAUS",
+      "ocr_text": "Walter",
+      "caption_blip": "A book on a table with a picture of two people",
+      "caption_textcaps": "",
+      "prompt": "A book on a table with a picture of two people, with the text \u201cDIE FLEDERMAUS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 14,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1756.29,
+        "brightness": 109.67,
+        "contrast": 75.91,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "image_id": "94b7331de9325f21",
+      "filename": "img_0085.jpg",
+      "filepath": "val/images/img_0085.jpg",
+      "split": "val",
+      "text": "rdio",
+      "annotation_text": "rdio",
+      "ocr_text": "465",
+      "caption_blip": "An image of a computer screen with a video player on it",
+      "caption_textcaps": "",
+      "prompt": "An image of a computer screen with a video player on it, with the text \u201crdio\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 331.87,
+        "brightness": 135.59,
+        "contrast": 73.71,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "image_id": "183d26d51a9843a5",
+      "filename": "img_0086.jpg",
+      "filepath": "val/images/img_0086.jpg",
+      "split": "val",
+      "text": "e DROP-OFF POINT",
+      "annotation_text": "e DROP-OFF POINT",
+      "ocr_text": "DROP-OFF",
+      "caption_blip": "A sign that is on the side of a road",
+      "caption_textcaps": "",
+      "prompt": "A sign that is on the side of a road, with the text \u201ce DROP-OFF POINT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 16,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 609.27,
+        "brightness": 124.05,
+        "contrast": 57.75,
+        "resolution": [
+          466,
+          640
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "image_id": "997bb10b622c19a2",
+      "filename": "img_0087.jpg",
+      "filepath": "val/images/img_0087.jpg",
+      "split": "val",
+      "text": "EN SEINE",
+      "annotation_text": "EN SEINE",
+      "ocr_text": "VILLE",
+      "caption_blip": "An orange and gray building",
+      "caption_textcaps": "",
+      "prompt": "An orange and gray building, with the text \u201cEN SEINE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 8,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1545.11,
+        "brightness": 119.8,
+        "contrast": 48.15,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "image_id": "9404a1942f9cbe2d",
+      "filename": "img_0088.jpg",
+      "filepath": "val/images/img_0088.jpg",
+      "split": "val",
+      "text": "EXPIRED",
+      "annotation_text": "EXPIRED",
+      "ocr_text": "EX",
+      "caption_blip": "A meter with the word time expired on it",
+      "caption_textcaps": "",
+      "prompt": "A meter with the word time expired on it, with the text \u201cEXPIRED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 213.37,
+        "brightness": 112.57,
+        "contrast": 65.34,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "image_id": "30692edec4d4feb0",
+      "filename": "img_0089.jpg",
+      "filepath": "val/images/img_0089.jpg",
+      "split": "val",
+      "text": "Budweiser",
+      "annotation_text": "Budweiser",
+      "ocr_text": "game",
+      "caption_blip": "A baseball game is being played at busch park",
+      "caption_textcaps": "",
+      "prompt": "A baseball game is being played at busch park, with the text \u201cBudweiser\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 5009.03,
+        "brightness": 113.03,
+        "contrast": 79.23,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    }
+  ]
+}

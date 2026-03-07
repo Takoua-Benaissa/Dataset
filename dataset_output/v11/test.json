@@ -1,0 +1,256 @@
+{
+  "split": "test",
+  "count": 10,
+  "data": [
+    {
+      "id": 90,
+      "image_id": "001521085.jpg",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "PRIVATE",
+      "annotation_text": "PRIVATE",
+      "ocr_text": "BER",
+      "caption": "the movie private number is shown",
+      "prompt": "the movie private number is shown, with the text \u201cPRIVATE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 405.93,
+        "brightness": 93.17,
+        "contrast": 60.54,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "001521052.jpg",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "show",
+      "annotation_text": "show",
+      "ocr_text": "SNOW",
+      "caption": "sam the show logo on a yellow background",
+      "prompt": "sam the show logo on a yellow background, with the text \u201cshow\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 4945.87,
+        "brightness": 165.38,
+        "contrast": 97.15,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "001521059.jpg",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "WALES",
+      "annotation_text": "WALES",
+      "ocr_text": "AR",
+      "caption": "hen party south wales",
+      "prompt": "hen party south wales, with the text \u201cWALES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 85.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1203.55,
+        "brightness": 107.65,
+        "contrast": 49.44,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "001521076.jpg",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "ENTRE",
+      "annotation_text": "ENTRE",
+      "ocr_text": "PRE",
+      "caption": "i am an entrepreneur pillow",
+      "prompt": "i am an entrepreneur pillow, with the text \u201cENTRE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 88.23,
+        "brightness": 211.55,
+        "contrast": 56.3,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "001521098.jpg",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "VALENTINES",
+      "annotation_text": "VALENTINES",
+      "ocr_text": "LE",
+      "caption": "barry white - valentine's day edition",
+      "prompt": "barry white - valentine's day edition, with the text \u201cVALENTINES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 699.74,
+        "brightness": 184.2,
+        "contrast": 65.54,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "001521096.jpg",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "Probably",
+      "annotation_text": "Probably",
+      "ocr_text": "Probal",
+      "caption": "this is probably vodka wine tumbler",
+      "prompt": "this is probably vodka wine tumbler, with the text \u201cProbably\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 680.58,
+        "brightness": 179.29,
+        "contrast": 55.73,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "001521124.jpg",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "Australian",
+      "annotation_text": "Australian",
+      "ocr_text": "Breed",
+      "caption": "australian kelpie breed of champions logo",
+      "prompt": "australian kelpie breed of champions logo, with the text \u201cAustralian\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 314.5,
+        "brightness": 220.98,
+        "contrast": 73.37,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "001521043.jpg",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "Experience",
+      "annotation_text": "Experience",
+      "ocr_text": "Experience",
+      "caption": "the nintendo experience best buy",
+      "prompt": "the nintendo experience best buy, with the text \u201cExperience\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 304.21,
+        "brightness": 111.1,
+        "contrast": 65.07,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "001521107.jpg",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "RTUNE",
+      "annotation_text": "RTUNE",
+      "ocr_text": "FORTUNE",
+      "caption": "james fortune - live through it",
+      "prompt": "james fortune - live through it, with the text \u201cRTUNE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 5,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1319.65,
+        "brightness": 119.13,
+        "contrast": 103.23,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "001521053.jpg",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "SUNTABLE",
+      "annotation_text": "SUNTABLE",
+      "ocr_text": "SUNTABLE",
+      "caption": "hachira suntable no 19 ethiopia",
+      "prompt": "hachira suntable no 19 ethiopia, with the text \u201cSUNTABLE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 89.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 586.82,
+        "brightness": 222.25,
+        "contrast": 35.44,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

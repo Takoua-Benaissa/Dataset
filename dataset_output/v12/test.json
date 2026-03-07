@@ -1,0 +1,32 @@
+{
+  "split": "test",
+  "count": 1,
+  "data": [
+    {
+      "id": 9,
+      "image_id": "001520155.jpg",
+      "filename": "img_0009.jpg",
+      "filepath": "test/images/img_0009.jpg",
+      "split": "test",
+      "text": "PO P UE",
+      "annotation_text": "AVENUE",
+      "ocr_text": "AVENUE",
+      "caption": "pop avenue - party band | new york, ny",
+      "prompt": "pop avenue - party band | new york, ny, with the text \u201cPO P UE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "phrase_reconstructed": true,
+        "text_length": 7,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 291.98,
+        "brightness": 70.2,
+        "contrast": 60.08,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

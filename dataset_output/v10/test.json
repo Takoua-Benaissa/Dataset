@@ -1,0 +1,266 @@
+{
+  "split": "test",
+  "count": 10,
+  "data": [
+    {
+      "id": 90,
+      "image_id": "8d6ae29de134eeef",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "baby",
+      "annotation_text": "baby",
+      "ocr_text": "\u00a9)",
+      "caption_blip": "An old typewriter sitting on top of a desk",
+      "caption_textcaps": "",
+      "prompt": "An old typewriter sitting on top of a desk, with the text \u201cbaby\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 3994.3,
+        "brightness": 116.4,
+        "contrast": 72.49,
+        "resolution": [
+          640,
+          524
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "6c270d38b9bfde71",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "175 marietta",
+      "annotation_text": "175 marietta",
+      "ocr_text": "175:",
+      "caption_blip": "A woman in a red shirt standing next to a book shelf",
+      "caption_textcaps": "",
+      "prompt": "A woman in a red shirt standing next to a book shelf, with the text \u201c175 marietta\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 90.0,
+        "text_length": 12,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 335.29,
+        "brightness": 85.92,
+        "contrast": 46.92,
+        "resolution": [
+          427,
+          640
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "c3910c9e33d1d446",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "J. S. Bach",
+      "annotation_text": "J. S. Bach",
+      "ocr_text": "Die",
+      "caption_blip": "An open book with a black and white title",
+      "caption_textcaps": "",
+      "prompt": "An open book with a black and white title, with the text \u201cJ. S. Bach\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "text_length": 10,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 1925.6,
+        "brightness": 164.17,
+        "contrast": 31.24,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "3a586d17ee39050c",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "Helvetica",
+      "annotation_text": "Helvetica",
+      "ocr_text": "Helvetica",
+      "caption_blip": "A man sitting at a desk with a laptop",
+      "caption_textcaps": "",
+      "prompt": "A man sitting at a desk with a laptop, with the text \u201cHelvetica\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 469.1,
+        "brightness": 108.33,
+        "contrast": 68.85,
+        "resolution": [
+          640,
+          427
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "04e562f083ca45ea",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "Clermont",
+      "annotation_text": "Clermont",
+      "ocr_text": "for",
+      "caption_blip": "A clock hanging on the side of a building",
+      "caption_textcaps": "",
+      "prompt": "A clock hanging on the side of a building, with the text \u201cClermont\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1557.47,
+        "brightness": 109.69,
+        "contrast": 68.39,
+        "resolution": [
+          427,
+          640
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "1e85203e9ba87a8c",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "Any questions",
+      "annotation_text": "Any questions",
+      "ocr_text": "Browse",
+      "caption_blip": "An image of a computer screen with a question on it",
+      "caption_textcaps": "",
+      "prompt": "An image of a computer screen with a question on it, with the text \u201cAny questions\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "text_length": 13,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 255.21,
+        "brightness": 110.57,
+        "contrast": 90.63,
+        "resolution": [
+          612,
+          612
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "600e2c70e26fc99e",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "ACE Hardwa",
+      "annotation_text": "ACE Hardwa",
+      "ocr_text": "2010",
+      "caption_blip": "A red bucket filled with scrap and paper",
+      "caption_textcaps": "",
+      "prompt": "A red bucket filled with scrap and paper, with the text \u201cACE Hardwa\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 10,
+        "word_count": 2,
+        "source": "TextOCR",
+        "sharpness": 1788.62,
+        "brightness": 116.15,
+        "contrast": 70.31,
+        "resolution": [
+          640,
+          428
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "24eef659eb02be5e",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "Ho- Hum Motel",
+      "annotation_text": "Ho- Hum Motel",
+      "ocr_text": "Burlington,",
+      "caption_blip": "An old postcard of a motel",
+      "caption_textcaps": "",
+      "prompt": "An old postcard of a motel, with the text \u201cHo- Hum Motel\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "text_length": 13,
+        "word_count": 3,
+        "source": "TextOCR",
+        "sharpness": 1517.68,
+        "brightness": 147.02,
+        "contrast": 54.71,
+        "resolution": [
+          640,
+          401
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "e5ced42bab420029",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "Phillies",
+      "annotation_text": "Phillies",
+      "ocr_text": "ico",
+      "caption_blip": "A group of baseball players standing on a field",
+      "caption_textcaps": "",
+      "prompt": "A group of baseball players standing on a field, with the text \u201cPhillies\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1772.1,
+        "brightness": 80.5,
+        "contrast": 65.53,
+        "resolution": [
+          639,
+          316
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "653a25f99438e465",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "facebook",
+      "annotation_text": "facebook",
+      "ocr_text": "Feed",
+      "caption_blip": "An image of a tv screen with a picture on it",
+      "caption_textcaps": "",
+      "prompt": "An image of a tv screen with a picture on it, with the text \u201cfacebook\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "text_length": 8,
+        "word_count": 1,
+        "source": "TextOCR",
+        "sharpness": 1613.01,
+        "brightness": 54.19,
+        "contrast": 60.98,
+        "resolution": [
+          640,
+          480
+        ]
+      }
+    }
+  ]
+}

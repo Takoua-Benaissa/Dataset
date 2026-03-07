@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "version": "9.0",
+    "description": "Text-in-image dataset built from AnyWord-3M. Filtered for short English text, OCR-verified. Full-image OCR reconstruction used to capture the complete visible phrase (not just a partial annotation).",
+    "source_dataset": "stzhao/AnyWord-3M",
+    "subsets_used": [
+      "laion",
+      "OCR_COCO_Text",
+      "OCR_mlt2019",
+      "OCR_Art"
+    ],
+    "thresholds": {
+      "min_resolution": 256,
+      "min_sharpness": 80,
+      "min_ocr_conf": 85,
+      "min_ocr_coverage": 0.3,
+      "min_phrase_word_conf": 50,
+      "max_phrase_words": 10,
+      "max_phrase_chars": 80,
+      "max_text_len": 40,
+      "max_words": 5,
+      "max_text_regions": 4,
+      "max_total_chars": 40,
+      "min_bbox_height": 30
+    },
+    "statistics": {
+      "total": 10,
+      "train": 8,
+      "val": 1,
+      "test": 1
+    }
+  },
+  "data": [
+    {
+      "id": 0,
+      "image_id": "001520075.jpg",
+      "filename": "img_0000.jpg",
+      "filepath": "train/images/img_0000.jpg",
+      "split": "train",
+      "text": "ROLLING STONES",
+      "annotation_text": "ROLLING",
+      "ocr_text": "ROLLING",
+      "caption": "the rolling stones shine a light",
+      "prompt": "the rolling stones shine a light, with the text \u201cROLLING STONES\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.5,
+        "phrase_reconstructed": true,
+        "text_length": 14,
+        "word_count": 2,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 518.2,
+        "brightness": 120.77,
+        "contrast": 103.32,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "image_id": "001520065.jpg",
+      "filename": "img_0001.jpg",
+      "filepath": "train/images/img_0001.jpg",
+      "split": "train",
+      "text": "holida Gift Gu ide FOR NEW MOMS",
+      "annotation_text": "holiday",
+      "ocr_text": "FOR",
+      "caption": "holiday gift guide for new moms",
+      "prompt": "holiday gift guide for new moms, with the text \u201cholida Gift Gu ide FOR NEW MOMS\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 84.71428571428571,
+        "phrase_reconstructed": true,
+        "text_length": 31,
+        "word_count": 7,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 535.19,
+        "brightness": 223.93,
+        "contrast": 74.75,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "001520019.jpg",
+      "filename": "img_0002.jpg",
+      "filepath": "train/images/img_0002.jpg",
+      "split": "train",
+      "text": "Large 3D PUNCH",
+      "annotation_text": "Large",
+      "ocr_text": "Large",
+      "caption": "crafts aus large 3d punch",
+      "prompt": "crafts aus large 3d punch, with the text \u201cLarge 3D PUNCH\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.33333333333333,
+        "phrase_reconstructed": true,
+        "text_length": 14,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 263.31,
+        "brightness": 185.6,
+        "contrast": 55.66,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image_id": "001520014.jpg",
+      "filename": "img_0003.jpg",
+      "filepath": "train/images/img_0003.jpg",
+      "split": "train",
+      "text": "Hudso Nn Square Ave",
+      "annotation_text": "Square",
+      "ocr_text": "Square",
+      "caption": "hudson square apartments - new jersey",
+      "prompt": "hudson square apartments - new jersey, with the text \u201cHudso Nn Square Ave\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 82.25,
+        "phrase_reconstructed": true,
+        "text_length": 19,
+        "word_count": 4,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1541.65,
+        "brightness": 117.71,
+        "contrast": 71.63,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "image_id": "001520055.jpg",
+      "filename": "img_0004.jpg",
+      "filepath": "train/images/img_0004.jpg",
+      "split": "train",
+      "text": "Nederlandse Mediation",
+      "annotation_text": "Nederlandse",
+      "ocr_text": "Mediation",
+      "caption": "navigator - nederlands meditations",
+      "prompt": "navigator - nederlands meditations, with the text \u201cNederlandse Mediation\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 73.5,
+        "phrase_reconstructed": true,
+        "text_length": 21,
+        "word_count": 2,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1142.45,
+        "brightness": 129.12,
+        "contrast": 60.94,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "image_id": "001520131.jpg",
+      "filename": "img_0005.jpg",
+      "filepath": "train/images/img_0005.jpg",
+      "split": "train",
+      "text": "SOURCE",
+      "annotation_text": "SOURCE",
+      "ocr_text": "SOURCE",
+      "caption": "combat source kill ant bait, 1 lb",
+      "prompt": "combat source kill ant bait, 1 lb, with the text \u201cSOURCE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": false,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 496.21,
+        "brightness": 191.24,
+        "contrast": 80.89,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "image_id": "001520061.jpg",
+      "filename": "img_0006.jpg",
+      "filepath": "train/images/img_0006.jpg",
+      "split": "train",
+      "text": "LONDON VENUES la FOR EVERY TYPE OF christmas party.",
+      "annotation_text": "christmas",
+      "ocr_text": "christmas",
+      "caption": "london venues for every type of christmas party",
+      "prompt": "london venues for every type of christmas party, with the text \u201cLONDON VENUES la FOR EVERY TYPE OF christmas party.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 87.88888888888889,
+        "phrase_reconstructed": true,
+        "text_length": 51,
+        "word_count": 9,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 2604.98,
+        "brightness": 199.3,
+        "contrast": 58.56,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "image_id": "001520194.jpg",
+      "filename": "img_0007.jpg",
+      "filepath": "train/images/img_0007.jpg",
+      "split": "train",
+      "text": "FIRING i",
+      "annotation_text": "FIRING",
+      "ocr_text": "FIRING",
+      "caption": "the firing squad podcast logo",
+      "prompt": "the firing squad podcast logo, with the text \u201cFIRING i\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "phrase_reconstructed": true,
+        "text_length": 8,
+        "word_count": 2,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 358.4,
+        "brightness": 65.17,
+        "contrast": 65.1,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "image_id": "001520204.jpg",
+      "filename": "img_0008.jpg",
+      "filepath": "val/images/img_0008.jpg",
+      "split": "val",
+      "text": "MONEY!",
+      "annotation_text": "MONEY!",
+      "ocr_text": "MONEY!",
+      "caption": "show me the money button",
+      "prompt": "show me the money button, with the text \u201cMONEY!\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": false,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 211.06,
+        "brightness": 176.62,
+        "contrast": 70.88,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "image_id": "001520155.jpg",
+      "filename": "img_0009.jpg",
+      "filepath": "test/images/img_0009.jpg",
+      "split": "test",
+      "text": "PO P UE",
+      "annotation_text": "AVENUE",
+      "ocr_text": "AVENUE",
+      "caption": "pop avenue - party band | new york, ny",
+      "prompt": "pop avenue - party band | new york, ny, with the text \u201cPO P UE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 88.0,
+        "phrase_reconstructed": true,
+        "text_length": 7,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 291.98,
+        "brightness": 70.2,
+        "contrast": 60.08,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

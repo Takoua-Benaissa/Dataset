@@ -49,7 +49,7 @@ echo ""
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 OUTPUT_DIR="$PROJECT_DIR/dataset_output"
-MAX_IMAGES=1000
+MAX_IMAGES=100
 
 # HuggingFace cache (optional — set to a fast local disk if available)
 export HF_HOME="${HF_HOME:-$HOME/.cache/huggingface}"

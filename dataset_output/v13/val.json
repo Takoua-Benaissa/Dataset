@@ -1,0 +1,266 @@
+{
+  "split": "val",
+  "count": 10,
+  "data": [
+    {
+      "id": 80,
+      "image_id": "001521386.jpg",
+      "filename": "img_0080.jpg",
+      "filepath": "val/images/img_0080.jpg",
+      "split": "val",
+      "text": "j ARTE NTOINETTE",
+      "annotation_text": "ANTOINETTE",
+      "ocr_text": "CARDS",
+      "caption": "marie antonette cards and gifts",
+      "prompt": "marie antonette cards and gifts, with the text \u201cj ARTE NTOINETTE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 76.0,
+        "phrase_reconstructed": true,
+        "text_length": 16,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1803.09,
+        "brightness": 226.79,
+        "contrast": 45.47,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "image_id": "001521421.jpg",
+      "filename": "img_0081.jpg",
+      "filepath": "val/images/img_0081.jpg",
+      "split": "val",
+      "text": "NEW YORK",
+      "annotation_text": "YORK",
+      "ocr_text": "YORK",
+      "caption": "new york street sign on a gray background",
+      "prompt": "new york street sign on a gray background, with the text \u201cNEW YORK\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.0,
+        "phrase_reconstructed": true,
+        "text_length": 8,
+        "word_count": 2,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 593.44,
+        "brightness": 190.51,
+        "contrast": 49.8,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "image_id": "001521453.jpg",
+      "filename": "img_0082.jpg",
+      "filepath": "val/images/img_0082.jpg",
+      "split": "val",
+      "text": "AotofChristian",
+      "annotation_text": "AotofChristian",
+      "ocr_text": "hands",
+      "caption": "i actually like a lot of christian bands - confession bear",
+      "prompt": "i actually like a lot of christian bands - confession bear, with the text \u201cAotofChristian\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": false,
+        "text_length": 14,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1035.29,
+        "brightness": 105.53,
+        "contrast": 75.12,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "image_id": "001521462.jpg",
+      "filename": "img_0083.jpg",
+      "filepath": "val/images/img_0083.jpg",
+      "split": "val",
+      "text": "NIC",
+      "annotation_text": "PICNIC",
+      "ocr_text": "PICNIC",
+      "caption": "the teddy bears picnic by bruce whitley",
+      "prompt": "the teddy bears picnic by bruce whitley, with the text \u201cNIC\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": true,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 897.38,
+        "brightness": 148.75,
+        "contrast": 60.22,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "image_id": "001521468.jpg",
+      "filename": "img_0084.jpg",
+      "filepath": "val/images/img_0084.jpg",
+      "split": "val",
+      "text": "Russian Bondage Team N",
+      "annotation_text": "Bondage",
+      "ocr_text": "Bondage",
+      "caption": "the russian bondage team logo",
+      "prompt": "the russian bondage team logo, with the text \u201cRussian Bondage Team N\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 81.25,
+        "phrase_reconstructed": true,
+        "text_length": 22,
+        "word_count": 4,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 649.79,
+        "brightness": 52.09,
+        "contrast": 76.56,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "image_id": "001521486.jpg",
+      "filename": "img_0085.jpg",
+      "filepath": "val/images/img_0085.jpg",
+      "split": "val",
+      "text": "Tube",
+      "annotation_text": "Tube",
+      "ocr_text": "Tube",
+      "caption": "youtube app icon with a red button",
+      "prompt": "youtube app icon with a red button, with the text \u201cTube\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": false,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 534.06,
+        "brightness": 170.69,
+        "contrast": 86.82,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "image_id": "001521500.jpg",
+      "filename": "img_0086.jpg",
+      "filepath": "val/images/img_0086.jpg",
+      "split": "val",
+      "text": "Cool Story Bro.",
+      "annotation_text": "Story",
+      "ocr_text": "Cool",
+      "caption": "cool story bro pillow",
+      "prompt": "cool story bro pillow, with the text \u201cCool Story Bro.\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.66666666666667,
+        "phrase_reconstructed": true,
+        "text_length": 15,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 189.89,
+        "brightness": 149.36,
+        "contrast": 85.15,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "image_id": "001521497.jpg",
+      "filename": "img_0087.jpg",
+      "filepath": "val/images/img_0087.jpg",
+      "split": "val",
+      "text": "QUALITY",
+      "annotation_text": "QUALITY",
+      "ocr_text": "FRESH",
+      "caption": "fresh milk logo on a white background",
+      "prompt": "fresh milk logo on a white background, with the text \u201cQUALITY\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": true,
+        "text_length": 7,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 213.68,
+        "brightness": 152.96,
+        "contrast": 84.61,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "image_id": "001521502.jpg",
+      "filename": "img_0088.jpg",
+      "filepath": "val/images/img_0088.jpg",
+      "split": "val",
+      "text": "Personal Cooling Products",
+      "annotation_text": "Products",
+      "ocr_text": "Products",
+      "caption": "personal cooling products",
+      "prompt": "personal cooling products, with the text \u201cPersonal Cooling Products\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": true,
+        "text_length": 25,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 533.19,
+        "brightness": 204.58,
+        "contrast": 78.51,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "image_id": "001521529.jpg",
+      "filename": "img_0089.jpg",
+      "filepath": "val/images/img_0089.jpg",
+      "split": "val",
+      "text": "NERD",
+      "annotation_text": "NERD",
+      "ocr_text": "NERD",
+      "caption": "the book nerd logo on a white background",
+      "prompt": "the book nerd logo on a white background, with the text \u201cNERD\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": true,
+        "text_length": 4,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 189.38,
+        "brightness": 164.96,
+        "contrast": 117.91,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

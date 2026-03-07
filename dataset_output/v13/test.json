@@ -1,0 +1,266 @@
+{
+  "split": "test",
+  "count": 10,
+  "data": [
+    {
+      "id": 90,
+      "image_id": "001521542.jpg",
+      "filename": "img_0090.jpg",
+      "filepath": "test/images/img_0090.jpg",
+      "split": "test",
+      "text": "Alexandra: Connor",
+      "annotation_text": "Alexandra",
+      "ocr_text": "Alexandra",
+      "caption": "the thomas audiobook cover art",
+      "prompt": "the thomas audiobook cover art, with the text \u201cAlexandra: Connor\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 78.0,
+        "phrase_reconstructed": true,
+        "text_length": 17,
+        "word_count": 2,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 661.77,
+        "brightness": 124.59,
+        "contrast": 88.79,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "image_id": "001521564.jpg",
+      "filename": "img_0091.jpg",
+      "filepath": "test/images/img_0091.jpg",
+      "split": "test",
+      "text": "Af Places mero!",
+      "annotation_text": "Places",
+      "ocr_text": "Places",
+      "caption": "the hollywood reporter - july/august 2018",
+      "prompt": "the hollywood reporter - july/august 2018, with the text \u201cAf Places mero!\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 72.0,
+        "phrase_reconstructed": true,
+        "text_length": 15,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 472.72,
+        "brightness": 128.02,
+        "contrast": 70.5,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "image_id": "001521518.jpg",
+      "filename": "img_0092.jpg",
+      "filepath": "test/images/img_0092.jpg",
+      "split": "test",
+      "text": "Insi Epicor Cust",
+      "annotation_text": "Insights",
+      "ocr_text": "Epicor",
+      "caption": "epicor insights 2018",
+      "prompt": "epicor insights 2018, with the text \u201cInsi Epicor Cust\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 86.66666666666667,
+        "phrase_reconstructed": true,
+        "text_length": 16,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 257.11,
+        "brightness": 84.61,
+        "contrast": 57.24,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "image_id": "001521455.jpg",
+      "filename": "img_0093.jpg",
+      "filepath": "test/images/img_0093.jpg",
+      "split": "test",
+      "text": "TIPS Public Speaking",
+      "annotation_text": "Speaking",
+      "ocr_text": "Speaking",
+      "caption": "25 effective public speaking tips",
+      "prompt": "25 effective public speaking tips, with the text \u201cTIPS Public Speaking\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.33333333333333,
+        "phrase_reconstructed": true,
+        "text_length": 20,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 1695.54,
+        "brightness": 89.21,
+        "contrast": 55.55,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "image_id": "001521599.jpg",
+      "filename": "img_0094.jpg",
+      "filepath": "test/images/img_0094.jpg",
+      "split": "test",
+      "text": "BLUEWATER KINGS BAND",
+      "annotation_text": "BLUEWATER",
+      "ocr_text": "BLUEWATER",
+      "caption": "bluewater kings band logo on a blue background",
+      "prompt": "bluewater kings band logo on a blue background, with the text \u201cBLUEWATER KINGS BAND\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 95.66666666666667,
+        "phrase_reconstructed": true,
+        "text_length": 20,
+        "word_count": 3,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 178.12,
+        "brightness": 76.16,
+        "contrast": 46.31,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "image_id": "001521612.jpg",
+      "filename": "img_0095.jpg",
+      "filepath": "test/images/img_0095.jpg",
+      "split": "test",
+      "text": "CROCHET #CROCHETLIFE",
+      "annotation_text": "CROCHET",
+      "ocr_text": "CROCHET",
+      "caption": "coffee messy hair crochet life mug",
+      "prompt": "coffee messy hair crochet life mug, with the text \u201cCROCHET #CROCHETLIFE\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 80.0,
+        "phrase_reconstructed": true,
+        "text_length": 20,
+        "word_count": 2,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 882.65,
+        "brightness": 216.49,
+        "contrast": 65.0,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "image_id": "001521642.jpg",
+      "filename": "img_0096.jpg",
+      "filepath": "test/images/img_0096.jpg",
+      "split": "test",
+      "text": "KIN",
+      "annotation_text": "KIND",
+      "ocr_text": "KIN",
+      "caption": "always be kind framed wall art",
+      "prompt": "always be kind framed wall art, with the text \u201cKIN\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 94.0,
+        "phrase_reconstructed": true,
+        "text_length": 3,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 423.87,
+        "brightness": 209.96,
+        "contrast": 58.81,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "image_id": "001521679.jpg",
+      "filename": "img_0097.jpg",
+      "filepath": "test/images/img_0097.jpg",
+      "split": "test",
+      "text": "PATENT",
+      "annotation_text": "PATENT",
+      "ocr_text": "WWW.CRAZYVAPES.COM",
+      "caption": "the crazyvapes rda is a clear glass tank with a black and pink top",
+      "prompt": "the crazyvapes rda is a clear glass tank with a black and pink top, with the text \u201cPATENT\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 91.0,
+        "phrase_reconstructed": false,
+        "text_length": 6,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 986.07,
+        "brightness": 228.62,
+        "contrast": 64.25,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "image_id": "001521720.jpg",
+      "filename": "img_0098.jpg",
+      "filepath": "test/images/img_0098.jpg",
+      "split": "test",
+      "text": "ED",
+      "annotation_text": "CROOKED",
+      "ocr_text": "ED",
+      "caption": "crooked weather rabbit holes",
+      "prompt": "crooked weather rabbit holes, with the text \u201cED\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 93.0,
+        "phrase_reconstructed": true,
+        "text_length": 2,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 338.83,
+        "brightness": 198.94,
+        "contrast": 52.85,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "image_id": "001521746.jpg",
+      "filename": "img_0099.jpg",
+      "filepath": "test/images/img_0099.jpg",
+      "split": "test",
+      "text": "SLAUGHTER",
+      "annotation_text": "SLAUGHTER",
+      "ocr_text": "SLAUGHTER",
+      "caption": "the cover of snatched by karin slaughter",
+      "prompt": "the cover of snatched by karin slaughter, with the text \u201cSLAUGHTER\u201d clearly visible, sharp focus, high resolution photography",
+      "metadata": {
+        "ocr_confidence": 96.0,
+        "phrase_reconstructed": false,
+        "text_length": 9,
+        "word_count": 1,
+        "source": "AnyWord-3M/laion",
+        "sharpness": 372.88,
+        "brightness": 109.91,
+        "contrast": 47.02,
+        "resolution": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}
