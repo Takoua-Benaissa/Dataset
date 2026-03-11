@@ -66,9 +66,47 @@ AnyWord-3M (HuggingFace: stzhao/AnyWord-3M)
 
 ---
 
-## Quick Start
+## Prerequisites & First-Run Setup
 
-### 1. Clone and set up environment
+### ⚠️ Important: First Run Takes 30+ Minutes
+The pipeline downloads and caches the **entire AnyWord-3M dataset** (~3M images, ~50-100 GB) from HuggingFace on the **first run**. Subsequent runs will be faster (cached data). This is unavoidable if using streaming mode.
+
+### System requirements
+- **Python** ≥ 3.9
+- **GPU strongly recommended** — BLIP caption generation is ~50 times faster on GPU. CPU-only runs will take hours.
+  - Tested on: NVIDIA L40S (48 GB VRAM)
+  - Works on: Any CUDA-capable GPU with ≥ 16 GB VRAM
+- **Tesseract OCR** ≥ 4.1 (required system package):
+  ```bash
+  # Ubuntu/Debian
+  sudo apt install tesseract-ocr tesseract-ocr-eng
+  
+  # macOS
+  brew install tesseract
+  
+  # CentOS/RHEL
+  sudo yum install tesseract
+  ```
+- **Disk space**
+  - HuggingFace cache: 50-100 GB (first run only)
+  - Output dataset: ~500 MB per 1000 images
+  - Recommend placing HF cache on a fast SSD: `export HF_HOME=/path/to/ssd/.cache/huggingface`
+
+### Python packages
+```
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+Pillow>=9.0.0
+pytesseract>=0.3.10
+opencv-python>=4.7.0
+datasets>=2.14.0
+numpy>=1.24.0
+langdetect>=1.0.9
+tqdm>=4.65.0
+```
+
+### ✅ Quick Start (5 min after setup)
 
 ```bash
 git clone <repo-url>
@@ -219,3 +257,69 @@ The provided `job_creation_dataset.sh` is configured for:
 - **AnyWord-3M:** Tuo et al., "AnyText: Multilingual Visual Text Generation And Editing," ICLR 2024
   https://github.com/tyxsspa/AnyText
   https://huggingface.co/datasets/stzhao/AnyWord-3M
+
+---
+
+## Troubleshooting
+
+### "Pipeline seems stuck / no progress shown"
+
+**This is normal on first run.** The pipeline is downloading the AnyWord-3M dataset from HuggingFace in the background.
+
+- **Check if data is downloading:** `du -sh ~/.cache/huggingface/` (directory grows as data arrives)
+- **Monitor GPU/CPU:** `nvidia-smi` or `top` (should show Python process using resources)
+- **Expected timing (first run):**
+  - Datasets library setup: 1-2 min
+  - Download laion subset: 15-30 min (500-1000 images/min depending on network)
+  - BLIP inference: 5-10 sec per image on GPU, 5+ min per image on CPU
+  - **Total: 30 min to 8 hours** depending on system
+
+### "Pipeline running very slowly (hours per image)"
+
+**Likely cause: No GPU or CPU-only inference**
+
+Check if CUDA is detected:
+```bash
+python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
+```
+
+If False, pipeline will use CPU and be **~50 times slower**. Solutions:
+1. Run on a GPU-enabled machine (recommended)
+2. Set `--max-images 10` for quick testing on CPU
+3. Configure `MAX_IMAGES=10` in `job_creation_dataset.sh` before submitting to cluster
+
+### "Tesseract not found / OCR failing"
+
+Install Tesseract (your OS):
+```bash
+# Ubuntu/Debian
+sudo apt install tesseract-ocr tesseract-ocr-eng
+
+# Check installation
+tesseract --version
+```
+
+### "HuggingFace quota exceeded / rate limiting"
+
+HuggingFace may rate-limit large dataset downloads. Solutions:
+1. **Pre-download subsets** for offline use:
+   ```bash
+   python download_datasets.py --data-dir ~/data/anyword3m
+   ```
+2. **Use fewer subsets:**
+   ```bash
+   python create_dataset_cluster.py \
+       --subsets laion \
+       --max-images 100
+   ```
+3. **Configure HF cache on a fast disk:**
+   ```bash
+   export HF_HOME=/fast_ssd/.cache/huggingface
+   ```
+
+### "Out of memory / CUDA out of memory"
+
+The BLIP model requires ~4-6 GB VRAM. Solutions:
+1. Run on a GPU with more VRAM
+2. Set `--max-images` to a smaller value (less memory for intermediate buffers)
+3. Run on CPU (slower but lower VRAM requirements)
