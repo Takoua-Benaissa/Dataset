@@ -76,8 +76,6 @@ The pipeline downloads and caches the **entire AnyWord-3M dataset** (~3M images,
 - **GPU strongly recommended** — BLIP caption generation is ~50 times faster on GPU. CPU-only runs will take hours.
   - Tested on: NVIDIA L40S (48 GB VRAM)
   - Works on: Any CUDA-capable GPU with ≥ 16 GB VRAM
-- **Tesseract OCR** ≥ 4.1 (required system package):
-  ```bash
   # Ubuntu/Debian
   sudo apt install tesseract-ocr tesseract-ocr-eng
   
@@ -98,7 +96,6 @@ torch>=2.0.0
 torchvision>=0.15.0
 transformers>=4.30.0
 Pillow>=9.0.0
-pytesseract>=0.3.10
 opencv-python>=4.7.0
 datasets>=2.14.0
 numpy>=1.24.0
@@ -120,7 +117,7 @@ pip install -r requirements.txt
 ```bash
 python create_dataset_cluster.py \
     --output dataset_output \
-    --max-images 1000
+    --max-images 500
 ```
 
 The dataset is streamed from HuggingFace, so no pre-download is required.

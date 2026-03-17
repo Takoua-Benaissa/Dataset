@@ -28,17 +28,9 @@ echo "  Python: $(python --version)"
 echo "[2/4] Installing Python packages..."
 pip install --upgrade pip -q
 pip install -r requirements.txt -q
-echo "  Installed: torch, transformers, pytesseract, opencv-python, datasets, langdetect, etc."
+echo "  Installed: torch, transformers, opencv-python, datasets, langdetect, etc."
 
 # ---- 3. Verify Tesseract ----
-echo "[3/4] Checking Tesseract OCR..."
-if command -v tesseract &> /dev/null; then
-    echo "  Tesseract: $(tesseract --version 2>&1 | head -1)"
-else
-    echo "  WARNING: Tesseract not found in PATH."
-    echo "  On Ubuntu: sudo apt install tesseract-ocr tesseract-ocr-eng"
-    echo "  On cluster: module load tesseract (if available)"
-fi
 
 # ---- 4. Verify HuggingFace access ----
 echo "[4/4] Checking HuggingFace datasets access..."
